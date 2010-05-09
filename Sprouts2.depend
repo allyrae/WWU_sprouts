@@ -1,300 +1,262 @@
 # depslib dependency file v1.0
-1273267749 source:/home/grosda/Desktop/Sprouts Final.r3/Game.cpp
+1273441392 source:c:\users\steven\code\git\game.cpp
 	"stdafx.h"
 	"include/bezier.h"
-	"SDL/SDL.h"
 	"include/draw.h"
 	"include/textbox.h"
-	<iostream>
-	<cstdlib>
-	<stdio.h>
-	"stdafx.h"
-	"include/bezier.h"
 	<SDL.h>
-	"include/draw.h"
-	"include/textbox.h"
 	<iostream>
 	<cstdlib>
 	<stdio.h>
 
-1255800464 
-
-1273257254 /home/grosda/Desktop/Sprouts Final.r3/stdafx.h
-	<iostream>
-	"SDL/SDL.h"
+1273257254 c:\users\steven\code\git\stdafx.h
 	<iostream>
 
-1273087574 "
-
-1273429126 /home/grosda/Desktop/Sprouts Final.r3/include/bezier.h
-	"draw.h"
-	"game.h"
-	"SDL/SDL_gfxPrimitives.h"
+1273429126 c:\users\steven\code\git\include\bezier.h
 	"draw.h"
 	"game.h"
 	"SDL_gfxPrimitives.h"
 
-1273087137 fxPrimitives.h"
-
-1273267896 /home/grosda/Desktop/Sprouts Final.r3/include/draw.h
-	<SDL/SDL.h>
-	<SDL/SDL_image.h>
-	<string>
+1273441413 c:\users\steven\code\git\include\draw.h
 	"SDL.h"
 	"SDL_image.h"
 	<string>
 
-1273087237 /home/grosda/Desktop/Sprouts Final.r3/include/game.h
-	<list>
-	"Sprout.h"
-	<list>
-	"Sprout.h"
+1255800449 c:\users\steven\code\git\sdl\include\sdl\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_audio.h"
+	"SDL_cdrom.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_loadso.h"
+	"SDL_mutex.h"
+	"SDL_rwops.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_video.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
 
-1273428809 /home/grosda/Desktop/Sprouts Final.r3/include/Sprout.h
-	"draw.h"
-	"SDL/SDL_ttf.h"
-	"draw.h"
-	"SDL_ttf.h"
+1255800450 c:\users\steven\code\git\sdl\include\sdl\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+	"begin_code.h"
+	"close_code.h"
 
-1273086227 tf.h"
-
-1273428929 /home/grosda/Desktop/Sprouts Final.r3/include/textbox.h
-	"../stdafx.h"
-	"SDL/SDL_ttf.h"
-	"draw.h"
-	"game.h"
-	<string>
-	"../stdafx.h"
-	"SDL_ttf.h"
-	"draw.h"
-	"game.h"
-	<string>
-
-1273086125 source:/home/grosda/Desktop/Sprouts Final.r3/LoadingScreen.cpp
-	"stdafx.h"
-	"include/draw.h"
-	"include/LoadingScreen.h"
-	"stdafx.h"
-	"include/draw.h"
-	"include/LoadingScreen.h"
-
-1273086125 oadingScreen.h"
-
-1273257340 /home/grosda/Desktop/Sprouts Final.r3/include/LoadingScreen.h
-	"draw.h"
-	"SDL/SDL.h"
-	<string>
-	"draw.h"
-	<string>
-
-1273428940 source:/home/grosda/Desktop/Sprouts Final.r3/Sprout.cpp
-	"stdafx.h"
-	<cmath>
-	"include/game.h"
-	"include/Sprout.h"
-	"SDL/SDL_ttf.h"
-	"stdafx.h"
-	<cmath>
-	"include/game.h"
-	"include/Sprout.h"
-	"SDL_ttf.h"
-
-1273428953 source:/home/grosda/Desktop/Sprouts Final.r3/Sprouts2.cpp
-	"stdafx.h"
-	"include/Sprout.h"
-	<time.h>
-	"include/bezier.h"
-	<SDL/SDL_ttf.h>
-	"include/textbox.h"
-	"include/LoadingScreen.h"
-	"include/button.h"
-	"include/bezier.h"
-	<SDL/SDL_ttf.h>
-	"include/textbox.h"
-	"include/Sprout.h"
-	"include/LoadingScreen.h"
-	"include/button.h"
-	"stdafx.h"
-	"include/Sprout.h"
-	<time.h>
-	"include/bezier.h"
-	"SDL_ttf.h"
-	"include/textbox.h"
-	"include/LoadingScreen.h"
-	"include/button.h"
-	"include/bezier.h"
-	"SDL_ttf.h"
-	"include/textbox.h"
-	"include/Sprout.h"
-	"include/LoadingScreen.h"
-	"include/button.h"
-
-1273172712 utton.h"
-
-1273172701 /home/grosda/Desktop/Sprouts Final.r3/include/button.h
-	"../stdafx.h"
-	"draw.h"
-	<string>
-	"SDL/SDL_ttf.h"
-	"../stdafx.h"
-	"draw.h"
-	<string>
-	"../SDL/SDL_ttf.h"
-
-1273087014 source:/home/grosda/Desktop/Sprouts Final.r3/applymove.cpp
-	"stdafx.h"
-	"include/Sprout.h"
-	"include/bezier.h"
-	<list>
-	"stdafx.h"
-	"include/Sprout.h"
-	"include/bezier.h"
-	<list>
-
-1273087094 ezier.h"
-
-1273429139 source:/home/grosda/Desktop/Sprouts Final.r3/bezier.cpp
-	"stdafx.h"
-	"include/draw.h"
-	"include/bezier.h"
-	"SDL/SDL_gfxPrimitives.h"
-	"stdafx.h"
-	"include/draw.h"
-	"include/bezier.h"
-	"SDL_gfxPrimitives.h"
-
-1273429145 source:/home/grosda/Desktop/Sprouts Final.r3/button.cpp
-	"stdafx.h"
-	"include/button.h"
-	"include/draw.h"
-	"SDL/SDL_gfxPrimitives.h"
-	"stdafx.h"
-	"include/button.h"
-	"include/draw.h"
-	"SDL_gfxPrimitives.h"
-
-1273087094 source:/home/grosda/Desktop/Sprouts Final.r3/checkWin.cpp
-	"stdafx.h"
-	"include/Sprout.h"
-	"include/bezier.h"
-	"stdafx.h"
-	"include/Sprout.h"
-	"include/bezier.h"
-
-1181080948 source:/home/grosda/Desktop/Sprouts Final.r3/draw.cpp
-	"stdafx.h"
-	"include/draw.h"
-	<string>
-	"stdafx.h"
-	"include/draw.h"
-	<string>
-
-1273087119 source:/home/grosda/Desktop/Sprouts Final.r3/parse.cpp
-	"stdafx.h"
-	<stack>
-	<math.h>
-	"include/game.h"
-	"stdafx.h"
-	<stack>
-	<math.h>
-	"include/game.h"
-
-1273087119 ame.h"
-
-1181080948 source:/home/grosda/Desktop/Sprouts Final.r3/stdafx.cpp
-	"stdafx.h"
-	"stdafx.h"
-
-1273429155 source:/home/grosda/Desktop/Sprouts Final.r3/textbox.cpp
-	"stdafx.h"
-	"include/textbox.h"
-	"SDL/SDL_gfxPrimitives.h"
-	"stdafx.h"
-	"include/textbox.h"
-	"SDL_gfxPrimitives.h"
-
-1273430145 source:/home/grosda/Desktop/Sprouts Final.r3/timer.cpp
-	"stdafx.h"
-	"include/timer.h"
-	"stdafx.h"
-	"SDL.h"
-	"include/timer.h"
-
-1181080948 imer.h"
-
-1181080948 /home/grosda/Desktop/Sprouts Final.r3/include/timer.h
-
-1273267749 source:c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\game.cpp
-	"stdafx.h"
-	"include/bezier.h"
-	<SDL.h>
-	"include/draw.h"
-	"include/textbox.h"
-	<iostream>
-	<cstdlib>
+1255800450 c:\users\steven\code\git\sdl\include\sdl\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
 	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
 
-1273257254 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\stdafx.h
-	<iostream>
+1255800464 c:\users\steven\code\git\sdl\include\sdl\sdl_config.h
+	"SDL_platform.h"
+	<stdarg.h>
 
-1273429126 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\include\bezier.h
-	"draw.h"
-	"game.h"
-	"SDL_gfxPrimitives.h"
+1255800450 c:\users\steven\code\git\sdl\include\sdl\sdl_platform.h
 
-1273429155 imitives.h"
+1255800450 c:\users\steven\code\git\sdl\include\sdl\begin_code.h
 
-1273172524 L_gfxPrimitives.h"
+1255800450 c:\users\steven\code\git\sdl\include\sdl\close_code.h
 
-1273267896 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\include\draw.h
+1255800449 c:\users\steven\code\git\sdl\include\sdl\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800449 c:\users\steven\code\git\sdl\include\sdl\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800449 c:\users\steven\code\git\sdl\include\sdl\sdl_endian.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\steven\code\git\sdl\include\sdl\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\steven\code\git\sdl\include\sdl\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1255800450 c:\users\steven\code\git\sdl\include\sdl\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800449 c:\users\steven\code\git\sdl\include\sdl\sdl_cdrom.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800449 c:\users\steven\code\git\sdl\include\sdl\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800449 c:\users\steven\code\git\sdl\include\sdl\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_active.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_quit.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800449 c:\users\steven\code\git\sdl\include\sdl\sdl_active.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800449 c:\users\steven\code\git\sdl\include\sdl\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keysym.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\steven\code\git\sdl\include\sdl\sdl_keysym.h
+
+1255800450 c:\users\steven\code\git\sdl\include\sdl\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\steven\code\git\sdl\include\sdl\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800449 c:\users\steven\code\git\sdl\include\sdl\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\steven\code\git\sdl\include\sdl\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1255800450 c:\users\steven\code\git\sdl\include\sdl\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\steven\code\git\sdl\include\sdl\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1255800450 c:\users\steven\code\git\sdl\include\sdl\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1273256240 c:\users\steven\code\git\sdl\include\sdl\sdl_image.h
 	"SDL.h"
-	"SDL_image.h"
-	<string>
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
 
-1273087237 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\include\game.h
+1273087237 c:\users\steven\code\git\include\game.h
 	<list>
 	"Sprout.h"
 
-1273428809 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\include\sprout.h
+1273428809 c:\users\steven\code\git\include\sprout.h
 	"draw.h"
 	"SDL_ttf.h"
 
-1273172701 L_ttf.h"
+1184479368 c:\users\steven\code\git\sdl\include\sdl\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
 
-1273428929 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\include\textbox.h
+1253756647 c:\users\steven\code\git\sdl\include\sdl\sdl_gfxprimitives.h
+	<math.h>
+	"SDL.h"
+
+1273428929 c:\users\steven\code\git\include\textbox.h
 	"../stdafx.h"
 	"SDL_ttf.h"
 	"draw.h"
 	"game.h"
 	<string>
 
-1273086125 source:c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\loadingscreen.cpp
+1273086125 source:c:\users\steven\code\git\loadingscreen.cpp
 	"stdafx.h"
 	"include/draw.h"
 	"include/LoadingScreen.h"
 
-1273257340 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\include\loadingscreen.h
+1273257340 c:\users\steven\code\git\include\loadingscreen.h
 	"draw.h"
 	<string>
 
-1273172925 L_timer.h"
-
-1273428940 source:c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sprout.cpp
+1273428940 source:c:\users\steven\code\git\sprout.cpp
 	"stdafx.h"
 	<cmath>
 	"include/game.h"
 	"include/Sprout.h"
 	"SDL_ttf.h"
 
-1273428953 source:c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sprouts2.cpp
-	"stdafx.h"
-	"include/Sprout.h"
+1273441361 source:c:\users\steven\code\git\sprouts2.cpp
 	<time.h>
+	"stdafx.h"
 	"include/bezier.h"
-	"SDL_ttf.h"
-	"include/textbox.h"
-	"include/LoadingScreen.h"
 	"include/button.h"
+	"include/LoadingScreen.h"
+	"include/Sprout.h"
+	"include/textbox.h"
+	"SDL_ttf.h"
 	"include/bezier.h"
 	"SDL_ttf.h"
 	"include/textbox.h"
@@ -302,1798 +264,58 @@
 	"include/LoadingScreen.h"
 	"include/button.h"
 
-1273172701 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\include\button.h
+1273172701 c:\users\steven\code\git\include\button.h
 	"../stdafx.h"
 	"draw.h"
 	<string>
 	"../SDL/SDL_ttf.h"
 
-1273087014 source:c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\applymove.cpp
+1273087014 source:c:\users\steven\code\git\applymove.cpp
 	"stdafx.h"
 	"include/Sprout.h"
 	"include/bezier.h"
 	<list>
 
-1273429139 source:c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\bezier.cpp
+1273429139 source:c:\users\steven\code\git\bezier.cpp
 	"stdafx.h"
 	"include/draw.h"
 	"include/bezier.h"
 	"SDL_gfxPrimitives.h"
 
-1273429145 source:c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\button.cpp
+1273429145 source:c:\users\steven\code\git\button.cpp
 	"stdafx.h"
 	"include/button.h"
 	"include/draw.h"
 	"SDL_gfxPrimitives.h"
 
-1273087094 source:c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\checkwin.cpp
+1273087094 source:c:\users\steven\code\git\checkwin.cpp
 	"stdafx.h"
 	"include/Sprout.h"
 	"include/bezier.h"
 
-1181080948 source:c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\draw.cpp
+1181080948 source:c:\users\steven\code\git\draw.cpp
 	"stdafx.h"
 	"include/draw.h"
 	<string>
 
-1273087119 source:c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\parse.cpp
+1273087119 source:c:\users\steven\code\git\parse.cpp
 	"stdafx.h"
 	<stack>
 	<math.h>
 	"include/game.h"
 
-1181080948 source:c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\stdafx.cpp
+1181080948 source:c:\users\steven\code\git\stdafx.cpp
 	"stdafx.h"
 
-1273429155 source:c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\textbox.cpp
+1273429155 source:c:\users\steven\code\git\textbox.cpp
 	"stdafx.h"
 	"include/textbox.h"
 	"SDL_gfxPrimitives.h"
 
-1273430145 source:c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\timer.cpp
+1273430145 source:c:\users\steven\code\git\timer.cpp
 	"stdafx.h"
 	"SDL.h"
 	"include/timer.h"
 
-1181080948 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\include\timer.h
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl.h
-	"SDL_main.h"
-	"SDL_stdinc.h"
-	"SDL_audio.h"
-	"SDL_cdrom.h"
-	"SDL_cpuinfo.h"
-	"SDL_endian.h"
-	"SDL_error.h"
-	"SDL_events.h"
-	"SDL_loadso.h"
-	"SDL_mutex.h"
-	"SDL_rwops.h"
-	"SDL_thread.h"
-	"SDL_timer.h"
-	"SDL_video.h"
-	"SDL_version.h"
-	"begin_code.h"
-	"close_code.h"
-
-1273433063 e.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_main.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_stdinc.h
-	"SDL_config.h"
-	<sys/types.h>
-	<stdio.h>
-	<stdlib.h>
-	<stddef.h>
-	<stdarg.h>
-	<stdlib.h>
-	<malloc.h>
-	<stddef.h>
-	<stdarg.h>
-	<memory.h>
-	<string.h>
-	<strings.h>
-	<inttypes.h>
-	<stdint.h>
-	<ctype.h>
-	<iconv.h>
-	"begin_code.h"
-	<alloca.h>
-	<malloc.h>
-	<malloc.h>
-	<malloc.h>
-	<stdlib.h>
-	"close_code.h"
-
-1255800464 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_config.h
-	"SDL_platform.h"
-	<stdarg.h>
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_platform.h
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\begin_code.h
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\close_code.h
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_audio.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_endian.h"
-	"SDL_mutex.h"
-	"SDL_thread.h"
-	"SDL_rwops.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_error.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_endian.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_mutex.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_thread.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_mutex.h"
-	"begin_code.h"
-	<process.h>
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_rwops.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_cdrom.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_cpuinfo.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_events.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_active.h"
-	"SDL_keyboard.h"
-	"SDL_mouse.h"
-	"SDL_joystick.h"
-	"SDL_quit.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_active.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_keyboard.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_keysym.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_keysym.h
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_mouse.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_video.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_video.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_rwops.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_joystick.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_quit.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-
-1255800450 .h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_loadso.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_timer.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_version.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1273172457 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_image.h
-	"SDL.h"
-	"SDL_version.h"
-	"begin_code.h"
-	"close_code.h"
-
-1273172497 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_ttf.h
-	"SDL.h"
-	"begin_code.h"
-	"close_code.h"
-
-1253756647 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\sdl_gfxprimitives.h
-	<math.h>
-	"SDL.h"
-
-1273087255 source:/home/davidgross/Dropbox/sprouts/Sprouts Final.r3/Game.cpp
-	"stdafx.h"
-	"include/bezier.h"
-	"SDL/SDL.h"
-	"include/draw.h"
-	"include/textbox.h"
-	<iostream>
-	<cstdlib>
-	<stdio.h>
-
-1273087574 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/stdafx.h
-	<iostream>
-	"SDL/SDL.h"
-
-1255800449 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL.h
-	"SDL_main.h"
-	"SDL_stdinc.h"
-	"SDL_audio.h"
-	"SDL_cdrom.h"
-	"SDL_cpuinfo.h"
-	"SDL_endian.h"
-	"SDL_error.h"
-	"SDL_events.h"
-	"SDL_loadso.h"
-	"SDL_mutex.h"
-	"SDL_rwops.h"
-	"SDL_thread.h"
-	"SDL_timer.h"
-	"SDL_video.h"
-	"SDL_version.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_main.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_stdinc.h
-	"SDL_config.h"
-	<sys/types.h>
-	<stdio.h>
-	<stdlib.h>
-	<stddef.h>
-	<stdarg.h>
-	<stdlib.h>
-	<malloc.h>
-	<stddef.h>
-	<stdarg.h>
-	<memory.h>
-	<string.h>
-	<strings.h>
-	<inttypes.h>
-	<stdint.h>
-	<ctype.h>
-	<iconv.h>
-	"begin_code.h"
-	<alloca.h>
-	<malloc.h>
-	<malloc.h>
-	<malloc.h>
-	<stdlib.h>
-	"close_code.h"
-
-1255800464 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_config.h
-	"SDL_platform.h"
-	<stdarg.h>
-
-1255800450 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_platform.h
-
-1255800450 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/begin_code.h
-
-1255800450 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/close_code.h
-
-1255800449 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_audio.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_endian.h"
-	"SDL_mutex.h"
-	"SDL_thread.h"
-	"SDL_rwops.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_error.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_endian.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_mutex.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_thread.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_mutex.h"
-	"begin_code.h"
-	<process.h>
-	"close_code.h"
-
-1255800450 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_rwops.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_cdrom.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_cpuinfo.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_events.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_active.h"
-	"SDL_keyboard.h"
-	"SDL_mouse.h"
-	"SDL_joystick.h"
-	"SDL_quit.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_active.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_keyboard.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_keysym.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_keysym.h
-
-1255800450 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_mouse.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_video.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_video.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_rwops.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_joystick.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_quit.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-
-1255800450 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_loadso.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_timer.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_version.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1273172524 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/include/bezier.h
-	"draw.h"
-	"game.h"
-	"../SDL/SDL_gfxPrimitives.h"
-
-1273172176 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/include/draw.h
-	"../SDL/SDL.h"
-	"../SDL/SDL_image.h"
-	<string>
-
-1273172457 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_image.h
-	"SDL.h"
-	"SDL_version.h"
-	"begin_code.h"
-	"close_code.h"
-
-1273087237 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/include/game.h
-	<list>
-	"Sprout.h"
-
-1273172515 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/include/Sprout.h
-	"draw.h"
-	"../SDL/SDL_ttf.h"
-
-1273172497 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_ttf.h
-	"SDL.h"
-	"begin_code.h"
-	"close_code.h"
-
-1253756647 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/SDL/SDL_gfxPrimitives.h
-	<math.h>
-	"SDL.h"
-
-1273172654 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/include/textbox.h
-	"../stdafx.h"
-	"../SDL/SDL_ttf.h"
-	"draw.h"
-	"game.h"
-	<string>
-
-1273086125 source:/home/davidgross/Dropbox/sprouts/Sprouts Final.r3/LoadingScreen.cpp
-	"stdafx.h"
-	"include/draw.h"
-	"include/LoadingScreen.h"
-
-1273172925 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/include/LoadingScreen.h
-	"draw.h"
-	"../SDL/SDL.h"
-	<string>
-	"../SDL/SDL_timer.h"
-
-1273086227 source:/home/davidgross/Dropbox/sprouts/Sprouts Final.r3/Sprout.cpp
-	"stdafx.h"
-	<cmath>
-	"include/game.h"
-	"include/Sprout.h"
-	"SDL/SDL_ttf.h"
-
-1273172712 source:/home/davidgross/Dropbox/sprouts/Sprouts Final.r3/Sprouts2.cpp
-	"stdafx.h"
-	"include/Sprout.h"
-	<time.h>
-	"include/bezier.h"
-	"SDL/SDL_ttf.h"
-	"include/textbox.h"
-	"include/LoadingScreen.h"
-	"include/button.h"
-	"include/bezier.h"
-	"SDL/SDL_ttf.h"
-	"include/textbox.h"
-	"include/Sprout.h"
-	"include/LoadingScreen.h"
-	"include/button.h"
-
-1273172701 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/include/button.h
-	"../stdafx.h"
-	"draw.h"
-	<string>
-	"../SDL/SDL_ttf.h"
-
-1273087014 source:/home/davidgross/Dropbox/sprouts/Sprouts Final.r3/applymove.cpp
-	"stdafx.h"
-	"include/Sprout.h"
-	"include/bezier.h"
-	<list>
-
-1273087023 source:/home/davidgross/Dropbox/sprouts/Sprouts Final.r3/bezier.cpp
-	"stdafx.h"
-	"include/draw.h"
-	"include/bezier.h"
-	"SDL/SDL_gfxPrimitives.h"
-
-1273087031 source:/home/davidgross/Dropbox/sprouts/Sprouts Final.r3/button.cpp
-	"stdafx.h"
-	"include/button.h"
-	"include/draw.h"
-	"SDL/SDL_gfxPrimitives.h"
-
-1273087094 source:/home/davidgross/Dropbox/sprouts/Sprouts Final.r3/checkWin.cpp
-	"stdafx.h"
-	"include/Sprout.h"
-	"include/bezier.h"
-
-1181080948 source:/home/davidgross/Dropbox/sprouts/Sprouts Final.r3/draw.cpp
-	"stdafx.h"
-	"include/draw.h"
-	<string>
-
-1273087119 source:/home/davidgross/Dropbox/sprouts/Sprouts Final.r3/parse.cpp
-	"stdafx.h"
-	<stack>
-	<math.h>
-	"include/game.h"
-
-1181080948 source:/home/davidgross/Dropbox/sprouts/Sprouts Final.r3/stdafx.cpp
-	"stdafx.h"
-
-1273087137 source:/home/davidgross/Dropbox/sprouts/Sprouts Final.r3/textbox.cpp
-	"stdafx.h"
-	"include/textbox.h"
-	"SDL/SDL_gfxPrimitives.h"
-
-1181080948 source:/home/davidgross/Dropbox/sprouts/Sprouts Final.r3/timer.cpp
-	"stdafx.h"
-	"include/timer.h"
-
-1181080948 /home/davidgross/Dropbox/sprouts/Sprouts Final.r3/include/timer.h
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl.h
-	"SDL_main.h"
-	"SDL_stdinc.h"
-	"SDL_audio.h"
-	"SDL_cdrom.h"
-	"SDL_cpuinfo.h"
-	"SDL_endian.h"
-	"SDL_error.h"
-	"SDL_events.h"
-	"SDL_loadso.h"
-	"SDL_mutex.h"
-	"SDL_rwops.h"
-	"SDL_thread.h"
-	"SDL_timer.h"
-	"SDL_video.h"
-	"SDL_version.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_main.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_stdinc.h
-	"SDL_config.h"
-	<sys/types.h>
-	<stdio.h>
-	<stdlib.h>
-	<stddef.h>
-	<stdarg.h>
-	<stdlib.h>
-	<malloc.h>
-	<stddef.h>
-	<stdarg.h>
-	<memory.h>
-	<string.h>
-	<strings.h>
-	<inttypes.h>
-	<stdint.h>
-	<ctype.h>
-	<iconv.h>
-	"begin_code.h"
-	<alloca.h>
-	<malloc.h>
-	<malloc.h>
-	<malloc.h>
-	<stdlib.h>
-	"close_code.h"
-
-1255800464 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_config.h
-	"SDL_platform.h"
-	<stdarg.h>
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_platform.h
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\begin_code.h
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\close_code.h
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_audio.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_endian.h"
-	"SDL_mutex.h"
-	"SDL_thread.h"
-	"SDL_rwops.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_error.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_endian.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_mutex.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_thread.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_mutex.h"
-	"begin_code.h"
-	<process.h>
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_rwops.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_cdrom.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_cpuinfo.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_events.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_active.h"
-	"SDL_keyboard.h"
-	"SDL_mouse.h"
-	"SDL_joystick.h"
-	"SDL_quit.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_active.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_keyboard.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_keysym.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_keysym.h
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_mouse.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_video.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_video.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_rwops.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_joystick.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_quit.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_loadso.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_timer.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl\sdl_version.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1184479368 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl_ttf-2.0.9\sdl_ttf.h
-	"SDL.h"
-	"begin_code.h"
-	"close_code.h"
-
-1273256993 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl-1.2.14\include\sdl
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl.h
-	"SDL_main.h"
-	"SDL_stdinc.h"
-	"SDL_audio.h"
-	"SDL_cdrom.h"
-	"SDL_cpuinfo.h"
-	"SDL_endian.h"
-	"SDL_error.h"
-	"SDL_events.h"
-	"SDL_loadso.h"
-	"SDL_mutex.h"
-	"SDL_rwops.h"
-	"SDL_thread.h"
-	"SDL_timer.h"
-	"SDL_video.h"
-	"SDL_version.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_main.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_stdinc.h
-	"SDL_config.h"
-	<sys/types.h>
-	<stdio.h>
-	<stdlib.h>
-	<stddef.h>
-	<stdarg.h>
-	<stdlib.h>
-	<malloc.h>
-	<stddef.h>
-	<stdarg.h>
-	<memory.h>
-	<string.h>
-	<strings.h>
-	<inttypes.h>
-	<stdint.h>
-	<ctype.h>
-	<iconv.h>
-	"begin_code.h"
-	<alloca.h>
-	<malloc.h>
-	<malloc.h>
-	<malloc.h>
-	<stdlib.h>
-	"close_code.h"
-
-1255800464 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_config.h
-	"SDL_platform.h"
-	<stdarg.h>
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_platform.h
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\begin_code.h
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\close_code.h
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_audio.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_endian.h"
-	"SDL_mutex.h"
-	"SDL_thread.h"
-	"SDL_rwops.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_error.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_endian.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_mutex.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_thread.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_mutex.h"
-	"begin_code.h"
-	<process.h>
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_rwops.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_cdrom.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_cpuinfo.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_events.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_active.h"
-	"SDL_keyboard.h"
-	"SDL_mouse.h"
-	"SDL_joystick.h"
-	"SDL_quit.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_active.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_keyboard.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_keysym.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_keysym.h
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_mouse.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_video.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_video.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_rwops.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_joystick.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_quit.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_loadso.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_timer.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_version.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1273431060 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_image.h
-	"SDL.h"
-	"SDL_version.h"
-	"begin_code.h"
-	"close_code.h"
-
-1273433063 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_ttf.h
-	"SDL.h"
-	"begin_code.h"
-	"close_code.h"
-
-1231481494 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_gfxprimitives_font.h
-
-1253756647 c:\users\steven\my dropbox\class\datastructures\sprouts\sprouts final.r3\sdl\include\sdl\sdl_gfxprimitives.h
-	<math.h>
-	"SDL.h"
-
-1255800449 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL.h
-	"SDL_main.h"
-	"SDL_stdinc.h"
-	"SDL_audio.h"
-	"SDL_cdrom.h"
-	"SDL_cpuinfo.h"
-	"SDL_endian.h"
-	"SDL_error.h"
-	"SDL_events.h"
-	"SDL_loadso.h"
-	"SDL_mutex.h"
-	"SDL_rwops.h"
-	"SDL_thread.h"
-	"SDL_timer.h"
-	"SDL_video.h"
-	"SDL_version.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_main.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_stdinc.h
-	"SDL_config.h"
-	<sys/types.h>
-	<stdio.h>
-	<stdlib.h>
-	<stddef.h>
-	<stdarg.h>
-	<stdlib.h>
-	<malloc.h>
-	<stddef.h>
-	<stdarg.h>
-	<memory.h>
-	<string.h>
-	<strings.h>
-	<inttypes.h>
-	<stdint.h>
-	<ctype.h>
-	<iconv.h>
-	"begin_code.h"
-	<alloca.h>
-	<malloc.h>
-	<malloc.h>
-	<malloc.h>
-	<stdlib.h>
-	"close_code.h"
-
-1255800464 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_config.h
-	"SDL_platform.h"
-	<stdarg.h>
-
-1255800450 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_platform.h
-
-1255800450 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/begin_code.h
-
-1255800450 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/close_code.h
-
-1255800449 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_audio.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_endian.h"
-	"SDL_mutex.h"
-	"SDL_thread.h"
-	"SDL_rwops.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_error.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_endian.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_mutex.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_thread.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_mutex.h"
-	"begin_code.h"
-	<process.h>
-	"close_code.h"
-
-1255800450 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_rwops.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_cdrom.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_cpuinfo.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_events.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_active.h"
-	"SDL_keyboard.h"
-	"SDL_mouse.h"
-	"SDL_joystick.h"
-	"SDL_quit.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_active.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_keyboard.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_keysym.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_keysym.h
-
-1255800450 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_mouse.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_video.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_video.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_rwops.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_joystick.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_quit.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-
-1255800450 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_loadso.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_timer.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_version.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1273256240 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_image.h
-	"SDL.h"
-	"SDL_version.h"
-	"begin_code.h"
-	"close_code.h"
-
-1184479368 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_ttf.h
-	"SDL.h"
-	"begin_code.h"
-	"close_code.h"
-
-1253756647 /home/grosda/Desktop/Sprouts Final.r3/SDL/include/SDL/SDL_gfxPrimitives.h
-	<math.h>
-	"SDL.h"
-
-1273267749 source:/home/grosda/Desktop/SproutsFinal.r3/Game.cpp
-	"stdafx.h"
-	"include/bezier.h"
-	<SDL.h>
-	"include/draw.h"
-	"include/textbox.h"
-	<iostream>
-	<cstdlib>
-	<stdio.h>
-
-1273257254 /home/grosda/Desktop/SproutsFinal.r3/stdafx.h
-	<iostream>
-
-1273429126 /home/grosda/Desktop/SproutsFinal.r3/include/bezier.h
-	"draw.h"
-	"game.h"
-	"SDL_gfxPrimitives.h"
-
-1273267896 /home/grosda/Desktop/SproutsFinal.r3/include/draw.h
-	"SDL.h"
-	"SDL_image.h"
-	<string>
-
-1255800449 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL.h
-	"SDL_main.h"
-	"SDL_stdinc.h"
-	"SDL_audio.h"
-	"SDL_cdrom.h"
-	"SDL_cpuinfo.h"
-	"SDL_endian.h"
-	"SDL_error.h"
-	"SDL_events.h"
-	"SDL_loadso.h"
-	"SDL_mutex.h"
-	"SDL_rwops.h"
-	"SDL_thread.h"
-	"SDL_timer.h"
-	"SDL_video.h"
-	"SDL_version.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_main.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_stdinc.h
-	"SDL_config.h"
-	<sys/types.h>
-	<stdio.h>
-	<stdlib.h>
-	<stddef.h>
-	<stdarg.h>
-	<stdlib.h>
-	<malloc.h>
-	<stddef.h>
-	<stdarg.h>
-	<memory.h>
-	<string.h>
-	<strings.h>
-	<inttypes.h>
-	<stdint.h>
-	<ctype.h>
-	<iconv.h>
-	"begin_code.h"
-	<alloca.h>
-	<malloc.h>
-	<malloc.h>
-	<malloc.h>
-	<stdlib.h>
-	"close_code.h"
-
-1255800464 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_config.h
-	"SDL_platform.h"
-	<stdarg.h>
-
-1255800450 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_platform.h
-
-1255800450 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/begin_code.h
-
-1255800450 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/close_code.h
-
-1255800449 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_audio.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_endian.h"
-	"SDL_mutex.h"
-	"SDL_thread.h"
-	"SDL_rwops.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_error.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_endian.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_mutex.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_thread.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_mutex.h"
-	"begin_code.h"
-	<process.h>
-	"close_code.h"
-
-1255800450 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_rwops.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_cdrom.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_cpuinfo.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_events.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_active.h"
-	"SDL_keyboard.h"
-	"SDL_mouse.h"
-	"SDL_joystick.h"
-	"SDL_quit.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_active.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_keyboard.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_keysym.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_keysym.h
-
-1255800450 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_mouse.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_video.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_video.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_rwops.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_joystick.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_quit.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-
-1255800450 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_loadso.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_timer.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_version.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1273256240 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_image.h
-	"SDL.h"
-	"SDL_version.h"
-	"begin_code.h"
-	"close_code.h"
-
-1273087237 /home/grosda/Desktop/SproutsFinal.r3/include/game.h
-	<list>
-	"Sprout.h"
-
-1273428809 /home/grosda/Desktop/SproutsFinal.r3/include/Sprout.h
-	"draw.h"
-	"SDL_ttf.h"
-
-1184479368 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_ttf.h
-	"SDL.h"
-	"begin_code.h"
-	"close_code.h"
-
-1253756647 /home/grosda/Desktop/SproutsFinal.r3/SDL/include/SDL/SDL_gfxPrimitives.h
-	<math.h>
-	"SDL.h"
-
-1273428929 /home/grosda/Desktop/SproutsFinal.r3/include/textbox.h
-	"../stdafx.h"
-	"SDL_ttf.h"
-	"draw.h"
-	"game.h"
-	<string>
-
-1273086125 source:/home/grosda/Desktop/SproutsFinal.r3/LoadingScreen.cpp
-	"stdafx.h"
-	"include/draw.h"
-	"include/LoadingScreen.h"
-
-1273257340 /home/grosda/Desktop/SproutsFinal.r3/include/LoadingScreen.h
-	"draw.h"
-	<string>
-
-1273428940 source:/home/grosda/Desktop/SproutsFinal.r3/Sprout.cpp
-	"stdafx.h"
-	<cmath>
-	"include/game.h"
-	"include/Sprout.h"
-	"SDL_ttf.h"
-
-1273428953 source:/home/grosda/Desktop/SproutsFinal.r3/Sprouts2.cpp
-	"stdafx.h"
-	"include/Sprout.h"
-	<time.h>
-	"include/bezier.h"
-	"SDL_ttf.h"
-	"include/textbox.h"
-	"include/LoadingScreen.h"
-	"include/button.h"
-	"include/bezier.h"
-	"SDL_ttf.h"
-	"include/textbox.h"
-	"include/Sprout.h"
-	"include/LoadingScreen.h"
-	"include/button.h"
-
-1273172701 /home/grosda/Desktop/SproutsFinal.r3/include/button.h
-	"../stdafx.h"
-	"draw.h"
-	<string>
-	"../SDL/SDL_ttf.h"
-
-1273087014 source:/home/grosda/Desktop/SproutsFinal.r3/applymove.cpp
-	"stdafx.h"
-	"include/Sprout.h"
-	"include/bezier.h"
-	<list>
-
-1273429139 source:/home/grosda/Desktop/SproutsFinal.r3/bezier.cpp
-	"stdafx.h"
-	"include/draw.h"
-	"include/bezier.h"
-	"SDL_gfxPrimitives.h"
-
-1273429145 source:/home/grosda/Desktop/SproutsFinal.r3/button.cpp
-	"stdafx.h"
-	"include/button.h"
-	"include/draw.h"
-	"SDL_gfxPrimitives.h"
-
-1273087094 source:/home/grosda/Desktop/SproutsFinal.r3/checkWin.cpp
-	"stdafx.h"
-	"include/Sprout.h"
-	"include/bezier.h"
-
-1181080948 source:/home/grosda/Desktop/SproutsFinal.r3/draw.cpp
-	"stdafx.h"
-	"include/draw.h"
-	<string>
-
-1273087119 source:/home/grosda/Desktop/SproutsFinal.r3/parse.cpp
-	"stdafx.h"
-	<stack>
-	<math.h>
-	"include/game.h"
-
-1181080948 source:/home/grosda/Desktop/SproutsFinal.r3/stdafx.cpp
-	"stdafx.h"
-
-1273429155 source:/home/grosda/Desktop/SproutsFinal.r3/textbox.cpp
-	"stdafx.h"
-	"include/textbox.h"
-	"SDL_gfxPrimitives.h"
-
-1273430145 source:/home/grosda/Desktop/SproutsFinal.r3/timer.cpp
-	"stdafx.h"
-	"SDL.h"
-	"include/timer.h"
-
-1181080948 /home/grosda/Desktop/SproutsFinal.r3/include/timer.h
-
-1273440027 source:c:\users\steven\code\2010\game.cpp
-	"stdafx.h"
-	"include/bezier.h"
-	<SDL.h>
-	"include/draw.h"
-	"include/textbox.h"
-	<iostream>
-	<cstdlib>
-	<stdio.h>
-
-1273257254 c:\users\steven\code\2010\stdafx.h
-	<iostream>
-
-1273429126 c:\users\steven\code\2010\include\bezier.h
-	"draw.h"
-	"game.h"
-	"SDL_gfxPrimitives.h"
-
-1273267896 c:\users\steven\code\2010\include\draw.h
-	"SDL.h"
-	"SDL_image.h"
-	<string>
-
-1255800449 c:\users\steven\code\2010\sdl\include\sdl\sdl.h
-	"SDL_main.h"
-	"SDL_stdinc.h"
-	"SDL_audio.h"
-	"SDL_cdrom.h"
-	"SDL_cpuinfo.h"
-	"SDL_endian.h"
-	"SDL_error.h"
-	"SDL_events.h"
-	"SDL_loadso.h"
-	"SDL_mutex.h"
-	"SDL_rwops.h"
-	"SDL_thread.h"
-	"SDL_timer.h"
-	"SDL_video.h"
-	"SDL_version.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\code\2010\sdl\include\sdl\sdl_main.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\code\2010\sdl\include\sdl\sdl_stdinc.h
-	"SDL_config.h"
-	<sys/types.h>
-	<stdio.h>
-	<stdlib.h>
-	<stddef.h>
-	<stdarg.h>
-	<stdlib.h>
-	<malloc.h>
-	<stddef.h>
-	<stdarg.h>
-	<memory.h>
-	<string.h>
-	<strings.h>
-	<inttypes.h>
-	<stdint.h>
-	<ctype.h>
-	<iconv.h>
-	"begin_code.h"
-	<alloca.h>
-	<malloc.h>
-	<malloc.h>
-	<malloc.h>
-	<stdlib.h>
-	"close_code.h"
-
-1255800464 c:\users\steven\code\2010\sdl\include\sdl\sdl_config.h
-	"SDL_platform.h"
-	<stdarg.h>
-
-1255800450 c:\users\steven\code\2010\sdl\include\sdl\sdl_platform.h
-
-1255800450 c:\users\steven\code\2010\sdl\include\sdl\begin_code.h
-
-1255800450 c:\users\steven\code\2010\sdl\include\sdl\close_code.h
-
-1255800449 c:\users\steven\code\2010\sdl\include\sdl\sdl_audio.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_endian.h"
-	"SDL_mutex.h"
-	"SDL_thread.h"
-	"SDL_rwops.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\code\2010\sdl\include\sdl\sdl_error.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\code\2010\sdl\include\sdl\sdl_endian.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\code\2010\sdl\include\sdl\sdl_mutex.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\code\2010\sdl\include\sdl\sdl_thread.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_mutex.h"
-	"begin_code.h"
-	<process.h>
-	"close_code.h"
-
-1255800450 c:\users\steven\code\2010\sdl\include\sdl\sdl_rwops.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\code\2010\sdl\include\sdl\sdl_cdrom.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\code\2010\sdl\include\sdl\sdl_cpuinfo.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\code\2010\sdl\include\sdl\sdl_events.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_active.h"
-	"SDL_keyboard.h"
-	"SDL_mouse.h"
-	"SDL_joystick.h"
-	"SDL_quit.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\code\2010\sdl\include\sdl\sdl_active.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\code\2010\sdl\include\sdl\sdl_keyboard.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_keysym.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\code\2010\sdl\include\sdl\sdl_keysym.h
-
-1255800450 c:\users\steven\code\2010\sdl\include\sdl\sdl_mouse.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_video.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\code\2010\sdl\include\sdl\sdl_video.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"SDL_rwops.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800449 c:\users\steven\code\2010\sdl\include\sdl\sdl_joystick.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\code\2010\sdl\include\sdl\sdl_quit.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-
-1255800450 c:\users\steven\code\2010\sdl\include\sdl\sdl_loadso.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\code\2010\sdl\include\sdl\sdl_timer.h
-	"SDL_stdinc.h"
-	"SDL_error.h"
-	"begin_code.h"
-	"close_code.h"
-
-1255800450 c:\users\steven\code\2010\sdl\include\sdl\sdl_version.h
-	"SDL_stdinc.h"
-	"begin_code.h"
-	"close_code.h"
-
-1273256240 c:\users\steven\code\2010\sdl\include\sdl\sdl_image.h
-	"SDL.h"
-	"SDL_version.h"
-	"begin_code.h"
-	"close_code.h"
-
-1273087237 c:\users\steven\code\2010\include\game.h
-	<list>
-	"Sprout.h"
-
-1273428809 c:\users\steven\code\2010\include\sprout.h
-	"draw.h"
-	"SDL_ttf.h"
-
-1184479368 c:\users\steven\code\2010\sdl\include\sdl\sdl_ttf.h
-	"SDL.h"
-	"begin_code.h"
-	"close_code.h"
-
-1253756647 c:\users\steven\code\2010\sdl\include\sdl\sdl_gfxprimitives.h
-	<math.h>
-	"SDL.h"
-
-1273428929 c:\users\steven\code\2010\include\textbox.h
-	"../stdafx.h"
-	"SDL_ttf.h"
-	"draw.h"
-	"game.h"
-	<string>
-
-1273086125 source:c:\users\steven\code\2010\loadingscreen.cpp
-	"stdafx.h"
-	"include/draw.h"
-	"include/LoadingScreen.h"
-
-1273257340 c:\users\steven\code\2010\include\loadingscreen.h
-	"draw.h"
-	<string>
-
-1273428940 source:c:\users\steven\code\2010\sprout.cpp
-	"stdafx.h"
-	<cmath>
-	"include/game.h"
-	"include/Sprout.h"
-	"SDL_ttf.h"
-
-1273428953 source:c:\users\steven\code\2010\sprouts2.cpp
-	"stdafx.h"
-	"include/Sprout.h"
-	<time.h>
-	"include/bezier.h"
-	"SDL_ttf.h"
-	"include/textbox.h"
-	"include/LoadingScreen.h"
-	"include/button.h"
-	"include/bezier.h"
-	"SDL_ttf.h"
-	"include/textbox.h"
-	"include/Sprout.h"
-	"include/LoadingScreen.h"
-	"include/button.h"
-
-1273172701 c:\users\steven\code\2010\include\button.h
-	"../stdafx.h"
-	"draw.h"
-	<string>
-	"../SDL/SDL_ttf.h"
-
-1273087014 source:c:\users\steven\code\2010\applymove.cpp
-	"stdafx.h"
-	"include/Sprout.h"
-	"include/bezier.h"
-	<list>
-
-1273429139 source:c:\users\steven\code\2010\bezier.cpp
-	"stdafx.h"
-	"include/draw.h"
-	"include/bezier.h"
-	"SDL_gfxPrimitives.h"
-
-1273429145 source:c:\users\steven\code\2010\button.cpp
-	"stdafx.h"
-	"include/button.h"
-	"include/draw.h"
-	"SDL_gfxPrimitives.h"
-
-1273087094 source:c:\users\steven\code\2010\checkwin.cpp
-	"stdafx.h"
-	"include/Sprout.h"
-	"include/bezier.h"
-
-1181080948 source:c:\users\steven\code\2010\draw.cpp
-	"stdafx.h"
-	"include/draw.h"
-	<string>
-
-1273087119 source:c:\users\steven\code\2010\parse.cpp
-	"stdafx.h"
-	<stack>
-	<math.h>
-	"include/game.h"
-
-1181080948 source:c:\users\steven\code\2010\stdafx.cpp
-	"stdafx.h"
-
-1273429155 source:c:\users\steven\code\2010\textbox.cpp
-	"stdafx.h"
-	"include/textbox.h"
-	"SDL_gfxPrimitives.h"
-
-1273430145 source:c:\users\steven\code\2010\timer.cpp
-	"stdafx.h"
-	"SDL.h"
-	"include/timer.h"
-
-1181080948 c:\users\steven\code\2010\include\timer.h
+1181080948 c:\users\steven\code\git\include\timer.h
 
