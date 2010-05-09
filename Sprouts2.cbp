@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Sprouts2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="Sprouts2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug Win32" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_CONSOLE" />
+				</Compiler>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="Sprouts2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release Win32" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-W" />
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_CONSOLE" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="SDL\include\SDL" />
+		</Compiler>
+		<Linker>
+			<Add option="-lmingw32 -lSDLmain -lSDL -lSDL_gfx -lSDL_ttf -lSDL_image" />
+			<Add directory="SDL\lib" />
+		</Linker>
+		<Unit filename="Game.cpp" />
+		<Unit filename="LoadingScreen.cpp" />
+		<Unit filename="ReadMe.txt" />
+		<Unit filename="Sprout.cpp" />
+		<Unit filename="Sprouts2.cpp" />
+		<Unit filename="applymove.cpp" />
+		<Unit filename="bezier.cpp" />
+		<Unit filename="button.cpp" />
+		<Unit filename="checkWin.cpp" />
+		<Unit filename="draw.cpp" />
+		<Unit filename="include\LoadingScreen.h" />
+		<Unit filename="include\Sprout.h" />
+		<Unit filename="include\bezier.h" />
+		<Unit filename="include\button.h" />
+		<Unit filename="include\draw.h" />
+		<Unit filename="include\game.h" />
+		<Unit filename="include\textbox.h" />
+		<Unit filename="include\timer.h" />
+		<Unit filename="parse.cpp" />
+		<Unit filename="stdafx.cpp" />
+		<Unit filename="stdafx.h" />
+		<Unit filename="textbox.cpp" />
+		<Unit filename="timer.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

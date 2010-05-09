@@ -1,0 +1,3 @@
+Ready to GO!!
+SDL Started Succesfully
+Drawing Succesful
