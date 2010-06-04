@@ -5,7 +5,7 @@
 #include "SDL_gfxPrimitives.h"
 //header for drawing the curves
 
-enum {CURVE_START = 0,
+enum Curve{CURVE_START,
       CURVE_END};
 
 //class declaratio

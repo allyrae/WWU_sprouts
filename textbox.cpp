@@ -5,13 +5,13 @@
 #define BUFFER 5      // The extra edge for the box
 
 //Constructor
-TextBox::TextBox(TTF_Font * theFont, SDL_Color color, int theType, Point placement, Game * theGame)
+TextBox::TextBox(TTF_Font * theFont, SDL_Color color, TextboxType theType, Point placement, Game * theGame)
 {
   game = theGame;
   point.x = placement.x;
   point.y = placement.y;
   cursor = 0;
-  state = 0;
+  state = TEXTBOX_FOCUS;
   ticksStart = SDL_GetTicks();
   font = theFont;
   textString = "Enter move here";
@@ -147,9 +147,9 @@ bool TextBox::processKeyDown(SDL_Event * event)
 }
 
 //set state determined by mouse interaction
-bool TextBox::setState(int theState)
+bool TextBox::setState(TextboxFocus theState)
 {
-  if (state != theState && theState >= 0 && theState < 2)
+  if (state != theState)
   {
     if (state == TEXTBOX_NO_FOCUS && theState == TEXTBOX_FOCUS)
     {
@@ -174,7 +174,7 @@ bool TextBox::setState(int theState)
 }
 
 //get mouse state
-int TextBox::getState(void)
+TextboxFocus TextBox::getState(void)
 {
   return state;
 }

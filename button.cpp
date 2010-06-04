@@ -30,9 +30,9 @@ Button::~Button(void)
 }
 
 // Sets the state of the button to the new state
-bool Button::setState(int newState)
+bool Button::setState(ButtonState newState)
 {
-  if (state != newState && newState < 3 && newState >= 0)
+  if (state != newState)
   {
     state = newState;
     return true;
@@ -44,7 +44,7 @@ bool Button::setState(int newState)
 }
 
 // Gets the current button state
-int Button::getState()
+ButtonState Button::getState()
 {
   return state;
 }
