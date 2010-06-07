@@ -1,7 +1,7 @@
-window_sizes 1575 918 393 1176 684 152
+window_sizes 1280 744 393 1176 684 152
 show_stereotypes
-selected class_ref 153095 // anonymous1
+selected 
+  package_ref 129 // WWU_sprouts.prj
 open
-  classview_ref 128775 // include
 end
 end

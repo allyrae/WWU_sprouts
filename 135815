@@ -1,7 +1,7 @@
-format 70
+format 73
 "include" // include
   revision 1
-  modified_by 7 "sherna"
+  modified_by 7 "Robin Zane"
   // class settings
   //class diagram settings
   draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
@@ -26,7 +26,9 @@ format 70
   package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
   show_infonote default drawing_language default show_stereotype_properties default
   
-  classview 128775 "include"
+  cpp_h_dir "C:/Documents and Settings/Robin Zane/Desktop/CPTR143 proj/WWU_sprouts/include/"
+  cpp_src_dir "C:/Documents and Settings/Robin Zane/Desktop/CPTR143 proj/WWU_sprouts/include/"
+  classview 135303 "include"
     //class diagram settings
     draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
     //collaboration diagram settings
@@ -42,7 +44,7 @@ format 70
     //activity diagram settings
     package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
     show_infonote default drawing_language default show_stereotype_properties default
-    class 153095 "anonymous1"
+    class 161159 "Curve"
       visibility package stereotype "enum"
       cpp_decl "${comment}enum ${name} {
 ${items}
@@ -54,10 +56,9 @@ ${items}
       idl_decl ""
       explicit_switch_type ""
       
-      comment "header for drawing the curves"
-      attribute 241415 "CURVE_START"
-	public type class_ref 153095 // anonymous1
-	init_value "= 0"
+      comment "header for drawing the curves"
+      attribute 255111 "CURVE_START"
+	public type class_ref 161159 // Curve
 	cpp_decl "  ${name}${value},${comment}"
 	java_decl ""
 	php_decl ""
@@ -65,8 +66,8 @@ ${items}
 	idl_decl ""
       end
 
-      attribute 241543 "CURVE_END"
-	public type class_ref 153095 // anonymous1
+      attribute 255239 "CURVE_END"
+	public type class_ref 161159 // Curve
 	cpp_decl "  ${name}${value},${comment}"
 	java_decl ""
 	php_decl ""
@@ -75,7 +76,7 @@ ${items}
       end
     end
 
-    class 153223 "Bezier"
+    class 161287 "Bezier"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};
@@ -87,17 +88,17 @@ ${inlines}
       idl_decl ""
       explicit_switch_type ""
       
-      comment "class declaratio"
-      classrelation 169735 // points (<directional composition>)
-	relation 169735 *-->
+      comment "class declaratio"
+      classrelation 177159 // points (<directional composition>)
+	relation 177159 *-->
 	  a role_name "points" multiplicity "[4]" private
 	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
 "
-	    classrelation_ref 169735 // points (<directional composition>)
-	  b parent class_ref 153351 // Point
+	    classrelation_ref 177159 // points (<directional composition>)
+	  b parent class_ref 161415 // Point
       end
 
-      operation 149511 "Bezier"
+      operation 166663 "Bezier"
 	public explicit_return_type ""
 	nparams 8
 	  param in name "" explicit_type "int"
@@ -108,9 +109,9 @@ ${inlines}
 	  param in name "" explicit_type "int"
 	  param in name "" explicit_type "int"
 	  param in name "" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}, ${t2} & ${p2}${v2}, ${t3} & ${p3}${v3}, ${t4} & ${p4}${v4}, ${t5} & ${p5}${v5}, ${t6} & ${p6}${v6}, ${t7} & ${p7}${v7}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}, ${t4} ${p4}${v4}, ${t5} ${p5}${v5}, ${t6} ${p6}${v6}, ${t7} ${p7}${v7}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}, ${t2} & ${p2}, ${t3} & ${p3}, ${t4} & ${p4}, ${t5} & ${p5}, ${t6} & ${p6}, ${t7} & ${p7}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}, ${t5} ${p5}, ${t6} ${p6}, ${t7} ${p7}${)}${throw}{
   ${body}}
 "
 	
@@ -119,45 +120,45 @@ ${inlines}
 	
       end
 
-      operation 149639 "Bezier"
+      operation 166791 "Bezier"
 	public explicit_return_type ""
 	nparams 1
-	  param in name "coord" type class_ref 153351 // Point
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	  param in name "coord" type class_ref 161415 // Point
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}[4]${v0}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}const ${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}[4]${)}${throw}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "constructor, if beginning coordinates are set."
+	comment "constructor, if beginning coordinates are set."
       end
 
-      operation 149767 "Bezier"
+      operation 166919 "Bezier"
 	public explicit_return_type ""
 	nparams 1
-	  param in name "start" type class_ref 153351 // Point
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	  param in name "start" type class_ref 161415 // Point
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}const ${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}${)}${throw}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "constructor"
+	comment "constructor"
       end
 
-      operation 149895 "Bezier"
+      operation 167047 "Bezier"
 	public explicit_return_type ""
 	nparams 1
-	  param inout name "" type class_ref 153223 // Bezier
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	  param inout name "" type class_ref 161287 // Bezier
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} * ${p0}${)}${throw}{
   ${body}}
 "
 	
@@ -166,13 +167,13 @@ ${inlines}
 	
       end
 
-      operation 150023 "Bezier"
+      operation 167175 "Bezier"
 	public explicit_return_type ""
 	nparams 1
 	  param in name "" explicit_type "void"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}${)}${throw}{
   ${body}}
 "
 	
@@ -181,34 +182,34 @@ ${inlines}
 	
       end
 
-      operation 150151 "Bezier"
+      operation 167303 "Bezier"
 	public explicit_return_type ""
 	nparams 4
-	  param in name "" type class_ref 153351 // Point
-	  param in name "" type class_ref 153351 // Point
-	  param in name "" type class_ref 153351 // Point
-	  param in name "" type class_ref 153351 // Point
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}const ${t0} & ${p0}${v0}, const ${t1} & ${p1}${v1}, const ${t2} & ${p2}${v2}, const ${t3} & ${p3}${v3}${)}${const}${volatile}${throw}${abstract};
+	  param in name "" type class_ref 161415 // Point
+	  param in name "" type class_ref 161415 // Point
+	  param in name "" type class_ref 161415 // Point
+	  param in name "" type class_ref 161415 // Point
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}const ${t0} & ${p0}, const ${t1} & ${p1}, const ${t2} & ${p2}, const ${t3} & ${p3}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${throw}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "constructor, if no beginning coordinates are set."
+	comment "constructor, if no beginning coordinates are set."
       end
 
-      operation 150279 "Bezier"
+      operation 167431 "Bezier"
 	public explicit_return_type ""
 	nparams 3
 	  param in name "from" explicit_type "int"
 	  param in name "to" explicit_type "int"
-	  param inout name "game" type class_ref 153479 // Game
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}, ${t2} & ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+	  param inout name "game" type class_ref 161543 // Game
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} * ${p2}${v2}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}, ${t2} & ${p2}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} * ${p2}${)}${throw}{
   ${body}}
 "
 	
@@ -217,13 +218,13 @@ ${inlines}
 	
       end
 
-      operation 150407 "getcoord"
-	public return_type class_ref 153351 // Point
+      operation 167559 "getcoord"
+	public return_type class_ref 161415 // Point
 	nparams 1
 	  param in name "point" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
@@ -232,141 +233,141 @@ ${inlines}
 	
       end
 
-      operation 150535 "getcoord"
-	public return_type class_ref 153351 // Point
+      operation 167687 "getcoord"
+	public return_type class_ref 161415 // Point
 	nparams 1
 	  param in name "" explicit_type "void"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} * ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} * ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "gets the coordinates of the selected point"
+	comment "gets the coordinates of the selected point"
       end
 
-      operation 150663 "setCurve"
+      operation 167815 "setCurve"
 	public explicit_return_type "void"
 	nparams 2
 	  param in name "x" explicit_type "int"
 	  param in name "y" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "returns all coordinates"
+	comment "returns all coordinates"
       end
 
-      operation 150791 "setcoord"
+      operation 167943 "setcoord"
 	public explicit_return_type "bool"
 	nparams 2
 	  param in name "point" explicit_type "int"
-	  param in name "coord" type class_ref 153351 // Point
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, const ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+	  param in name "coord" type class_ref 161415 // Point
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, const ${t1} & ${p1}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment " Sets the curve up with the second end point at (x,y)"
+	comment " Sets the curve up with the second end point at (x,y)"
       end
 
-      operation 150919 "setcoord"
+      operation 168071 "setcoord"
 	public explicit_return_type "bool"
 	nparams 3
 	  param in name "point" explicit_type "int"
 	  param in name "x" explicit_type "int"
 	  param in name "y" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}, ${t2} & ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}, ${t2} & ${p2}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "sets the coordinates of the selected point to the sent coordinates"
+	comment "sets the coordinates of the selected point to the sent coordinates"
       end
 
-      operation 151047 "setcoord"
+      operation 168199 "setcoord"
 	public explicit_return_type "bool"
 	nparams 1
-	  param in name "coords" type class_ref 153351 // Point
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}const ${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	  param in name "coords" type class_ref 161415 // Point
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}[4]${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}const ${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}[4]${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "sets the coordinates of the selected point to sent x and y"
+	comment "sets the coordinates of the selected point to sent x and y"
       end
 
-      operation 151175 "adjustCoord"
+      operation 168327 "adjustCoord"
 	public explicit_return_type "bool"
 	nparams 3
 	  param in name "point" explicit_type "int"
 	  param in name "x" explicit_type "int"
 	  param in name "y" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}, ${t2} & ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}, ${t2} & ${p2}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "sets the coordinates of the selected point by array"
+	comment "sets the coordinates of the selected point by array"
       end
 
-      operation 151303 "draw"
+      operation 168455 "draw"
 	public explicit_return_type "void"
 	nparams 1
 	  param inout name "" explicit_type "SDL_Surface"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "sets the coordinates of the selected point to sent x and y"
+	comment "sets the coordinates of the selected point to sent x and y"
       end
 
-      operation 151431 "~Bezier"
+      operation 168583 "~Bezier"
 	public explicit_return_type ""
 	nparams 0
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${throw}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "draws the curve"
+	comment "draws the curve"
       end
     end
 
-    class 153351 "Point"
+    class 161415 "Point"
       visibility package stereotype "struct"
       cpp_decl "${comment}${template}struct ${name}${inherit} {
 ${members}};
@@ -378,7 +379,7 @@ ${inlines}
       idl_decl ""
       explicit_switch_type ""
       
-      attribute 242439 "x"
+      attribute 256007 "x"
 	public explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -388,7 +389,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 242567 "y"
+      attribute 256135 "y"
 	public explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -399,7 +400,7 @@ ${inlines}
       end
     end
 
-    class 153479 "Game"
+    class 161543 "Game"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};
@@ -411,18 +412,18 @@ ${inlines}
       idl_decl ""
       explicit_switch_type ""
       
-      attribute 242695 "connectable"
+      attribute 256263 "connectable"
 	private explicit_type "int"
-	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * * ${name}${value};
 "
 	java_decl ""
 	php_decl ""
 	python_decl ""
 	idl_decl ""
-	comment "2D array of ints."
+	comment "2D array of ints."
       end
 
-      attribute 242823 "mesier"
+      attribute 256391 "mesier"
 	private explicit_type "bool"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -430,10 +431,10 @@ ${inlines}
 	php_decl ""
 	python_decl ""
 	idl_decl ""
-	comment "Mesier mode?"
+	comment "Mesier mode?"
       end
 
-      attribute 242951 "turn"
+      attribute 256519 "turn"
 	private explicit_type "bool"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -441,19 +442,19 @@ ${inlines}
 	php_decl ""
 	python_decl ""
 	idl_decl ""
-	comment "Who's turn is it (false = left)."
+	comment "Who's turn is it (false = left)."
       end
 
-      classrelation 169991 // sproutClips (<unidirectional association>)
-	relation 169991 --->
+      classrelation 177543 // sproutClips (<unidirectional association>)
+	relation 177543 --->
 	  a role_name "sproutClips" private
 	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
-	    classrelation_ref 169991 // sproutClips (<unidirectional association>)
-	  b parent class_ref 153863 // SproutClips
+	    classrelation_ref 177543 // sproutClips (<unidirectional association>)
+	  b parent class_ref 161927 // SproutClips
       end
 
-      attribute 243079 "gameWinState"
+      attribute 256647 "gameWinState"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -463,7 +464,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 243207 "nodeNumbers"
+      attribute 256775 "nodeNumbers"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -473,7 +474,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 243335 "count"
+      attribute 256903 "count"
 	public explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -481,50 +482,50 @@ ${inlines}
 	php_decl ""
 	python_decl ""
 	idl_decl ""
-	comment "Number of initial nodes in the game."
+	comment "Number of initial nodes in the game."
       end
 
-      attribute 243463 "connection"
-	public type class_ref 153223 // Bezier
-	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+      attribute 257031 "connection"
+	public type class_ref 161287 // Bezier
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * * * ${name}${value};
 "
 	java_decl ""
 	php_decl ""
 	python_decl ""
 	idl_decl ""
-	comment "2D array of pointers to Beziers."
+	comment "2D array of pointers to Beziers."
       end
 
-      attribute 243591 "nodes"
-	public type class_ref 153991 // Sprout
-	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+      attribute 257159 "nodes"
+	public type class_ref 162055 // Sprout
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * * ${name}${value};
 "
 	java_decl ""
 	php_decl ""
 	python_decl ""
 	idl_decl ""
-	comment "Array of Node pointers."
+	comment "Array of Node pointers."
       end
 
-      classrelation 170119 // text (<unidirectional association>)
-	relation 170119 --->
+      classrelation 177671 // text (<unidirectional association>)
+	relation 177671 --->
 	  a role_name "text" public
 	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
-	    classrelation_ref 170119 // text (<unidirectional association>)
-	  b parent class_ref 154119 // TextBox
+	    classrelation_ref 177671 // text (<unidirectional association>)
+	  b parent class_ref 162183 // TextBox
       end
 
-      operation 152455 "Game"
+      operation 169607 "Game"
 	public explicit_return_type ""
 	nparams 4
 	  param in name "" explicit_type "bool"
 	  param in name "" explicit_type "bool"
 	  param in name "" explicit_type "int"
-	  param inout name "" type class_ref 153863 // SproutClips
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}, ${t2} & ${p2}${v2}, ${t3} & ${p3}${v3}${)}${const}${volatile}${throw}${abstract};
+	  param inout name "" type class_ref 161927 // SproutClips
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} * ${p3}${v3}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}, ${t2} & ${p2}, ${t3} & ${p3}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} * ${p3}${)}${throw}{
   ${body}}
 "
 	
@@ -533,39 +534,39 @@ ${inlines}
 	
       end
 
-      operation 152583 "Game"
+      operation 169735 "Game"
 	public explicit_return_type ""
 	nparams 1
-	  param inout name "" type class_ref 153479 // Game
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	  param inout name "" type class_ref 161543 // Game
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} * ${p0}${)}${throw}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "Main constructor, makes a game with turn, mesier, and number of initial nodes."
+	comment "Main constructor, makes a game with turn, mesier, and number of initial nodes."
       end
 
-      operation 152711 "freeConnections"
+      operation 169863 "freeConnections"
 	public explicit_return_type "int"
 	nparams 1
 	  param in name "" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "Constructor for copying games."
+	comment "Constructor for copying games."
       end
 
-      operation 152839 "parsemove"
+      operation 169991 "parsemove"
 	public explicit_return_type "int"
 	nparams 7
 	  param inout name "move" explicit_type "char"
@@ -575,43 +576,43 @@ ${inlines}
 	  param inout name "near" explicit_type "int"
 	  param inout name "clockwise" explicit_type "bool"
 	  param inout name "encap" explicit_type "std::list<int>"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}, ${t2} & ${p2}${v2}, ${t3} & ${p3}${v3}, ${t4} & ${p4}${v4}, ${t5} & ${p5}${v5}, ${t6} & ${p6}${v6}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}, ${t1} * ${p1}${v1}, ${t2} * ${p2}${v2}, ${t3} * ${p3}${v3}, ${t4} * ${p4}${v4}, ${t5} * ${p5}${v5}, ${t6} * ${p6}${v6}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}, ${t2} & ${p2}, ${t3} & ${p3}, ${t4} & ${p4}, ${t5} & ${p5}, ${t6} & ${p6}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} * ${p0}, ${t1} * ${p1}, ${t2} * ${p2}, ${t3} * ${p3}, ${t4} * ${p4}, ${t5} * ${p5}, ${t6} * ${p6}${)}${const}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "Returns the number of connections a node has available to it."
+	comment "Returns the number of connections a node has available to it."
       end
 
-      operation 152967 "setConnected"
+      operation 170119 "setConnected"
 	public explicit_return_type "bool"
 	nparams 2
 	  param in name "toConnect" explicit_type "std::list<int>"
 	  param in name "canConnect" explicit_type "std::list<int>"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "Parses a move."
+	comment "Parses a move."
       end
 
-      operation 153095 "findConnected"
+      operation 170247 "findConnected"
 	public explicit_return_type "int"
 	nparams 2
 	  param in name "from" explicit_type "int"
 	  param in name "current" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
@@ -620,14 +621,14 @@ ${inlines}
 	
       end
 
-      operation 153223 "notEnregioned"
+      operation 170375 "notEnregioned"
 	public explicit_return_type "bool"
 	nparams 2
 	  param in name "node" explicit_type "int"
 	  param in name "encapsulated" explicit_type "std::list<int>"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
@@ -636,16 +637,16 @@ ${inlines}
 	
       end
 
-      operation 153351 "findBorders"
+      operation 170503 "findBorders"
 	public explicit_return_type "std::list<int>"
 	nparams 4
 	  param in name "from" explicit_type "int"
 	  param in name "to" explicit_type "int"
 	  param in name "prev" explicit_type "int"
 	  param in name "" explicit_type "std::list<int>"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}, ${t2} & ${p2}${v2}, ${t3} & ${p3}${v3}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}, ${t2} & ${p2}, ${t3} & ${p3}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${const}${throw}${staticnl}{
   ${body}}
 "
 	
@@ -654,7 +655,7 @@ ${inlines}
 	
       end
 
-      operation 153479 "applyMove"
+      operation 170631 "applyMove"
 	public explicit_return_type "bool"
 	nparams 6
 	  param in name "from" explicit_type "int"
@@ -663,9 +664,9 @@ ${inlines}
 	  param in name "encapsulated" explicit_type "std::list<int>"
 	  param in name "clockwise" explicit_type "bool"
 	  param in name "near" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}, ${t2} & ${p2}${v2}, ${t3} & ${p3}${v3}, ${t4} & ${p4}${v4}, ${t5} & ${p5}${v5}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}, ${t4} ${p4}${v4}, ${t5} ${p5}${v5}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}, ${t2} & ${p2}, ${t3} & ${p3}, ${t4} & ${p4}, ${t5} & ${p5}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} ${p4}, ${t5} ${p5}${)}${const}${throw}${staticnl}{
   ${body}}
 "
 	
@@ -674,13 +675,13 @@ ${inlines}
 	
       end
 
-      operation 153607 "output_console"
+      operation 170759 "output_console"
 	public explicit_return_type "void"
 	nparams 1
 	  param in name "" explicit_type "void"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
@@ -689,14 +690,14 @@ ${inlines}
 	
       end
 
-      operation 153735 "output_file"
+      operation 170887 "output_file"
 	public explicit_return_type "void"
 	nparams 2
 	  param inout name "" explicit_type "FILE"
 	  param inout name "" explicit_type "char"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}, ${t1} * ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} * ${p0}, ${t1} * ${p1}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
@@ -705,13 +706,13 @@ ${inlines}
 	
       end
 
-      operation 153863 "move"
+      operation 171015 "move"
 	public explicit_return_type "void"
 	nparams 1
 	  param inout name "" explicit_type "char"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
@@ -720,14 +721,14 @@ ${inlines}
 	
       end
 
-      operation 153991 "get_connectable"
+      operation 171143 "get_connectable"
 	public explicit_return_type "int"
 	nparams 2
 	  param in name "from" explicit_type "int"
 	  param in name "to" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
@@ -736,14 +737,14 @@ ${inlines}
 	
       end
 
-      operation 154119 "get_connected"
+      operation 171271 "get_connected"
 	public explicit_return_type "int"
 	nparams 2
 	  param in name "from" explicit_type "int"
 	  param in name "to" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
@@ -752,13 +753,13 @@ ${inlines}
 	
       end
 
-      operation 154247 "parseerror"
+      operation 171399 "parseerror"
 	public explicit_return_type "void"
 	nparams 1
 	  param in name "error" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
@@ -767,7 +768,7 @@ ${inlines}
 	
       end
 
-      operation 154375 "checkWin"
+      operation 171527 "checkWin"
 	public explicit_return_type "int"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -781,7 +782,7 @@ ${inlines}
 	
       end
 
-      operation 154503 "possibleMoves"
+      operation 171655 "possibleMoves"
 	public explicit_return_type "std::list<std::string>"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -795,7 +796,7 @@ ${inlines}
 	
       end
 
-      operation 154631 "checkMoveState"
+      operation 171783 "checkMoveState"
 	public explicit_return_type "int"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -809,7 +810,7 @@ ${inlines}
 	
       end
 
-      operation 154759 "numberNodes"
+      operation 171911 "numberNodes"
 	public explicit_return_type "int"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -823,7 +824,7 @@ ${inlines}
 	
       end
 
-      operation 154887 "playerTurn"
+      operation 172039 "playerTurn"
 	public explicit_return_type "int"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -837,15 +838,15 @@ ${inlines}
 	
       end
 
-      operation 155015 "checkRegion"
+      operation 172167 "checkRegion"
 	public explicit_return_type "bool"
 	nparams 3
 	  param in name "created" explicit_type "int"
 	  param in name "from" explicit_type "int"
 	  param in name "to" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}, ${t2} & ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}, ${t2} & ${p2}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}${)}${const}${throw}${staticnl}{
   ${body}}
 "
 	
@@ -854,13 +855,13 @@ ${inlines}
 	
       end
 
-      operation 155143 "~Game"
+      operation 172295 "~Game"
 	public explicit_return_type ""
 	nparams 1
 	  param in name "" explicit_type "void"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${t0} ${p0}${v0}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}${)}${throw}{
   ${body}}
 "
 	
@@ -870,7 +871,7 @@ ${inlines}
       end
     end
 
-    class 153607 "anonymous2"
+    class 161671 "ButtonState"
       visibility package stereotype "enum"
       cpp_decl "${comment}enum ${name} {
 ${items}
@@ -882,9 +883,10 @@ ${items}
       idl_decl ""
       explicit_switch_type ""
       
-      attribute 241671 "B_STATE_NORMAL"
-	public type class_ref 153607 // anonymous2
-	init_value "= 0"
+      comment " Base Class for buttons
+ Should include all basic button functionality which can be easliy derived from for specialty buttons"
+      attribute 255367 "B_STATE_NORMAL"
+	public type class_ref 161671 // ButtonState
 	cpp_decl "  ${name}${value},${comment}"
 	java_decl ""
 	php_decl ""
@@ -892,8 +894,8 @@ ${items}
 	idl_decl ""
       end
 
-      attribute 241799 "B_STATE_HOVER"
-	public type class_ref 153607 // anonymous2
+      attribute 255495 "B_STATE_HOVER"
+	public type class_ref 161671 // ButtonState
 	cpp_decl "  ${name}${value},${comment}"
 	java_decl ""
 	php_decl ""
@@ -901,8 +903,8 @@ ${items}
 	idl_decl ""
       end
 
-      attribute 241927 "B_STATE_PRESSED"
-	public type class_ref 153607 // anonymous2
+      attribute 255623 "B_STATE_PRESSED"
+	public type class_ref 161671 // ButtonState
 	cpp_decl "  ${name}${value},${comment}"
 	java_decl ""
 	php_decl ""
@@ -911,7 +913,7 @@ ${items}
       end
     end
 
-    class 153735 "Button"
+    class 161799 "Button"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};
@@ -923,22 +925,20 @@ ${inlines}
       idl_decl ""
       explicit_switch_type ""
       
-      comment " Base Class for buttons
- Should include all basic button functionality which can be easliy derived from for specialty buttons"
-      attribute 242055 "text"
+      attribute 255751 "text"
 	private explicit_type "SDL_Surface"
-	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
 	java_decl ""
 	php_decl ""
 	python_decl ""
 	idl_decl ""
-	comment " Where the image is that will need to be clipped"
+	comment " Where the image is that will need to be clipped"
       end
 
-      attribute 242183 "font"
+      attribute 255879 "font"
 	private explicit_type "TTF_Font"
-	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
 	java_decl ""
 	php_decl ""
@@ -946,36 +946,35 @@ ${inlines}
 	idl_decl ""
       end
 
-      classrelation 169863 // point (<directional composition>)
-	relation 169863 *-->
+      classrelation 177287 // point (<directional composition>)
+	relation 177287 *-->
 	  a role_name "point" private
-	    comment " (x,y) location and (w,h) of button"
+	    comment " (x,y) location and (w,h) of button"
 	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
-	    classrelation_ref 169863 // point (<directional composition>)
-	  b parent class_ref 153351 // Point
+	    classrelation_ref 177287 // point (<directional composition>)
+	  b parent class_ref 161415 // Point
       end
 
-      attribute 242311 "state"
-	private explicit_type "int"
-	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+      classrelation 177415 // state (<directional composition>)
+	relation 177415 *-->
+	  a role_name "state" private
+	    comment " The current state of the button"
+	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	comment " The current state of the button"
+	    classrelation_ref 177415 // state (<directional composition>)
+	  b parent class_ref 161671 // ButtonState
       end
 
-      operation 151559 "Button"
+      operation 168711 "Button"
 	public explicit_return_type ""
 	nparams 3
-	  param in name "placement" type class_ref 153351 // Point
+	  param in name "placement" type class_ref 161415 // Point
 	  param in name "textString" explicit_type "std::string"
 	  param inout name "theFont" explicit_type "TTF_Font"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}const ${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}, ${t2} & ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} * ${p2}${v2}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}const ${t0} & ${p0}, ${t1} & ${p1}, ${t2} & ${p2}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} * ${p2}${)}${throw}{
   ${body}}
 "
 	
@@ -984,13 +983,13 @@ ${inlines}
 	
       end
 
-      operation 151687 "~Button"
+      operation 168839 "~Button"
 	public explicit_return_type ""
 	nparams 1
 	  param in name "" explicit_type "void"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${t0} ${p0}${v0}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}${)}${throw}{
   ${body}}
 "
 	
@@ -999,13 +998,13 @@ ${inlines}
 	
       end
 
-      operation 151815 "setState"
+      operation 168967 "setState"
 	public explicit_return_type "bool"
 	nparams 1
-	  param in name "newState" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	  param in name "newState" type class_ref 161671 // ButtonState
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
@@ -1014,8 +1013,8 @@ ${inlines}
 	
       end
 
-      operation 151943 "getState"
-	public explicit_return_type "int"
+      operation 169095 "getState"
+	public return_type class_ref 161671 // ButtonState
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
 "
@@ -1026,50 +1025,50 @@ ${inlines}
 	
 	
 	
-	comment " update the state of the button"
+	comment " update the state of the button"
       end
 
-      operation 152071 "isMouseover"
+      operation 169223 "isMouseover"
 	public explicit_return_type "bool"
 	nparams 2
 	  param in name "x" explicit_type "int"
 	  param in name "y" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment " Returns the state of the button"
+	comment " Returns the state of the button"
       end
 
-      operation 152199 "draw"
+      operation 169351 "draw"
 	public explicit_return_type "bool"
 	nparams 1
 	  param inout name "destination" explicit_type "SDL_Surface"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment " Tells if the given xy buttons are over the button"
+	comment " Tells if the given xy buttons are over the button"
       end
 
-      operation 152327 "moveTo"
+      operation 169479 "moveTo"
 	public explicit_return_type "bool"
 	nparams 2
 	  param in name "x" explicit_type "int"
 	  param in name "y" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
@@ -1077,11 +1076,11 @@ ${inlines}
 	
 	
 	comment " Draws the button based on the state given at the x,y value given
- Moves the button to the requested (x,y) coordinates"
+ Moves the button to the requested (x,y) coordinates"
       end
     end
 
-    class 153863 "SproutClips"
+    class 161927 "SproutClips"
       visibility package stereotype "struct"
       cpp_decl "${comment}${template}struct ${name}${inherit} {
 ${members}};
@@ -1093,7 +1092,7 @@ ${inlines}
       idl_decl ""
       explicit_switch_type ""
       
-      attribute 244615 "clipsGreen"
+      attribute 258183 "clipsGreen"
 	public explicit_type "SDL_Rect"
 	multiplicity "[ 14 ]"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
@@ -1104,7 +1103,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 244743 "clipsYellow"
+      attribute 258311 "clipsYellow"
 	public explicit_type "SDL_Rect"
 	multiplicity "[ 14 ]"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
@@ -1115,7 +1114,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 244871 "clipsRed"
+      attribute 258439 "clipsRed"
 	public explicit_type "SDL_Rect"
 	multiplicity "[ 14 ]"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
@@ -1126,7 +1125,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 244999 "clipBlack"
+      attribute 258567 "clipBlack"
 	public explicit_type "SDL_Rect"
 	multiplicity "[ 1 ]"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
@@ -1137,9 +1136,9 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 245127 "anime"
+      attribute 258695 "anime"
 	public explicit_type "SDL_Surface"
-	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
 	java_decl ""
 	php_decl ""
@@ -1147,9 +1146,9 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 245255 "click"
+      attribute 258823 "click"
 	public explicit_type "SDL_Surface"
-	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
 	java_decl ""
 	php_decl ""
@@ -1157,9 +1156,9 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 245383 "font"
+      attribute 258951 "font"
 	public explicit_type "TTF_Font"
-	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
 	java_decl ""
 	php_decl ""
@@ -1168,7 +1167,7 @@ ${inlines}
       end
     end
 
-    class 153991 "Sprout"
+    class 162055 "Sprout"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};
@@ -1180,7 +1179,7 @@ ${inlines}
       idl_decl ""
       explicit_switch_type ""
       
-      attribute 245511 "frame"
+      attribute 259079 "frame"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1188,20 +1187,10 @@ ${inlines}
 	php_decl ""
 	python_decl ""
 	idl_decl ""
-	comment "Its current frame"
+	comment "Its current frame"
       end
 
-      attribute 245639 "ticks"
-	private explicit_type "int"
-	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
-"
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-      end
-
-      attribute 245767 "color"
+      attribute 259207 "ticks"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1211,7 +1200,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 245895 "status"
+      attribute 259335 "color"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1219,20 +1208,30 @@ ${inlines}
 	php_decl ""
 	python_decl ""
 	idl_decl ""
-	comment "Its animation status"
       end
 
-      classrelation 170247 // clips (<unidirectional association>)
-	relation 170247 --->
+      attribute 259463 "status"
+	private explicit_type "int"
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	comment "Its animation status"
+      end
+
+      classrelation 177799 // clips (<unidirectional association>)
+	relation 177799 --->
 	  a role_name "clips" private
-	    comment "The clips/image for the sprout"
+	    comment "The clips/image for the sprout"
 	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
-	    classrelation_ref 170247 // clips (<unidirectional association>)
-	  b parent class_ref 153863 // SproutClips
+	    classrelation_ref 177799 // clips (<unidirectional association>)
+	  b parent class_ref 161927 // SproutClips
       end
 
-      attribute 246023 "sproutNumber"
+      attribute 259591 "sproutNumber"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1240,27 +1239,27 @@ ${inlines}
 	php_decl ""
 	python_decl ""
 	idl_decl ""
-	comment "The identifier of the sprout"
+	comment "The identifier of the sprout"
       end
 
-      attribute 246151 "number"
+      attribute 259719 "number"
 	private explicit_type "SDL_Surface"
-	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
 	java_decl ""
 	php_decl ""
 	python_decl ""
 	idl_decl ""
-	comment " The Surface that will hold the rendered Number"
+	comment " The Surface that will hold the rendered Number"
       end
 
-      operation 155783 "renderNumber"
+      operation 172935 "renderNumber"
 	private explicit_return_type "void"
 	nparams 1
 	  param in name "" explicit_type "void"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
@@ -1269,53 +1268,53 @@ ${inlines}
 	
       end
 
-      operation 155911 "available"
+      operation 173063 "available"
 	private explicit_return_type "bool"
 	nparams 5
 	  param in name "x" explicit_type "int"
 	  param in name "y" explicit_type "int"
 	  param in name "from" explicit_type "int"
 	  param in name "to" explicit_type "int"
-	  param inout name "sprouts" type class_ref 153991 // Sprout
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}, ${t2} & ${p2}${v2}, ${t3} & ${p3}${v3}, ${t4} & ${p4}${v4}${)}${const}${volatile}${throw}${abstract};
+	  param inout name "sprouts" type class_ref 162055 // Sprout
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}, ${t4} * * ${p4}${v4}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}, ${t2} & ${p2}, ${t3} & ${p3}, ${t4} & ${p4}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} * * ${p4}${)}${const}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment " Renders the text for the number of the node"
+	comment " Renders the text for the number of the node"
       end
 
-      operation 156039 "willOverlap"
+      operation 173191 "willOverlap"
 	private explicit_return_type "bool"
 	nparams 2
 	  param in name "x" explicit_type "int"
 	  param in name "y" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment " Checks to see if the given (x,y) is not over another sprout"
+	comment " Checks to see if the given (x,y) is not over another sprout"
       end
 
-      classrelation 170375 // parent (<unidirectional association>)
-	relation 170375 --->
+      classrelation 177927 // parent (<unidirectional association>)
+	relation 177927 --->
 	  a role_name "parent" private
 	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
-	    classrelation_ref 170375 // parent (<unidirectional association>)
-	  b parent class_ref 153479 // Game
+	    classrelation_ref 177927 // parent (<unidirectional association>)
+	  b parent class_ref 161543 // Game
       end
 
-      attribute 246279 "node"
+      attribute 259847 "node"
 	public explicit_type "SDL_Rect"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1325,96 +1324,96 @@ ${inlines}
 	idl_decl ""
       end
 
-      operation 156167 "Sprout"
+      operation 173319 "Sprout"
 	public explicit_return_type ""
 	nparams 3
-	  param inout name "theClips" type class_ref 153863 // SproutClips
-	  param inout name "sprouts" type class_ref 153991 // Sprout
-	  param inout name "game" type class_ref 153479 // Game
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}, ${t2} & ${p2}${v2}${)}${const}${volatile}${throw}${abstract};
+	  param inout name "theClips" type class_ref 161927 // SproutClips
+	  param inout name "sprouts" type class_ref 162055 // Sprout
+	  param inout name "game" type class_ref 161543 // Game
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}, ${t1} * * ${p1}${v1}, ${t2} * ${p2}${v2}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}, ${t2} & ${p2}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} * ${p0}, ${t1} * * ${p1}, ${t2} * ${p2}${)}${throw}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "Initializes the variables"
+	comment "Initializes the variables"
       end
 
-      operation 156295 "Sprout"
+      operation 173447 "Sprout"
 	public explicit_return_type ""
 	nparams 4
 	  param in name "num" explicit_type "int"
 	  param in name "x" explicit_type "int"
 	  param in name "y" explicit_type "int"
-	  param inout name "theClips" type class_ref 153863 // SproutClips
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}, ${t2} & ${p2}${v2}, ${t3} & ${p3}${v3}${)}${const}${volatile}${throw}${abstract};
+	  param inout name "theClips" type class_ref 161927 // SproutClips
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} * ${p3}${v3}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}, ${t2} & ${p2}, ${t3} & ${p3}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} * ${p3}${)}${throw}{
   ${body}}
 "
 	
 	
 	
 	
-	comment " Generic everything is randomized"
+	comment " Generic everything is randomized"
       end
 
-      operation 156423 "Sprout"
+      operation 173575 "Sprout"
 	public explicit_return_type ""
 	nparams 6
 	  param in name "num" explicit_type "int"
 	  param in name "from" explicit_type "int"
 	  param in name "to" explicit_type "int"
-	  param inout name "theClips" type class_ref 153863 // SproutClips
-	  param inout name "sprouts" type class_ref 153991 // Sprout
-	  param inout name "game" type class_ref 153479 // Game
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}, ${t2} & ${p2}${v2}, ${t3} & ${p3}${v3}, ${t4} & ${p4}${v4}, ${t5} & ${p5}${v5}${)}${const}${volatile}${throw}${abstract};
+	  param inout name "theClips" type class_ref 161927 // SproutClips
+	  param inout name "sprouts" type class_ref 162055 // Sprout
+	  param inout name "game" type class_ref 161543 // Game
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} * ${p3}${v3}, ${t4} * * ${p4}${v4}, ${t5} * ${p5}${v5}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}, ${t2} & ${p2}, ${t3} & ${p3}, ${t4} & ${p4}, ${t5} & ${p5}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} * ${p3}, ${t4} * * ${p4}, ${t5} * ${p5}${)}${throw}{
   ${body}}
 "
 	
 	
 	
 	
-	comment " Set the (x,y) to the given and set up as a 2 connection sprout"
+	comment " Set the (x,y) to the given and set up as a 2 connection sprout"
       end
 
-      operation 156551 "Sprout"
+      operation 173703 "Sprout"
 	public explicit_return_type ""
 	nparams 1
-	  param inout name "current" type class_ref 153991 // Sprout
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	  param inout name "current" type class_ref 162055 // Sprout
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} * ${p0}${)}${throw}{
   ${body}}
 "
 	
 	
 	
 	
-	comment " Sets the number and randoms the rest"
+	comment " Sets the number and randoms the rest"
       end
 
-      operation 156679 "~Sprout"
+      operation 173831 "~Sprout"
 	public explicit_return_type ""
 	nparams 0
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${throw}{
   ${body}}
 "
 	
 	
 	
 	
-	comment " duplicate the currnt Sprout to the new sprout"
+	comment " duplicate the currnt Sprout to the new sprout"
       end
 
-      operation 156807 "getState"
+      operation 173959 "getState"
 	public explicit_return_type "int"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -1429,27 +1428,27 @@ ${inlines}
 	comment " Generic Destructor
 Sprout(int x, int y, int num, SproutClips * theClips);        // Set x and y coords of sprout plus its number
 Sprout(int num, int firstNode, int secondNode, SproutClips* theClips);    // Sets the number and calculates the x and y based on its connections to the other nodes
- State functions"
+ State functions"
       end
 
-      operation 156935 "setState"
+      operation 174087 "setState"
 	public explicit_return_type "void"
 	nparams 1
 	  param in name "" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment " Returns the state"
+	comment " Returns the state"
       end
 
-      operation 157063 "getPoint"
-	public return_type class_ref 153351 // Point
+      operation 174215 "getPoint"
+	public return_type class_ref 161415 // Point
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
 "
@@ -1460,34 +1459,34 @@ Sprout(int num, int firstNode, int secondNode, SproutClips* theClips);    // Set
 	
 	
 	
-	comment "sets the status"
+	comment "sets the status"
       end
 
-      operation 157191 "setPoint"
+      operation 174343 "setPoint"
 	public explicit_return_type "void"
 	nparams 2
 	  param in name "x" explicit_type "int"
 	  param in name "y" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment " Returns the location point"
+	comment " Returns the location point"
       end
 
-      operation 157319 "isMouseOver"
+      operation 174471 "isMouseOver"
 	public explicit_return_type "bool"
 	nparams 2
 	  param in name "x" explicit_type "int"
 	  param in name "y" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
@@ -1495,123 +1494,123 @@ Sprout(int num, int firstNode, int secondNode, SproutClips* theClips);    // Set
 	
 	
 	comment " Returns the location point
-Handles input"
+Handles input"
       end
 
-      operation 157447 "hover"
+      operation 174599 "hover"
 	public explicit_return_type "void"
 	nparams 1
 	  param inout name "destination" explicit_type "SDL_Surface"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment " Disply Functions"
+	comment " Disply Functions"
       end
 
-      operation 157575 "click"
+      operation 174727 "click"
 	public explicit_return_type "void"
 	nparams 1
 	  param inout name "destination" explicit_type "SDL_Surface"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "Shows the hover"
+	comment "Shows the hover"
       end
 
-      operation 157703 "show"
+      operation 174855 "show"
 	public explicit_return_type "void"
 	nparams 1
 	  param inout name "destination" explicit_type "SDL_Surface"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "Shows the click"
+	comment "Shows the click"
       end
 
-      operation 157831 "draw"
+      operation 174983 "draw"
 	public explicit_return_type "void"
 	nparams 1
 	  param inout name "destination" explicit_type "SDL_Surface"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "Shows the node"
+	comment "Shows the node"
       end
 
-      operation 157959 "addConnection"
+      operation 175111 "addConnection"
 	public explicit_return_type "void"
 	nparams 1
 	  param in name "" explicit_type "void"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment " Calls the correct drawing function based on the stat"
+	comment " Calls the correct drawing function based on the stat"
       end
 
-      operation 158087 "removeConnection"
+      operation 175239 "removeConnection"
 	public explicit_return_type "void"
 	nparams 1
 	  param in name "" explicit_type "void"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment " Changes the color based on the number of connections"
+	comment " Changes the color based on the number of connections"
       end
 
-      operation 158215 "getConnections"
+      operation 175367 "getConnections"
 	public explicit_return_type "int"
 	nparams 1
 	  param in name "" explicit_type "void"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment " Changes the color based on the number of"
+	comment " Changes the color based on the number of"
       end
     end
 
-    class 154119 "TextBox"
+    class 162183 "TextBox"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};
@@ -1623,16 +1622,16 @@ ${inlines}
       idl_decl ""
       explicit_switch_type ""
       
-      classrelation 170503 // game (<unidirectional association>)
-	relation 170503 --->
+      classrelation 178055 // game (<unidirectional association>)
+	relation 178055 --->
 	  a role_name "game" private
 	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
-	    classrelation_ref 170503 // game (<unidirectional association>)
-	  b parent class_ref 153479 // Game
+	    classrelation_ref 178055 // game (<unidirectional association>)
+	  b parent class_ref 161543 // Game
       end
 
-      attribute 246919 "textColor"
+      attribute 260487 "textColor"
 	private explicit_type "SDL_Color"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1642,9 +1641,9 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 247047 "font"
+      attribute 260615 "font"
 	private explicit_type "TTF_Font"
-	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
 	java_decl ""
 	php_decl ""
@@ -1652,9 +1651,9 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 247175 "textRender"
+      attribute 260743 "textRender"
 	private explicit_type "SDL_Surface"
-	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
 	java_decl ""
 	php_decl ""
@@ -1662,9 +1661,9 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 247303 "destination"
+      attribute 260871 "destination"
 	private explicit_type "SDL_Surface"
-	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
 	java_decl ""
 	php_decl ""
@@ -1672,7 +1671,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 247431 "ticksStart"
+      attribute 260999 "ticksStart"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1682,16 +1681,16 @@ ${inlines}
 	idl_decl ""
       end
 
-      classrelation 170631 // point (<directional composition>)
-	relation 170631 *-->
+      classrelation 178183 // point (<directional composition>)
+	relation 178183 *-->
 	  a role_name "point" private
 	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
-	    classrelation_ref 170631 // point (<directional composition>)
-	  b parent class_ref 153351 // Point
+	    classrelation_ref 178183 // point (<directional composition>)
+	  b parent class_ref 161415 // Point
       end
 
-      attribute 247559 "changed"
+      attribute 261127 "changed"
 	private explicit_type "bool"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1699,10 +1698,30 @@ ${inlines}
 	php_decl ""
 	python_decl ""
 	idl_decl ""
-	comment " holds whether we should re render the string or not"
+	comment " holds whether we should re render the string or not"
       end
 
-      attribute 247687 "state"
+      classrelation 178311 // state (<directional composition>)
+	relation 178311 *-->
+	  a role_name "state" private
+	    comment " Holds whether it has focus or not"
+	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 178311 // state (<directional composition>)
+	  b parent class_ref 162439 // TextboxFocus
+      end
+
+      classrelation 178439 // type (<directional composition>)
+	relation 178439 *-->
+	  a role_name "type" private
+	    comment " Holds what type of box it is (So that we know where to send the string on enter)"
+	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
+"
+	    classrelation_ref 178439 // type (<directional composition>)
+	  b parent class_ref 162567 // TextboxType
+      end
+
+      attribute 261255 "cursor"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1710,32 +1729,10 @@ ${inlines}
 	php_decl ""
 	python_decl ""
 	idl_decl ""
-	comment " Holds whether it has focus or not"
+	comment " Where in the flash animation the cursor is"
       end
 
-      attribute 247815 "type"
-	private explicit_type "int"
-	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
-"
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	comment " Holds what type of box it is (So that we know where to send the string on enter)"
-      end
-
-      attribute 247943 "cursor"
-	private explicit_type "int"
-	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
-"
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	comment " Where in the flash animation the cursor is"
-      end
-
-      attribute 248071 "textString"
+      attribute 261383 "textString"
 	private explicit_type "std::string"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1743,20 +1740,20 @@ ${inlines}
 	php_decl ""
 	python_decl ""
 	idl_decl ""
-	comment " The text String"
+	comment " The text String"
       end
 
-      operation 158343 "TextBox"
+      operation 175495 "TextBox"
 	public explicit_return_type ""
 	nparams 5
 	  param inout name "theFont" explicit_type "TTF_Font"
 	  param in name "color" explicit_type "SDL_Color"
-	  param in name "type" explicit_type "int"
-	  param in name "placement" type class_ref 153351 // Point
-	  param inout name "theGame" type class_ref 153479 // Game
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}, ${t2} & ${p2}${v2}, const ${t3} & ${p3}${v3}, ${t4} & ${p4}${v4}${)}${const}${volatile}${throw}${abstract};
+	  param in name "type" type class_ref 162567 // TextboxType
+	  param in name "placement" type class_ref 161415 // Point
+	  param inout name "theGame" type class_ref 161543 // Game
+	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}, ${t4} * ${p4}${v4}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}, ${t2} & ${p2}, const ${t3} & ${p3}, ${t4} & ${p4}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${t0} * ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} * ${p4}${)}${throw}{
   ${body}}
 "
 	
@@ -1765,12 +1762,12 @@ ${inlines}
 	
       end
 
-      operation 158471 "~TextBox"
+      operation 175623 "~TextBox"
 	public explicit_return_type ""
 	nparams 0
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${throw}{
   ${body}}
 "
 	
@@ -1779,13 +1776,13 @@ ${inlines}
 	
       end
 
-      operation 158599 "draw"
+      operation 175751 "draw"
 	public explicit_return_type "bool"
 	nparams 1
 	  param inout name "destination" explicit_type "SDL_Surface"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
@@ -1794,45 +1791,45 @@ ${inlines}
 	
       end
 
-      operation 158727 "processKeyDown"
+      operation 175879 "processKeyDown"
 	public explicit_return_type "bool"
 	nparams 1
 	  param inout name "event" explicit_type "SDL_Event"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "draws the textbox"
+	comment "draws the textbox"
       end
 
-      operation 158855 "setState"
+      operation 176007 "setState"
 	public explicit_return_type "bool"
 	nparams 1
-	  param in name "state" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	  param in name "state" type class_ref 162439 // TextboxFocus
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "processes keyboard input"
+	comment "processes keyboard input"
       end
 
-      operation 158983 "getState"
-	public explicit_return_type "int"
+      operation 176135 "getState"
+	public return_type class_ref 162439 // TextboxFocus
 	nparams 1
 	  param in name "" explicit_type "void"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
@@ -1841,14 +1838,14 @@ ${inlines}
 	
       end
 
-      operation 159111 "isMouseover"
+      operation 176263 "isMouseover"
 	public explicit_return_type "bool"
 	nparams 2
 	  param in name "x" explicit_type "int"
 	  param in name "y" explicit_type "int"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}, ${t1} & ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}, ${t1} & ${p1}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
@@ -1858,7 +1855,7 @@ ${inlines}
       end
     end
 
-    class 154247 "LoadingScreen"
+    class 162311 "LoadingScreen"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};
@@ -1872,8 +1869,8 @@ ${inlines}
       
       comment "#include \"../SDL/SDL_timer.h\"
 header for the loading screen
-declaration of the class"
-      attribute 243719 "frame"
+declaration of the class"
+      attribute 257287 "frame"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1881,10 +1878,10 @@ declaration of the class"
 	php_decl ""
 	python_decl ""
 	idl_decl ""
-	comment "declarations of variables"
+	comment "declarations of variables"
       end
 
-      attribute 243847 "ticksStart"
+      attribute 257415 "ticksStart"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1894,7 +1891,7 @@ declaration of the class"
 	idl_decl ""
       end
 
-      attribute 243975 "folder"
+      attribute 257543 "folder"
 	private explicit_type "std::string"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1904,7 +1901,7 @@ declaration of the class"
 	idl_decl ""
       end
 
-      attribute 244103 "screenname"
+      attribute 257671 "screenname"
 	private explicit_type "std::string"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1914,7 +1911,7 @@ declaration of the class"
 	idl_decl ""
       end
 
-      attribute 244231 "waitname"
+      attribute 257799 "waitname"
 	private explicit_type "std::string"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1924,10 +1921,10 @@ declaration of the class"
 	idl_decl ""
       end
 
-      attribute 244359 "loadingScreen"
+      attribute 257927 "loadingScreen"
 	private explicit_type "SDL_Surface"
 	multiplicity "[30]"
-	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${multiplicity}${value};
 "
 	java_decl ""
 	php_decl ""
@@ -1935,10 +1932,10 @@ declaration of the class"
 	idl_decl ""
       end
 
-      attribute 244487 "loadingWait"
+      attribute 258055 "loadingWait"
 	private explicit_type "SDL_Surface"
 	multiplicity "[10]"
-	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
+	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${multiplicity}${value};
 "
 	java_decl ""
 	php_decl ""
@@ -1946,12 +1943,12 @@ declaration of the class"
 	idl_decl ""
       end
 
-      operation 155271 "LoadingScreen"
+      operation 172423 "LoadingScreen"
 	public explicit_return_type ""
 	nparams 0
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${throw}{
   ${body}}
 "
 	
@@ -1960,7 +1957,7 @@ declaration of the class"
 	
       end
 
-      operation 155399 "PlayWait"
+      operation 172551 "PlayWait"
 	public explicit_return_type "void"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -1972,10 +1969,10 @@ declaration of the class"
 	
 	
 	
-	comment "constructor"
+	comment "constructor"
       end
 
-      operation 155527 "PlayStart"
+      operation 172679 "PlayStart"
 	public explicit_return_type "void"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -1987,27 +1984,27 @@ declaration of the class"
 	
 	
 	
-	comment "music"
+	comment "music"
       end
 
-      operation 155655 "draw"
+      operation 172807 "draw"
 	public explicit_return_type "bool"
 	nparams 1
 	  param inout name "destination" explicit_type "SDL_Surface"
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} & ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} * ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} & ${p0}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} * ${p0}${)}${const}${volatile}${throw}${staticnl}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "music"
+	comment "music"
       end
     end
 
-    class 154375 "anonymous3"
+    class 162439 "TextboxFocus"
       visibility package stereotype "enum"
       cpp_decl "${comment}enum ${name} {
 ${items}
@@ -2019,9 +2016,8 @@ ${items}
       idl_decl ""
       explicit_switch_type ""
       
-      attribute 246407 "TEXTBOX_NO_FOCUS"
-	public type class_ref 154375 // anonymous3
-	init_value "= 0"
+      attribute 259975 "TEXTBOX_NO_FOCUS"
+	public type class_ref 162439 // TextboxFocus
 	cpp_decl "  ${name}${value},${comment}"
 	java_decl ""
 	php_decl ""
@@ -2029,8 +2025,8 @@ ${items}
 	idl_decl ""
       end
 
-      attribute 246535 "TEXTBOX_FOCUS"
-	public type class_ref 154375 // anonymous3
+      attribute 260103 "TEXTBOX_FOCUS"
+	public type class_ref 162439 // TextboxFocus
 	cpp_decl "  ${name}${value},${comment}"
 	java_decl ""
 	php_decl ""
@@ -2039,7 +2035,7 @@ ${items}
       end
     end
 
-    class 154503 "anonymous4"
+    class 162567 "TextboxType"
       visibility package stereotype "enum"
       cpp_decl "${comment}enum ${name} {
 ${items}
@@ -2051,9 +2047,8 @@ ${items}
       idl_decl ""
       explicit_switch_type ""
       
-      attribute 246663 "TEXTBOX_TYPE_NUM"
-	public type class_ref 154503 // anonymous4
-	init_value "= 0"
+      attribute 260231 "TEXTBOX_TYPE_NUM"
+	public type class_ref 162567 // TextboxType
 	cpp_decl "  ${name}${value},${comment}"
 	java_decl ""
 	php_decl ""
@@ -2061,8 +2056,8 @@ ${items}
 	idl_decl ""
       end
 
-      attribute 246791 "TEXTBOX_TYPE_MOVE"
-	public type class_ref 154503 // anonymous4
+      attribute 260359 "TEXTBOX_TYPE_MOVE"
+	public type class_ref 162567 // TextboxType
 	cpp_decl "  ${name}${value},${comment}"
 	java_decl ""
 	php_decl ""
@@ -2071,7 +2066,7 @@ ${items}
       end
     end
 
-    class 154631 "Timer"
+    class 162695 "Timer"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};
@@ -2083,7 +2078,7 @@ ${inlines}
       idl_decl ""
       explicit_switch_type ""
       
-      attribute 248199 "startTicks"
+      attribute 261511 "startTicks"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -2093,7 +2088,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 248327 "pausedTicks"
+      attribute 261639 "pausedTicks"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -2103,7 +2098,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 248455 "paused"
+      attribute 261767 "paused"
 	private explicit_type "bool"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -2113,7 +2108,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 248583 "started"
+      attribute 261895 "started"
 	private explicit_type "bool"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -2123,22 +2118,22 @@ ${inlines}
 	idl_decl ""
       end
 
-      operation 159239 "Timer"
+      operation 176391 "Timer"
 	public explicit_return_type ""
 	nparams 0
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw};
 "
-	cpp_def "${comment}${inline} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+	cpp_def "${comment}${inline}${class}::${name}${(}${)}${throw}{
   ${body}}
 "
 	
 	
 	
 	
-	comment "Initializes variables"
+	comment "Initializes variables"
       end
 
-      operation 159367 "start"
+      operation 176519 "start"
 	public explicit_return_type "void"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -2150,24 +2145,10 @@ ${inlines}
 	
 	
 	
-	comment "The various clock actions"
+	comment "The various clock actions"
       end
 
-      operation 159495 "stop"
-	public explicit_return_type "void"
-	nparams 0
-	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
-"
-	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
-  ${body}}
-"
-	
-	
-	
-	
-      end
-
-      operation 159623 "pause"
+      operation 176647 "stop"
 	public explicit_return_type "void"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -2181,7 +2162,7 @@ ${inlines}
 	
       end
 
-      operation 159751 "unpause"
+      operation 176775 "pause"
 	public explicit_return_type "void"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -2195,7 +2176,21 @@ ${inlines}
 	
       end
 
-      operation 159879 "get_ticks"
+      operation 176903 "unpause"
+	public explicit_return_type "void"
+	nparams 0
+	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
+"
+	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${)}${const}${volatile}${throw}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+	
+      end
+
+      operation 177031 "get_ticks"
 	public explicit_return_type "int"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -2207,10 +2202,10 @@ ${inlines}
 	
 	
 	
-	comment "Gets the timer's time"
+	comment "Gets the timer's time"
       end
 
-      operation 160007 "is_started"
+      operation 177159 "is_started"
 	public explicit_return_type "bool"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -2222,10 +2217,10 @@ ${inlines}
 	
 	
 	
-	comment "Checks the status of the timer"
+	comment "Checks the status of the timer"
       end
 
-      operation 160135 "is_paused"
+      operation 177287 "is_paused"
 	public explicit_return_type "bool"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -2241,11 +2236,11 @@ ${inlines}
     end
   end
 
-  deploymentview 128775 "include"
+  deploymentview 135303 "include"
     //deployment diagram settings
     package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
     draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
-    artifact 136711 "bezier"
+    artifact 144135 "bezier"
       stereotype "source"
       cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
 #define ${NAMESPACE}_${NAME}_H
@@ -2264,12 +2259,12 @@ ${namespace_start}
 ${members}
 ${namespace_end}"
       associated_classes
-	class_ref 153095 // anonymous1
-	class_ref 153223 // Bezier
+	class_ref 161159 // Curve
+	class_ref 161287 // Bezier
       end
     end
 
-    artifact 136839 "button"
+    artifact 144263 "button"
       stereotype "source"
       cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
 #define ${NAMESPACE}_${NAME}_H
@@ -2288,12 +2283,12 @@ ${namespace_start}
 ${members}
 ${namespace_end}"
       associated_classes
-	class_ref 153607 // anonymous2
-	class_ref 153735 // Button
+	class_ref 161671 // ButtonState
+	class_ref 161799 // Button
       end
     end
 
-    artifact 136967 "draw"
+    artifact 144391 "draw"
       stereotype "source"
       cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
 #define ${NAMESPACE}_${NAME}_H
@@ -2312,11 +2307,11 @@ ${namespace_start}
 ${members}
 ${namespace_end}"
       associated_classes
-	class_ref 153351 // Point
+	class_ref 161415 // Point
       end
     end
 
-    artifact 137095 "game"
+    artifact 144519 "game"
       stereotype "source"
       cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
 #define ${NAMESPACE}_${NAME}_H
@@ -2335,11 +2330,11 @@ ${namespace_start}
 ${members}
 ${namespace_end}"
       associated_classes
-	class_ref 153479 // Game
+	class_ref 161543 // Game
       end
     end
 
-    artifact 137223 "LoadingScreen"
+    artifact 144647 "LoadingScreen"
       stereotype "source"
       cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
 #define ${NAMESPACE}_${NAME}_H
@@ -2358,11 +2353,11 @@ ${namespace_start}
 ${members}
 ${namespace_end}"
       associated_classes
-	class_ref 154247 // LoadingScreen
+	class_ref 162311 // LoadingScreen
       end
     end
 
-    artifact 137351 "Sprout"
+    artifact 144775 "Sprout"
       stereotype "source"
       cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
 #define ${NAMESPACE}_${NAME}_H
@@ -2381,12 +2376,12 @@ ${namespace_start}
 ${members}
 ${namespace_end}"
       associated_classes
-	class_ref 153863 // SproutClips
-	class_ref 153991 // Sprout
+	class_ref 161927 // SproutClips
+	class_ref 162055 // Sprout
       end
     end
 
-    artifact 137479 "textbox"
+    artifact 144903 "textbox"
       stereotype "source"
       cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
 #define ${NAMESPACE}_${NAME}_H
@@ -2405,13 +2400,13 @@ ${namespace_start}
 ${members}
 ${namespace_end}"
       associated_classes
-	class_ref 154375 // anonymous3
-	class_ref 154503 // anonymous4
-	class_ref 154119 // TextBox
+	class_ref 162439 // TextboxFocus
+	class_ref 162567 // TextboxType
+	class_ref 162183 // TextBox
       end
     end
 
-    artifact 137607 "timer"
+    artifact 145031 "timer"
       stereotype "source"
       cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
 #define ${NAMESPACE}_${NAME}_H
@@ -2430,7 +2425,7 @@ ${namespace_start}
 ${members}
 ${namespace_end}"
       associated_classes
-	class_ref 154631 // Timer
+	class_ref 162695 // Timer
       end
     end
   end

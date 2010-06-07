@@ -4,58 +4,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<title>Class Sprout</title>
+<title>Class TextboxType</title>
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 <body bgcolor="#ffffff">
 
-<div class = "title">Class Sprout</div>
+<div class = "title">Class TextboxType</div>
 <p></p>
 
 <!-- ============================================================= -->
 
 <a name="refclass162567"></a>
 <p>Declaration :</p><ul>
-<li>C++ : class Sprout </li></ul><p>Artifact : <a href="index.html#refartifact144775"><b>Sprout</b></a></p>
+<li>C++ : enum TextboxType </li></ul><p>Artifact : <a href="index.html#refartifact144903"><b>textbox</b></a></p>
+<p>Stereotype: enum</p>
 <div class="sub">
-<a name="refattribute260231"></a>
-<table><tr><td><div class="element">Attribute <b>frame</b></div></td></tr></table>
-<p>Its current frame<br /></p><p>Declaration :</p><ul><li>Uml : - frame : int</li><li>C++ : private: int frame</li></ul><a name="refattribute260359"></a>
-<table><tr><td><div class="element">Attribute <b>ticks</b></div></td></tr></table>
-<p>Declaration :</p><ul><li>Uml : - ticks : int</li><li>C++ : private: int ticks</li></ul><a name="refattribute260487"></a>
-<table><tr><td><div class="element">Attribute <b>color</b></div></td></tr></table>
-<p>Declaration :</p><ul><li>Uml : - color : int</li><li>C++ : private: int color</li></ul><a name="refattribute260615"></a>
-<table><tr><td><div class="element">Attribute <b>status</b></div></td></tr></table>
-<p>Its animation status<br /></p><p>Declaration :</p><ul><li>Uml : - status : int</li><li>C++ : private: int status</li></ul><a name="refrelation177799"></a>
-<table><tr><td><div class="element">Relation <b>clips (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>The clips/image for the sprout<br /></p><p>Declaration :</p><ul><li>Uml : - clips : <a href="class162439.html#refclass162439"><b>SproutClips</b></a></li><li>C++ : private: <a href="class162439.html#refclass162439"><b>SproutClips</b></a> * clips</li></ul><a name="refattribute260743"></a>
-<table><tr><td><div class="element">Attribute <b>sproutNumber</b></div></td></tr></table>
-<p>The identifier of the sprout<br /></p><p>Declaration :</p><ul><li>Uml : - sproutNumber : int</li><li>C++ : private: int sproutNumber</li></ul><a name="refattribute260871"></a>
-<table><tr><td><div class="element">Attribute <b>number</b></div></td></tr></table>
-<p> The Surface that will hold the rendered Number<br /></p><p>Declaration :</p><ul><li>Uml : - number : SDL_Surface</li><li>C++ : private: SDL_Surface * number</li></ul><a name="refoperation172935"></a>
-<table><tr><td><div class="element">Operation <b>renderNumber</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - renderNumber(in  : void) : void</li><li>C++ : private: void renderNumber(void )</li></ul><a name="refoperation173063"></a>
-<table><tr><td><div class="element">Operation <b>available</b></div></td></tr></table><p> Renders the text for the number of the node<br /></p><p>Declaration :</p><ul><li>Uml : - available(in x : int, in y : int, in from : int, in to : int, inout sprouts : <a href="class162567.html#refclass162567"><b>Sprout</b></a>) : bool</li><li>C++ : private: bool available(int x, int y, int from, int to, <a href="class162567.html#refclass162567"><b>Sprout</b></a> * * sprouts)</li></ul><a name="refoperation173191"></a>
-<table><tr><td><div class="element">Operation <b>willOverlap</b></div></td></tr></table><p> Checks to see if the given (x,y) is not over another sprout<br /></p><p>Declaration :</p><ul><li>Uml : - willOverlap(in x : int, in y : int) : bool</li><li>C++ : private: bool willOverlap(int x, int y)</li></ul><a name="refrelation177927"></a>
-<table><tr><td><div class="element">Relation <b>parent (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - parent : <a href="class162055.html#refclass162055"><b>Game</b></a></li><li>C++ : private: <a href="class162055.html#refclass162055"><b>Game</b></a> * parent</li></ul><a name="refattribute260999"></a>
-<table><tr><td><div class="element">Attribute <b>node</b></div></td></tr></table>
-<p>Declaration :</p><ul><li>Uml : + node : SDL_Rect</li><li>C++ : public: SDL_Rect node</li></ul><a name="refoperation173319"></a>
-<table><tr><td><div class="element">Operation <b>Sprout</b></div></td></tr></table><p>Initializes the variables<br /></p><p>Declaration :</p><ul><li>Uml : + Sprout(inout theClips : <a href="class162439.html#refclass162439"><b>SproutClips</b></a>, inout sprouts : <a href="class162567.html#refclass162567"><b>Sprout</b></a>, inout game : <a href="class162055.html#refclass162055"><b>Game</b></a>) : </li><li>C++ : public: Sprout(<a href="class162439.html#refclass162439"><b>SproutClips</b></a> * theClips, <a href="class162567.html#refclass162567"><b>Sprout</b></a> * * sprouts, <a href="class162055.html#refclass162055"><b>Game</b></a> * game)</li></ul><a name="refoperation173447"></a>
-<table><tr><td><div class="element">Operation <b>Sprout</b></div></td></tr></table><p> Generic everything is randomized<br /></p><p>Declaration :</p><ul><li>Uml : + Sprout(in num : int, in x : int, in y : int, inout theClips : <a href="class162439.html#refclass162439"><b>SproutClips</b></a>) : </li><li>C++ : public: Sprout(int num, int x, int y, <a href="class162439.html#refclass162439"><b>SproutClips</b></a> * theClips)</li></ul><a name="refoperation173575"></a>
-<table><tr><td><div class="element">Operation <b>Sprout</b></div></td></tr></table><p> Set the (x,y) to the given and set up as a 2 connection sprout<br /></p><p>Declaration :</p><ul><li>Uml : + Sprout(in num : int, in from : int, in to : int, inout theClips : <a href="class162439.html#refclass162439"><b>SproutClips</b></a>, inout sprouts : <a href="class162567.html#refclass162567"><b>Sprout</b></a>, inout game : <a href="class162055.html#refclass162055"><b>Game</b></a>) : </li><li>C++ : public: Sprout(int num, int from, int to, <a href="class162439.html#refclass162439"><b>SproutClips</b></a> * theClips, <a href="class162567.html#refclass162567"><b>Sprout</b></a> * * sprouts, <a href="class162055.html#refclass162055"><b>Game</b></a> * game)</li></ul><a name="refoperation173703"></a>
-<table><tr><td><div class="element">Operation <b>Sprout</b></div></td></tr></table><p> Sets the number and randoms the rest<br /></p><p>Declaration :</p><ul><li>Uml : + Sprout(inout current : <a href="class162567.html#refclass162567"><b>Sprout</b></a>) : </li><li>C++ : public: Sprout(<a href="class162567.html#refclass162567"><b>Sprout</b></a> * current)</li></ul><a name="refoperation173831"></a>
-<table><tr><td><div class="element">Operation <b>~Sprout</b></div></td></tr></table><p> duplicate the currnt Sprout to the new sprout<br /></p><p>Declaration :</p><ul><li>Uml : + ~Sprout() : </li><li>C++ : public: ~Sprout()</li></ul><a name="refoperation173959"></a>
-<table><tr><td><div class="element">Operation <b>getState</b></div></td></tr></table><p> Generic Destructor<br />Sprout(int x, int y, int num, SproutClips * theClips);        // Set x and y coords of sprout plus its number<br />Sprout(int num, int firstNode, int secondNode, SproutClips* theClips);    // Sets the number and calculates the x and y based on its connections to the other nodes<br /> State functions<br /></p><p>Declaration :</p><ul><li>Uml : + getState() : int</li><li>C++ : public: int getState()</li></ul><a name="refoperation174087"></a>
-<table><tr><td><div class="element">Operation <b>setState</b></div></td></tr></table><p> Returns the state<br /></p><p>Declaration :</p><ul><li>Uml : + setState(in  : int) : void</li><li>C++ : public: void setState(int )</li></ul><a name="refoperation174215"></a>
-<table><tr><td><div class="element">Operation <b>getPoint</b></div></td></tr></table><p>sets the status<br /></p><p>Declaration :</p><ul><li>Uml : + getPoint() : <a href="class161927.html#refclass161927"><b>Point</b></a></li><li>C++ : public: <a href="class161927.html#refclass161927"><b>Point</b></a> getPoint()</li></ul><a name="refoperation174343"></a>
-<table><tr><td><div class="element">Operation <b>setPoint</b></div></td></tr></table><p> Returns the location point<br /></p><p>Declaration :</p><ul><li>Uml : + setPoint(in x : int, in y : int) : void</li><li>C++ : public: void setPoint(int x, int y)</li></ul><a name="refoperation174471"></a>
-<table><tr><td><div class="element">Operation <b>isMouseOver</b></div></td></tr></table><p> Returns the location point<br />Handles input<br /></p><p>Declaration :</p><ul><li>Uml : + isMouseOver(in x : int, in y : int) : bool</li><li>C++ : public: bool isMouseOver(int x, int y)</li></ul><a name="refoperation174599"></a>
-<table><tr><td><div class="element">Operation <b>hover</b></div></td></tr></table><p> Disply Functions<br /></p><p>Declaration :</p><ul><li>Uml : + hover(inout destination : SDL_Surface) : void</li><li>C++ : public: void hover(SDL_Surface * destination)</li></ul><a name="refoperation174727"></a>
-<table><tr><td><div class="element">Operation <b>click</b></div></td></tr></table><p>Shows the hover<br /></p><p>Declaration :</p><ul><li>Uml : + click(inout destination : SDL_Surface) : void</li><li>C++ : public: void click(SDL_Surface * destination)</li></ul><a name="refoperation174855"></a>
-<table><tr><td><div class="element">Operation <b>show</b></div></td></tr></table><p>Shows the click<br /></p><p>Declaration :</p><ul><li>Uml : + show(inout destination : SDL_Surface) : void</li><li>C++ : public: void show(SDL_Surface * destination)</li></ul><a name="refoperation174983"></a>
-<table><tr><td><div class="element">Operation <b>draw</b></div></td></tr></table><p>Shows the node<br /></p><p>Declaration :</p><ul><li>Uml : + draw(inout destination : SDL_Surface) : void</li><li>C++ : public: void draw(SDL_Surface * destination)</li></ul><a name="refoperation175111"></a>
-<table><tr><td><div class="element">Operation <b>addConnection</b></div></td></tr></table><p> Calls the correct drawing function based on the stat<br /></p><p>Declaration :</p><ul><li>Uml : + addConnection(in  : void) : void</li><li>C++ : public: void addConnection(void )</li></ul><a name="refoperation175239"></a>
-<table><tr><td><div class="element">Operation <b>removeConnection</b></div></td></tr></table><p> Changes the color based on the number of connections<br /></p><p>Declaration :</p><ul><li>Uml : + removeConnection(in  : void) : void</li><li>C++ : public: void removeConnection(void )</li></ul><a name="refoperation175367"></a>
-<table><tr><td><div class="element">Operation <b>getConnections</b></div></td></tr></table><p> Changes the color based on the number of<br /></p><p>Declaration :</p><ul><li>Uml : + getConnections(in  : void) : int</li><li>C++ : public: int getConnections(void )</li></ul></div>
-<p>All public operations : <a href="class162567.html#refoperation175111"><b>addConnection</b></a> , <a href="class162567.html#refoperation174727"><b>click</b></a> , <a href="class162567.html#refoperation174983"><b>draw</b></a> , <a href="class162567.html#refoperation175367"><b>getConnections</b></a> , <a href="class162567.html#refoperation174215"><b>getPoint</b></a> , <a href="class162567.html#refoperation173959"><b>getState</b></a> , <a href="class162567.html#refoperation174599"><b>hover</b></a> , <a href="class162567.html#refoperation174471"><b>isMouseOver</b></a> , <a href="class162567.html#refoperation175239"><b>removeConnection</b></a> , <a href="class162567.html#refoperation174343"><b>setPoint</b></a> , <a href="class162567.html#refoperation174087"><b>setState</b></a> , <a href="class162567.html#refoperation174855"><b>show</b></a> </p>
+<p>Items :</p><ul>
+<li>TEXTBOX_TYPE_NUM</li>
+<li>TEXTBOX_TYPE_MOVE</li>
+</ul>
+</div>
 </body>
 </html>

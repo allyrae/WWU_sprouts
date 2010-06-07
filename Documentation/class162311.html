@@ -4,35 +4,41 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<title>Class Button</title>
+<title>Class LoadingScreen</title>
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 <body bgcolor="#ffffff">
 
-<div class = "title">Class Button</div>
+<div class = "title">Class LoadingScreen</div>
 <p></p>
 
 <!-- ============================================================= -->
 
 <a name="refclass162311"></a>
+<p>#include "../SDL/SDL_timer.h"<br />header for the loading screen<br />declaration of the class<br /></p>
 <p>Declaration :</p><ul>
-<li>C++ : class Button </li></ul><p>Artifact : <a href="index.html#refartifact144263"><b>button</b></a></p>
+<li>C++ : class LoadingScreen </li></ul><p>Artifact : <a href="index.html#refartifact144647"><b>LoadingScreen</b></a></p>
 <div class="sub">
-<a name="refattribute256903"></a>
-<table><tr><td><div class="element">Attribute <b>text</b></div></td></tr></table>
-<p> Where the image is that will need to be clipped<br /></p><p>Declaration :</p><ul><li>Uml : - text : SDL_Surface</li><li>C++ : private: SDL_Surface * text</li></ul><a name="refattribute257031"></a>
-<table><tr><td><div class="element">Attribute <b>font</b></div></td></tr></table>
-<p>Declaration :</p><ul><li>Uml : - font : TTF_Font</li><li>C++ : private: TTF_Font * font</li></ul><a name="refrelation177287"></a>
-<table><tr><td><div class="element">Relation <b>point (&lt;directional composition&gt;)</b></div></td></tr></table><p> (x,y) location and (w,h) of button<br /></p><p>Declaration :</p><ul><li>Uml : - point : <a href="class161927.html#refclass161927"><b>Point</b></a></li><li>C++ : private: <a href="class161927.html#refclass161927"><b>Point</b></a> point</li></ul><a name="refrelation177415"></a>
-<table><tr><td><div class="element">Relation <b>state (&lt;directional composition&gt;)</b></div></td></tr></table><p> The current state of the button<br /></p><p>Declaration :</p><ul><li>Uml : - state : <a href="class162183.html#refclass162183"><b>ButtonState</b></a></li><li>C++ : private: <a href="class162183.html#refclass162183"><b>ButtonState</b></a> state</li></ul><a name="refoperation168711"></a>
-<table><tr><td><div class="element">Operation <b>Button</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Button(in placement : <a href="class161927.html#refclass161927"><b>Point</b></a>, in textString : std::string, inout theFont : TTF_Font) : </li><li>C++ : public: Button(<a href="class161927.html#refclass161927"><b>Point</b></a> placement, std::string textString, TTF_Font * theFont)</li></ul><a name="refoperation168839"></a>
-<table><tr><td><div class="element">Operation <b>~Button</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ~Button(in  : void) : </li><li>C++ : public: ~Button(void )</li></ul><a name="refoperation168967"></a>
-<table><tr><td><div class="element">Operation <b>setState</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + setState(in newState : <a href="class162183.html#refclass162183"><b>ButtonState</b></a>) : bool</li><li>C++ : public: bool setState(<a href="class162183.html#refclass162183"><b>ButtonState</b></a> newState)</li></ul><a name="refoperation169095"></a>
-<table><tr><td><div class="element">Operation <b>getState</b></div></td></tr></table><p> update the state of the button<br /></p><p>Declaration :</p><ul><li>Uml : + getState() : <a href="class162183.html#refclass162183"><b>ButtonState</b></a></li><li>C++ : public: <a href="class162183.html#refclass162183"><b>ButtonState</b></a> getState()</li></ul><a name="refoperation169223"></a>
-<table><tr><td><div class="element">Operation <b>isMouseover</b></div></td></tr></table><p> Returns the state of the button<br /></p><p>Declaration :</p><ul><li>Uml : + isMouseover(in x : int, in y : int) : bool</li><li>C++ : public: bool isMouseover(int x, int y)</li></ul><a name="refoperation169351"></a>
-<table><tr><td><div class="element">Operation <b>draw</b></div></td></tr></table><p> Tells if the given xy buttons are over the button<br /></p><p>Declaration :</p><ul><li>Uml : + draw(inout destination : SDL_Surface) : bool</li><li>C++ : public: bool draw(SDL_Surface * destination)</li></ul><a name="refoperation169479"></a>
-<table><tr><td><div class="element">Operation <b>moveTo</b></div></td></tr></table><p> Draws the button based on the state given at the x,y value given<br /> Moves the button to the requested (x,y) coordinates<br /></p><p>Declaration :</p><ul><li>Uml : + moveTo(in x : int, in y : int) : bool</li><li>C++ : public: bool moveTo(int x, int y)</li></ul></div>
-<p>All public operations : <a href="class162311.html#refoperation169351"><b>draw</b></a> , <a href="class162311.html#refoperation169095"><b>getState</b></a> , <a href="class162311.html#refoperation169223"><b>isMouseover</b></a> , <a href="class162311.html#refoperation169479"><b>moveTo</b></a> , <a href="class162311.html#refoperation168967"><b>setState</b></a> </p>
+<a name="refattribute257287"></a>
+<table><tr><td><div class="element">Attribute <b>frame</b></div></td></tr></table>
+<p>declarations of variables<br /></p><p>Declaration :</p><ul><li>Uml : - frame : int</li><li>C++ : private: int frame</li></ul><a name="refattribute257415"></a>
+<table><tr><td><div class="element">Attribute <b>ticksStart</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - ticksStart : int</li><li>C++ : private: int ticksStart</li></ul><a name="refattribute257543"></a>
+<table><tr><td><div class="element">Attribute <b>folder</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - folder : std::string</li><li>C++ : private: std::string folder</li></ul><a name="refattribute257671"></a>
+<table><tr><td><div class="element">Attribute <b>screenname</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - screenname : std::string</li><li>C++ : private: std::string screenname</li></ul><a name="refattribute257799"></a>
+<table><tr><td><div class="element">Attribute <b>waitname</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - waitname : std::string</li><li>C++ : private: std::string waitname</li></ul><a name="refattribute257927"></a>
+<table><tr><td><div class="element">Attribute <b>loadingScreen</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - loadingScreen : SDL_Surface, multiplicity : [30]</li><li>C++ : private: SDL_Surface * loadingScreen[30]</li></ul><a name="refattribute258055"></a>
+<table><tr><td><div class="element">Attribute <b>loadingWait</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - loadingWait : SDL_Surface, multiplicity : [10]</li><li>C++ : private: SDL_Surface * loadingWait[10]</li></ul><a name="refoperation172423"></a>
+<table><tr><td><div class="element">Operation <b>LoadingScreen</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + LoadingScreen() : </li><li>C++ : public: LoadingScreen()</li></ul><a name="refoperation172551"></a>
+<table><tr><td><div class="element">Operation <b>PlayWait</b></div></td></tr></table><p>constructor<br /></p><p>Declaration :</p><ul><li>Uml : + PlayWait() : void</li><li>C++ : public: void PlayWait()</li></ul><a name="refoperation172679"></a>
+<table><tr><td><div class="element">Operation <b>PlayStart</b></div></td></tr></table><p>music<br /></p><p>Declaration :</p><ul><li>Uml : + PlayStart() : void</li><li>C++ : public: void PlayStart()</li></ul><a name="refoperation172807"></a>
+<table><tr><td><div class="element">Operation <b>draw</b></div></td></tr></table><p>music<br /></p><p>Declaration :</p><ul><li>Uml : + draw(inout destination : SDL_Surface) : bool</li><li>C++ : public: bool draw(SDL_Surface * destination)</li></ul></div>
+<p>All public operations : <a href="class162311.html#refoperation172807"><b>draw</b></a> , <a href="class162311.html#refoperation172679"><b>PlayStart</b></a> , <a href="class162311.html#refoperation172551"><b>PlayWait</b></a> </p>
 </body>
 </html>
