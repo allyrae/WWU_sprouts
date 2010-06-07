@@ -36,11 +36,17 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add directory="SDL\include\SDL" />
+			<Add directory="SDL/include/SDL" />
 		</Compiler>
 		<Linker>
-			<Add option="-lmingw32 -lSDLmain -lSDL -lSDL_gfx -lSDL_ttf -lSDL_image" />
-			<Add directory="SDL\lib" />
+			<Add option="-lSDLmain -lSDL -lSDL_gfx -lSDL_ttf -lSDL_image" />
+			<Add library="/usr/lib/libSDL.a" />
+			<Add library="/usr/lib/libSDL.dll.a" />
+			<Add library="/usr/lib/libSDL_gfx.a" />
+			<Add library="/usr/lib/libSDL_image.a" />
+			<Add library="/usr/lib/libSDLmain.a" />
+			<Add library="/usr/lib/libSDL_ttf.a" />
+			<Add directory="SDL/lib" />
 		</Linker>
 		<Unit filename="Game.cpp" />
 		<Unit filename="LoadingScreen.cpp" />
@@ -52,14 +58,14 @@
 		<Unit filename="button.cpp" />
 		<Unit filename="checkWin.cpp" />
 		<Unit filename="draw.cpp" />
-		<Unit filename="include\LoadingScreen.h" />
-		<Unit filename="include\Sprout.h" />
-		<Unit filename="include\bezier.h" />
-		<Unit filename="include\button.h" />
-		<Unit filename="include\draw.h" />
-		<Unit filename="include\game.h" />
-		<Unit filename="include\textbox.h" />
-		<Unit filename="include\timer.h" />
+		<Unit filename="include/LoadingScreen.h" />
+		<Unit filename="include/Sprout.h" />
+		<Unit filename="include/bezier.h" />
+		<Unit filename="include/button.h" />
+		<Unit filename="include/draw.h" />
+		<Unit filename="include/game.h" />
+		<Unit filename="include/textbox.h" />
+		<Unit filename="include/timer.h" />
 		<Unit filename="parse.cpp" />
 		<Unit filename="stdafx.cpp" />
 		<Unit filename="stdafx.h" />
