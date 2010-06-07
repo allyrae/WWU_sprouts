@@ -1,3 +1,46 @@
 Ready to GO!!
 SDL Started Succesfully
 Drawing Succesful
+Move: 4(5)3
+3 Creates 4 To 2
+  0123456789
+
+0 0111      
+1 0011      
+2 0001      
+3 0000      
+4           
+5           
+6           
+7           
+8           
+9           
+Player 0 has won.Move: 5(6)4
+4 Creates 5 To 3
+  0123456789
+
+0 01111     
+1 00111     
+2 00111     
+3 00011     
+4 00112     
+5           
+6           
+7           
+8           
+9           
+Player 0 has won.Move: 6(7)3
+5 Creates 6 To 2
+  0123456789
+
+0 011111    
+1 001111    
+2 001111    
+3 000211    
+4 001131    
+5 000112    
+6           
+7           
+8           
+9           
+Player 0 has won.

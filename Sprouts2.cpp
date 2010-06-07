@@ -10,7 +10,7 @@
 #include "SDL_ttf.h"
 
 // Define Game States
-enum{ GAME_STATE_LOADING = 0,
+enum GameState{ GAME_STATE_LOADING,
       GAME_STATE_START,
       GAME_STATE_PLAY,
       GAME_STATE_QUIT};
@@ -39,7 +39,7 @@ using namespace std;
 // Surfaces
 SDL_Surface * screen = NULL;
 // The Game State
-int gameState;
+GameState gameState;
 
 Game * g; // Main Game object
 
