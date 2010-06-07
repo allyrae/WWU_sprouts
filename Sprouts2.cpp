@@ -259,13 +259,24 @@ bool init()
 
   // Set sproutClips
   setSproutClips();   // Must be after the font is set
-  sproutClips.anime = load_image( "images/hover.png" );
-  sproutClips.click = load_image( "images/click.png" );
-  sproutClips.font = font;
+//  sproutClips.anime = load_image( "images/hover.png" );
+//  sproutClips.click = load_image( "images/click.png" );
+  sproutClips.anime = IMG_Load( "images/hover.png" );
+  sproutClips.click = IMG_Load( "images/click.png" );
+sproutClips.font = font;
   if (sproutClips.font == NULL)
   {
     cout << "ERROR:  Invlaid font" << endl;
   }
+
+    if(!sproutClips.anime) {
+        printf("IMG_Load: %s\n", IMG_GetError());
+        // handle error
+    }
+    if(!sproutClips.click) {
+        printf("IMG_Load2: %s\n", IMG_GetError());
+        // handle error
+    }
 
   SDL_SetColorKey( sproutClips.anime, SDL_SRCCOLORKEY, SDL_MapRGB(sproutClips.anime->format, 255,255,255));
   SDL_SetColorKey( sproutClips.click, SDL_SRCCOLORKEY, SDL_MapRGB(sproutClips.click->format, 255,255,255));
