@@ -21,11 +21,13 @@ class LoadingScreen
     bool isWait, isStart;
     SDL_Surface *loadingScreen[150];
     SDL_Surface *loadingWait;
+    SDL_Surface *loadingLoad[150];
+
+    bool initing;
   public:
     LoadingScreen();//constructor
     void PlayWait();//music
     void PlayStart();//music
     bool draw(SDL_Surface* destination);//draws the loading screen
-
 };
 

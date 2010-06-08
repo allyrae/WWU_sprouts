@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug Win32" />
-	<File name="LoadingScreen.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="1787" topLine="26" />
+	<File name="LoadingScreen.cpp" open="1" top="1" tabpos="3">
+		<Cursor position="835" topLine="9" />
 	</File>
 	<File name="Sprout.cpp" open="1" top="0" tabpos="8">
 		<Cursor position="665" topLine="0" />
 	</File>
-	<File name="Sprouts2.cpp" open="1" top="1" tabpos="1">
-		<Cursor position="1192" topLine="3" />
+	<File name="Sprouts2.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="13413" topLine="357" />
 	</File>
 	<File name="button.cpp" open="1" top="0" tabpos="4">
 		<Cursor position="472" topLine="0" />
 	</File>
 	<File name="draw.cpp" open="1" top="0" tabpos="7">
-		<Cursor position="993" topLine="0" />
+		<Cursor position="913" topLine="0" />
 	</File>
 	<File name="include/LoadingScreen.h" open="1" top="0" tabpos="5">
-		<Cursor position="435" topLine="0" />
+		<Cursor position="490" topLine="0" />
 	</File>
 	<File name="include/button.h" open="0" top="0" tabpos="0">
 		<Cursor position="424" topLine="0" />
 	</File>
 	<File name="include/draw.h" open="1" top="0" tabpos="2">
-		<Cursor position="444" topLine="0" />
+		<Cursor position="734" topLine="0" />
 	</File>
 	<File name="timer.cpp" open="1" top="0" tabpos="6">
 		<Cursor position="0" topLine="0" />

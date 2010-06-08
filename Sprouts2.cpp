@@ -506,6 +506,7 @@ int main(int argc, char* argv[])
   move->fromCurve = NULL;
   move->newSprout = NULL;
 
+
   if (Draw())
   {
     cout << "Drawing Succesful" << endl;
@@ -517,7 +518,6 @@ int main(int argc, char* argv[])
   }
 
   // End Test SDL Commands
-
   // Main game loop Code
   while(gameState!=GAME_STATE_QUIT)
   {
