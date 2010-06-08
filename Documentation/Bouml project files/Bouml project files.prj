@@ -1,6 +1,6 @@
 format 73
-"WWU_sprouts.prj"
-  revision 2
+"Bouml project files"
+  revision 1
   modified_by 7 "Robin Zane"
 
 
@@ -31,12 +31,9 @@ format 73
   show_infonote yes drawing_language uml show_stereotype_properties no
   
   class_color yellow duration_color transparent continuation_color gray note_color blue fragment_color transparent subject_color transparent usecase_color yellow package_color transparent component_color green artifact_color green deploymentnode_color gray state_color yellow stateaction_color transparent activity_color transparent activityregion_color transparent activitypartition_color transparent activityaction_color transparent parameterpin_color white 
-  font_size 12
+  font_size 8
   diagram_format A4
 
   mark_for_import
   
-  ncouples 1
-  key "html dir" value "C:/Documents and Settings/Robin Zane/Desktop/CPTR143 proj/WWU_sprouts/Documentation/"
-  package_ref 135815 // include
 end

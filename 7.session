@@ -1,7 +1,3 @@
-window_sizes 1280 744 393 1176 684 152
+window_sizes 1200 700 300 900 533 82
 show_stereotypes
-selected 
-  package_ref 129 // WWU_sprouts.prj
-open
-end
 end

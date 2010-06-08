@@ -1,0 +1,9 @@
+window_sizes 1200 700 300 900 533 82
+show_stereotypes
+selected 
+  package_ref 129 // WWU_sprouts
+open
+  class_ref 128007 // Curve
+  deploymentview_ref 128007 // include
+end
+end

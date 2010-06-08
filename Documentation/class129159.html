@@ -1,0 +1,48 @@
+<!-- Documentation produced by the Html generator of Bouml (http://bouml.free.fr) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class LoadingScreen</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class LoadingScreen</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="refclass129159"></a>
+<p>#include "../SDL/SDL_timer.h"<br />header for the loading screen<br />declaration of the class<br /></p>
+<p>Declaration :</p><ul>
+<li>C++ : class LoadingScreen </li></ul><p>Artifact : <a href="index.html#refartifact128519"><b>LoadingScreen</b></a></p>
+<div class="sub">
+<a name="refattribute130183"></a>
+<table><tr><td><div class="element">Attribute <b>frame</b></div></td></tr></table>
+<p>declarations of variables<br /></p><p>Declaration :</p><ul><li>Uml : - frame : int</li><li>C++ : private: int frame</li></ul><a name="refattribute130311"></a>
+<table><tr><td><div class="element">Attribute <b>ticksStart</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - ticksStart : int</li><li>C++ : private: int ticksStart</li></ul><a name="refattribute130439"></a>
+<table><tr><td><div class="element">Attribute <b>folder</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - folder : std::string</li><li>C++ : private: std::string folder</li></ul><a name="refattribute130567"></a>
+<table><tr><td><div class="element">Attribute <b>screenname</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - screenname : std::string</li><li>C++ : private: std::string screenname</li></ul><a name="refattribute130695"></a>
+<table><tr><td><div class="element">Attribute <b>waitname</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - waitname : std::string</li><li>C++ : private: std::string waitname</li></ul><a name="refattribute130823"></a>
+<table><tr><td><div class="element">Attribute <b>loadingScreen</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - loadingScreen : SDL_Surface, multiplicity : [150]</li><li>C++ : private: SDL_Surface * loadingScreen[150]</li></ul><a name="refattribute130951"></a>
+<table><tr><td><div class="element">Attribute <b>loadingWait</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - loadingWait : SDL_Surface</li><li>C++ : private: SDL_Surface * loadingWait</li></ul><a name="refattribute131079"></a>
+<table><tr><td><div class="element">Attribute <b>loadingLoad</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - loadingLoad : SDL_Surface, multiplicity : [150]</li><li>C++ : private: SDL_Surface * loadingLoad[150]</li></ul><a name="refattribute131207"></a>
+<table><tr><td><div class="element">Attribute <b>initing</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - initing : bool</li><li>C++ : private: bool initing</li></ul><a name="refoperation133767"></a>
+<table><tr><td><div class="element">Operation <b>LoadingScreen</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + LoadingScreen() : </li><li>C++ : public: LoadingScreen()</li></ul><a name="refoperation133895"></a>
+<table><tr><td><div class="element">Operation <b>PlayWait</b></div></td></tr></table><p>constructor<br /></p><p>Declaration :</p><ul><li>Uml : + PlayWait() : void</li><li>C++ : public: void PlayWait()</li></ul><a name="refoperation134023"></a>
+<table><tr><td><div class="element">Operation <b>PlayStart</b></div></td></tr></table><p>music<br /></p><p>Declaration :</p><ul><li>Uml : + PlayStart() : void</li><li>C++ : public: void PlayStart()</li></ul><a name="refoperation134151"></a>
+<table><tr><td><div class="element">Operation <b>draw</b></div></td></tr></table><p>music<br /></p><p>Declaration :</p><ul><li>Uml : + draw(inout destination : SDL_Surface) : bool</li><li>C++ : public: bool draw(SDL_Surface * destination)</li></ul></div>
+<p>All public operations : <a href="class129159.html#refoperation134151"><b>draw</b></a> , <a href="class129159.html#refoperation134023"><b>PlayStart</b></a> , <a href="class129159.html#refoperation133895"><b>PlayWait</b></a> </p>
+</body>
+</html>

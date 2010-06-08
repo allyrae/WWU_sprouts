@@ -1,0 +1,38 @@
+<!-- Documentation produced by the Html generator of Bouml (http://bouml.free.fr) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class Button</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class Button</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="refclass128647"></a>
+<p>Declaration :</p><ul>
+<li>C++ : class Button </li></ul><p>Artifact : <a href="index.html#refartifact128135"><b>button</b></a></p>
+<div class="sub">
+<a name="refattribute128647"></a>
+<table><tr><td><div class="element">Attribute <b>text</b></div></td></tr></table>
+<p> Where the image is that will need to be clipped<br /></p><p>Declaration :</p><ul><li>Uml : - text : SDL_Surface</li><li>C++ : private: SDL_Surface * text</li></ul><a name="refattribute128775"></a>
+<table><tr><td><div class="element">Attribute <b>font</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - font : TTF_Font</li><li>C++ : private: TTF_Font * font</li></ul><a name="refrelation128135"></a>
+<table><tr><td><div class="element">Relation <b>point (&lt;directional composition&gt;)</b></div></td></tr></table><p> (x,y) location and (w,h) of button<br /></p><p>Declaration :</p><ul><li>Uml : - point : <a href="class128263.html#refclass128263"><b>Point</b></a></li><li>C++ : private: <a href="class128263.html#refclass128263"><b>Point</b></a> point</li></ul><a name="refrelation128263"></a>
+<table><tr><td><div class="element">Relation <b>state (&lt;directional composition&gt;)</b></div></td></tr></table><p> The current state of the button<br /></p><p>Declaration :</p><ul><li>Uml : - state : <a href="class128519.html#refclass128519"><b>ButtonState</b></a></li><li>C++ : private: <a href="class128519.html#refclass128519"><b>ButtonState</b></a> state</li></ul><a name="refoperation130055"></a>
+<table><tr><td><div class="element">Operation <b>Button</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + Button(in placement : <a href="class128263.html#refclass128263"><b>Point</b></a>, in textString : std::string, inout theFont : TTF_Font) : </li><li>C++ : public: Button(<a href="class128263.html#refclass128263"><b>Point</b></a> placement, std::string textString, TTF_Font * theFont)</li></ul><a name="refoperation130183"></a>
+<table><tr><td><div class="element">Operation <b>~Button</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ~Button(in  : void) : </li><li>C++ : public: ~Button(void )</li></ul><a name="refoperation130311"></a>
+<table><tr><td><div class="element">Operation <b>setState</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + setState(in newState : <a href="class128519.html#refclass128519"><b>ButtonState</b></a>) : bool</li><li>C++ : public: bool setState(<a href="class128519.html#refclass128519"><b>ButtonState</b></a> newState)</li></ul><a name="refoperation130439"></a>
+<table><tr><td><div class="element">Operation <b>getState</b></div></td></tr></table><p> update the state of the button<br /></p><p>Declaration :</p><ul><li>Uml : + getState() : <a href="class128519.html#refclass128519"><b>ButtonState</b></a></li><li>C++ : public: <a href="class128519.html#refclass128519"><b>ButtonState</b></a> getState()</li></ul><a name="refoperation130567"></a>
+<table><tr><td><div class="element">Operation <b>isMouseover</b></div></td></tr></table><p> Returns the state of the button<br /></p><p>Declaration :</p><ul><li>Uml : + isMouseover(in x : int, in y : int) : bool</li><li>C++ : public: bool isMouseover(int x, int y)</li></ul><a name="refoperation130695"></a>
+<table><tr><td><div class="element">Operation <b>draw</b></div></td></tr></table><p> Tells if the given xy buttons are over the button<br /></p><p>Declaration :</p><ul><li>Uml : + draw(inout destination : SDL_Surface) : bool</li><li>C++ : public: bool draw(SDL_Surface * destination)</li></ul><a name="refoperation130823"></a>
+<table><tr><td><div class="element">Operation <b>moveTo</b></div></td></tr></table><p> Draws the button based on the state given at the x,y value given<br /> Moves the button to the requested (x,y) coordinates<br /></p><p>Declaration :</p><ul><li>Uml : + moveTo(in x : int, in y : int) : bool</li><li>C++ : public: bool moveTo(int x, int y)</li></ul></div>
+<p>All public operations : <a href="class128647.html#refoperation130695"><b>draw</b></a> , <a href="class128647.html#refoperation130439"><b>getState</b></a> , <a href="class128647.html#refoperation130567"><b>isMouseover</b></a> , <a href="class128647.html#refoperation130823"><b>moveTo</b></a> , <a href="class128647.html#refoperation130311"><b>setState</b></a> </p>
+</body>
+</html>

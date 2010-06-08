@@ -1,0 +1,52 @@
+<!-- Documentation produced by the Html generator of Bouml (http://bouml.free.fr) -->
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Class TextBox</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">Class TextBox</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="refclass129031"></a>
+<p>Declaration :</p><ul>
+<li>C++ : class TextBox </li></ul><p>Artifact : <a href="index.html#refartifact128775"><b>textbox</b></a></p>
+<div class="sub">
+<a name="refrelation128903"></a>
+<table><tr><td><div class="element">Relation <b>game (&lt;unidirectional association&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - game : <a href="class128391.html#refclass128391"><b>Game</b></a></li><li>C++ : private: <a href="class128391.html#refclass128391"><b>Game</b></a> * game</li></ul><a name="refattribute133639"></a>
+<table><tr><td><div class="element">Attribute <b>textColor</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - textColor : SDL_Color</li><li>C++ : private: SDL_Color textColor</li></ul><a name="refattribute133767"></a>
+<table><tr><td><div class="element">Attribute <b>font</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - font : TTF_Font</li><li>C++ : private: TTF_Font * font</li></ul><a name="refattribute133895"></a>
+<table><tr><td><div class="element">Attribute <b>textRender</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - textRender : SDL_Surface</li><li>C++ : private: SDL_Surface * textRender</li></ul><a name="refattribute134023"></a>
+<table><tr><td><div class="element">Attribute <b>destination</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - destination : SDL_Surface</li><li>C++ : private: SDL_Surface * destination</li></ul><a name="refattribute134151"></a>
+<table><tr><td><div class="element">Attribute <b>ticksStart</b></div></td></tr></table>
+<p>Declaration :</p><ul><li>Uml : - ticksStart : int</li><li>C++ : private: int ticksStart</li></ul><a name="refrelation129031"></a>
+<table><tr><td><div class="element">Relation <b>point (&lt;directional composition&gt;)</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : - point : <a href="class128263.html#refclass128263"><b>Point</b></a></li><li>C++ : private: <a href="class128263.html#refclass128263"><b>Point</b></a> point</li></ul><a name="refattribute134279"></a>
+<table><tr><td><div class="element">Attribute <b>changed</b></div></td></tr></table>
+<p> holds whether we should re render the string or not<br /></p><p>Declaration :</p><ul><li>Uml : - changed : bool</li><li>C++ : private: bool changed</li></ul><a name="refrelation129159"></a>
+<table><tr><td><div class="element">Relation <b>state (&lt;directional composition&gt;)</b></div></td></tr></table><p> Holds whether it has focus or not<br /></p><p>Declaration :</p><ul><li>Uml : - state : <a href="class129287.html#refclass129287"><b>TextboxFocus</b></a></li><li>C++ : private: <a href="class129287.html#refclass129287"><b>TextboxFocus</b></a> state</li></ul><a name="refrelation129287"></a>
+<table><tr><td><div class="element">Relation <b>type (&lt;directional composition&gt;)</b></div></td></tr></table><p> Holds what type of box it is (So that we know where to send the string on enter)<br /></p><p>Declaration :</p><ul><li>Uml : - type : <a href="class129415.html#refclass129415"><b>TextboxType</b></a></li><li>C++ : private: <a href="class129415.html#refclass129415"><b>TextboxType</b></a> type</li></ul><a name="refattribute134407"></a>
+<table><tr><td><div class="element">Attribute <b>cursor</b></div></td></tr></table>
+<p> Where in the flash animation the cursor is<br /></p><p>Declaration :</p><ul><li>Uml : - cursor : int</li><li>C++ : private: int cursor</li></ul><a name="refattribute134535"></a>
+<table><tr><td><div class="element">Attribute <b>textString</b></div></td></tr></table>
+<p> The text String<br /></p><p>Declaration :</p><ul><li>Uml : - textString : std::string</li><li>C++ : private: std::string textString</li></ul><a name="refoperation136839"></a>
+<table><tr><td><div class="element">Operation <b>TextBox</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + TextBox(inout theFont : TTF_Font, in color : SDL_Color, in type : <a href="class129415.html#refclass129415"><b>TextboxType</b></a>, in placement : <a href="class128263.html#refclass128263"><b>Point</b></a>, inout theGame : <a href="class128391.html#refclass128391"><b>Game</b></a>) : </li><li>C++ : public: TextBox(TTF_Font * theFont, SDL_Color color, <a href="class129415.html#refclass129415"><b>TextboxType</b></a> type, <a href="class128263.html#refclass128263"><b>Point</b></a> placement, <a href="class128391.html#refclass128391"><b>Game</b></a> * theGame)</li></ul><a name="refoperation136967"></a>
+<table><tr><td><div class="element">Operation <b>~TextBox</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + ~TextBox() : </li><li>C++ : public: ~TextBox()</li></ul><a name="refoperation137095"></a>
+<table><tr><td><div class="element">Operation <b>draw</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + draw(inout destination : SDL_Surface) : bool</li><li>C++ : public: bool draw(SDL_Surface * destination)</li></ul><a name="refoperation137223"></a>
+<table><tr><td><div class="element">Operation <b>processKeyDown</b></div></td></tr></table><p>draws the textbox<br /></p><p>Declaration :</p><ul><li>Uml : + processKeyDown(inout event : SDL_Event) : bool</li><li>C++ : public: bool processKeyDown(SDL_Event * event)</li></ul><a name="refoperation137351"></a>
+<table><tr><td><div class="element">Operation <b>setState</b></div></td></tr></table><p>processes keyboard input<br /></p><p>Declaration :</p><ul><li>Uml : + setState(in state : <a href="class129287.html#refclass129287"><b>TextboxFocus</b></a>) : bool</li><li>C++ : public: bool setState(<a href="class129287.html#refclass129287"><b>TextboxFocus</b></a> state)</li></ul><a name="refoperation137479"></a>
+<table><tr><td><div class="element">Operation <b>getState</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + getState(in  : void) : <a href="class129287.html#refclass129287"><b>TextboxFocus</b></a></li><li>C++ : public: <a href="class129287.html#refclass129287"><b>TextboxFocus</b></a> getState(void )</li></ul><a name="refoperation137607"></a>
+<table><tr><td><div class="element">Operation <b>isMouseover</b></div></td></tr></table><p>Declaration :</p><ul><li>Uml : + isMouseover(in x : int, in y : int) : bool</li><li>C++ : public: bool isMouseover(int x, int y)</li></ul></div>
+<p>All public operations : <a href="class129031.html#refoperation137095"><b>draw</b></a> , <a href="class129031.html#refoperation137479"><b>getState</b></a> , <a href="class129031.html#refoperation137607"><b>isMouseover</b></a> , <a href="class129031.html#refoperation137223"><b>processKeyDown</b></a> , <a href="class129031.html#refoperation137351"><b>setState</b></a> </p>
+</body>
+</html>

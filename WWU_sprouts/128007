@@ -28,7 +28,7 @@ format 73
   
   cpp_h_dir "C:/Documents and Settings/Robin Zane/Desktop/CPTR143 proj/WWU_sprouts/include/"
   cpp_src_dir "C:/Documents and Settings/Robin Zane/Desktop/CPTR143 proj/WWU_sprouts/include/"
-  classview 135303 "include"
+  classview 128007 "include"
     //class diagram settings
     draw_all_relations default hide_attributes default hide_operations default hide_getset_operations default show_members_full_definition default show_members_visibility default show_members_stereotype default show_members_multiplicity default show_members_initialization default show_attribute_modifiers default member_max_width 0 show_parameter_dir default show_parameter_name default package_name_in_tab default class_drawing_mode default drawing_language default show_context_mode default auto_label_position default show_relation_modifiers default show_relation_visibility default show_infonote default shadow default show_stereotype_properties default
     //collaboration diagram settings
@@ -44,7 +44,7 @@ format 73
     //activity diagram settings
     package_name_in_tab default show_context default show_opaque_action_definition default auto_label_position default write_flow_label_horizontally default draw_all_relations default shadow default
     show_infonote default drawing_language default show_stereotype_properties default
-    class 161159 "Curve"
+    class 128007 "Curve"
       visibility package stereotype "enum"
       cpp_decl "${comment}enum ${name} {
 ${items}
@@ -57,8 +57,8 @@ ${items}
       explicit_switch_type ""
       
       comment "header for drawing the curves"
-      attribute 255111 "CURVE_START"
-	public type class_ref 161159 // Curve
+      attribute 128007 "CURVE_START"
+	public type class_ref 128007 // Curve
 	cpp_decl "  ${name}${value},${comment}"
 	java_decl ""
 	php_decl ""
@@ -66,8 +66,8 @@ ${items}
 	idl_decl ""
       end
 
-      attribute 255239 "CURVE_END"
-	public type class_ref 161159 // Curve
+      attribute 128135 "CURVE_END"
+	public type class_ref 128007 // Curve
 	cpp_decl "  ${name}${value},${comment}"
 	java_decl ""
 	php_decl ""
@@ -76,7 +76,7 @@ ${items}
       end
     end
 
-    class 161287 "Bezier"
+    class 128135 "Bezier"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};
@@ -89,16 +89,16 @@ ${inlines}
       explicit_switch_type ""
       
       comment "class declaratio"
-      classrelation 177159 // points (<directional composition>)
-	relation 177159 *-->
+      classrelation 128007 // points (<directional composition>)
+	relation 128007 *-->
 	  a role_name "points" multiplicity "[4]" private
 	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
 "
-	    classrelation_ref 177159 // points (<directional composition>)
-	  b parent class_ref 161415 // Point
+	    classrelation_ref 128007 // points (<directional composition>)
+	  b parent class_ref 128263 // Point
       end
 
-      operation 166663 "Bezier"
+      operation 128007 "Bezier"
 	public explicit_return_type ""
 	nparams 8
 	  param in name "" explicit_type "int"
@@ -120,10 +120,10 @@ ${inlines}
 	
       end
 
-      operation 166791 "Bezier"
+      operation 128135 "Bezier"
 	public explicit_return_type ""
 	nparams 1
-	  param in name "coord" type class_ref 161415 // Point
+	  param in name "coord" type class_ref 128263 // Point
 	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}[4]${v0}${)}${volatile}${throw};
 "
 	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}[4]${)}${throw}{
@@ -136,10 +136,10 @@ ${inlines}
 	comment "constructor, if beginning coordinates are set."
       end
 
-      operation 166919 "Bezier"
+      operation 128263 "Bezier"
 	public explicit_return_type ""
 	nparams 1
-	  param in name "start" type class_ref 161415 // Point
+	  param in name "start" type class_ref 128263 // Point
 	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}${)}${volatile}${throw};
 "
 	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}${)}${throw}{
@@ -152,10 +152,10 @@ ${inlines}
 	comment "constructor"
       end
 
-      operation 167047 "Bezier"
+      operation 128391 "Bezier"
 	public explicit_return_type ""
 	nparams 1
-	  param inout name "" type class_ref 161287 // Bezier
+	  param inout name "" type class_ref 128135 // Bezier
 	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}${)}${volatile}${throw};
 "
 	cpp_def "${comment}${inline}${class}::${name}${(}${t0} * ${p0}${)}${throw}{
@@ -167,7 +167,7 @@ ${inlines}
 	
       end
 
-      operation 167175 "Bezier"
+      operation 128519 "Bezier"
 	public explicit_return_type ""
 	nparams 1
 	  param in name "" explicit_type "void"
@@ -182,13 +182,13 @@ ${inlines}
 	
       end
 
-      operation 167303 "Bezier"
+      operation 128647 "Bezier"
 	public explicit_return_type ""
 	nparams 4
-	  param in name "" type class_ref 161415 // Point
-	  param in name "" type class_ref 161415 // Point
-	  param in name "" type class_ref 161415 // Point
-	  param in name "" type class_ref 161415 // Point
+	  param in name "" type class_ref 128263 // Point
+	  param in name "" type class_ref 128263 // Point
+	  param in name "" type class_ref 128263 // Point
+	  param in name "" type class_ref 128263 // Point
 	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}${)}${volatile}${throw};
 "
 	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}${)}${throw}{
@@ -201,12 +201,12 @@ ${inlines}
 	comment "constructor, if no beginning coordinates are set."
       end
 
-      operation 167431 "Bezier"
+      operation 128775 "Bezier"
 	public explicit_return_type ""
 	nparams 3
 	  param in name "from" explicit_type "int"
 	  param in name "to" explicit_type "int"
-	  param inout name "game" type class_ref 161543 // Game
+	  param inout name "game" type class_ref 128391 // Game
 	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} * ${p2}${v2}${)}${volatile}${throw};
 "
 	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} * ${p2}${)}${throw}{
@@ -218,8 +218,8 @@ ${inlines}
 	
       end
 
-      operation 167559 "getcoord"
-	public return_type class_ref 161415 // Point
+      operation 128903 "getcoord"
+	public return_type class_ref 128263 // Point
 	nparams 1
 	  param in name "point" explicit_type "int"
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
@@ -233,8 +233,8 @@ ${inlines}
 	
       end
 
-      operation 167687 "getcoord"
-	public return_type class_ref 161415 // Point
+      operation 129031 "getcoord"
+	public return_type class_ref 128263 // Point
 	nparams 1
 	  param in name "" explicit_type "void"
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} * ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
@@ -249,7 +249,7 @@ ${inlines}
 	comment "gets the coordinates of the selected point"
       end
 
-      operation 167815 "setCurve"
+      operation 129159 "setCurve"
 	public explicit_return_type "void"
 	nparams 2
 	  param in name "x" explicit_type "int"
@@ -266,11 +266,11 @@ ${inlines}
 	comment "returns all coordinates"
       end
 
-      operation 167943 "setcoord"
+      operation 129287 "setcoord"
 	public explicit_return_type "bool"
 	nparams 2
 	  param in name "point" explicit_type "int"
-	  param in name "coord" type class_ref 161415 // Point
+	  param in name "coord" type class_ref 128263 // Point
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}${)}${const}${volatile}${throw}${abstract};
 "
 	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}${)}${const}${volatile}${throw}${staticnl}{
@@ -283,7 +283,7 @@ ${inlines}
 	comment " Sets the curve up with the second end point at (x,y)"
       end
 
-      operation 168071 "setcoord"
+      operation 129415 "setcoord"
 	public explicit_return_type "bool"
 	nparams 3
 	  param in name "point" explicit_type "int"
@@ -301,10 +301,10 @@ ${inlines}
 	comment "sets the coordinates of the selected point to the sent coordinates"
       end
 
-      operation 168199 "setcoord"
+      operation 129543 "setcoord"
 	public explicit_return_type "bool"
 	nparams 1
-	  param in name "coords" type class_ref 161415 // Point
+	  param in name "coords" type class_ref 128263 // Point
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}[4]${v0}${)}${const}${volatile}${throw}${abstract};
 "
 	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}[4]${)}${const}${volatile}${throw}${staticnl}{
@@ -317,7 +317,7 @@ ${inlines}
 	comment "sets the coordinates of the selected point to sent x and y"
       end
 
-      operation 168327 "adjustCoord"
+      operation 129671 "adjustCoord"
 	public explicit_return_type "bool"
 	nparams 3
 	  param in name "point" explicit_type "int"
@@ -335,7 +335,7 @@ ${inlines}
 	comment "sets the coordinates of the selected point by array"
       end
 
-      operation 168455 "draw"
+      operation 129799 "draw"
 	public explicit_return_type "void"
 	nparams 1
 	  param inout name "" explicit_type "SDL_Surface"
@@ -351,7 +351,7 @@ ${inlines}
 	comment "sets the coordinates of the selected point to sent x and y"
       end
 
-      operation 168583 "~Bezier"
+      operation 129927 "~Bezier"
 	public explicit_return_type ""
 	nparams 0
 	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${throw};
@@ -367,7 +367,7 @@ ${inlines}
       end
     end
 
-    class 161415 "Point"
+    class 128263 "Point"
       visibility package stereotype "struct"
       cpp_decl "${comment}${template}struct ${name}${inherit} {
 ${members}};
@@ -379,7 +379,7 @@ ${inlines}
       idl_decl ""
       explicit_switch_type ""
       
-      attribute 256007 "x"
+      attribute 128903 "x"
 	public explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -389,7 +389,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 256135 "y"
+      attribute 129031 "y"
 	public explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -400,7 +400,7 @@ ${inlines}
       end
     end
 
-    class 161543 "Game"
+    class 128391 "Game"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};
@@ -412,7 +412,7 @@ ${inlines}
       idl_decl ""
       explicit_switch_type ""
       
-      attribute 256263 "connectable"
+      attribute 129159 "connectable"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * * ${name}${value};
 "
@@ -423,7 +423,7 @@ ${inlines}
 	comment "2D array of ints."
       end
 
-      attribute 256391 "mesier"
+      attribute 129287 "mesier"
 	private explicit_type "bool"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -434,7 +434,7 @@ ${inlines}
 	comment "Mesier mode?"
       end
 
-      attribute 256519 "turn"
+      attribute 129415 "turn"
 	private explicit_type "bool"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -445,16 +445,16 @@ ${inlines}
 	comment "Who's turn is it (false = left)."
       end
 
-      classrelation 177543 // sproutClips (<unidirectional association>)
-	relation 177543 --->
+      classrelation 128391 // sproutClips (<unidirectional association>)
+	relation 128391 --->
 	  a role_name "sproutClips" private
 	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
-	    classrelation_ref 177543 // sproutClips (<unidirectional association>)
-	  b parent class_ref 161927 // SproutClips
+	    classrelation_ref 128391 // sproutClips (<unidirectional association>)
+	  b parent class_ref 128775 // SproutClips
       end
 
-      attribute 256647 "gameWinState"
+      attribute 129543 "gameWinState"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -464,7 +464,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 256775 "nodeNumbers"
+      attribute 129671 "nodeNumbers"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -474,7 +474,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 256903 "count"
+      attribute 129799 "count"
 	public explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -485,8 +485,8 @@ ${inlines}
 	comment "Number of initial nodes in the game."
       end
 
-      attribute 257031 "connection"
-	public type class_ref 161287 // Bezier
+      attribute 129927 "connection"
+	public type class_ref 128135 // Bezier
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * * * ${name}${value};
 "
 	java_decl ""
@@ -496,8 +496,8 @@ ${inlines}
 	comment "2D array of pointers to Beziers."
       end
 
-      attribute 257159 "nodes"
-	public type class_ref 162055 // Sprout
+      attribute 130055 "nodes"
+	public type class_ref 128903 // Sprout
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * * ${name}${value};
 "
 	java_decl ""
@@ -507,22 +507,22 @@ ${inlines}
 	comment "Array of Node pointers."
       end
 
-      classrelation 177671 // text (<unidirectional association>)
-	relation 177671 --->
+      classrelation 128519 // text (<unidirectional association>)
+	relation 128519 --->
 	  a role_name "text" public
 	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
-	    classrelation_ref 177671 // text (<unidirectional association>)
-	  b parent class_ref 162183 // TextBox
+	    classrelation_ref 128519 // text (<unidirectional association>)
+	  b parent class_ref 129031 // TextBox
       end
 
-      operation 169607 "Game"
+      operation 130951 "Game"
 	public explicit_return_type ""
 	nparams 4
 	  param in name "" explicit_type "bool"
 	  param in name "" explicit_type "bool"
 	  param in name "" explicit_type "int"
-	  param inout name "" type class_ref 161927 // SproutClips
+	  param inout name "" type class_ref 128775 // SproutClips
 	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} * ${p3}${v3}${)}${volatile}${throw};
 "
 	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} * ${p3}${)}${throw}{
@@ -534,10 +534,10 @@ ${inlines}
 	
       end
 
-      operation 169735 "Game"
+      operation 131079 "Game"
 	public explicit_return_type ""
 	nparams 1
-	  param inout name "" type class_ref 161543 // Game
+	  param inout name "" type class_ref 128391 // Game
 	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}${)}${volatile}${throw};
 "
 	cpp_def "${comment}${inline}${class}::${name}${(}${t0} * ${p0}${)}${throw}{
@@ -550,7 +550,7 @@ ${inlines}
 	comment "Main constructor, makes a game with turn, mesier, and number of initial nodes."
       end
 
-      operation 169863 "freeConnections"
+      operation 131207 "freeConnections"
 	public explicit_return_type "int"
 	nparams 1
 	  param in name "" explicit_type "int"
@@ -566,7 +566,7 @@ ${inlines}
 	comment "Constructor for copying games."
       end
 
-      operation 169991 "parsemove"
+      operation 131335 "parsemove"
 	public explicit_return_type "int"
 	nparams 7
 	  param inout name "move" explicit_type "char"
@@ -588,7 +588,7 @@ ${inlines}
 	comment "Returns the number of connections a node has available to it."
       end
 
-      operation 170119 "setConnected"
+      operation 131463 "setConnected"
 	public explicit_return_type "bool"
 	nparams 2
 	  param in name "toConnect" explicit_type "std::list<int>"
@@ -605,7 +605,7 @@ ${inlines}
 	comment "Parses a move."
       end
 
-      operation 170247 "findConnected"
+      operation 131591 "findConnected"
 	public explicit_return_type "int"
 	nparams 2
 	  param in name "from" explicit_type "int"
@@ -621,7 +621,7 @@ ${inlines}
 	
       end
 
-      operation 170375 "notEnregioned"
+      operation 131719 "notEnregioned"
 	public explicit_return_type "bool"
 	nparams 2
 	  param in name "node" explicit_type "int"
@@ -637,7 +637,7 @@ ${inlines}
 	
       end
 
-      operation 170503 "findBorders"
+      operation 131847 "findBorders"
 	public explicit_return_type "std::list<int>"
 	nparams 4
 	  param in name "from" explicit_type "int"
@@ -655,7 +655,7 @@ ${inlines}
 	
       end
 
-      operation 170631 "applyMove"
+      operation 131975 "applyMove"
 	public explicit_return_type "bool"
 	nparams 6
 	  param in name "from" explicit_type "int"
@@ -675,7 +675,7 @@ ${inlines}
 	
       end
 
-      operation 170759 "output_console"
+      operation 132103 "output_console"
 	public explicit_return_type "void"
 	nparams 1
 	  param in name "" explicit_type "void"
@@ -690,7 +690,7 @@ ${inlines}
 	
       end
 
-      operation 170887 "output_file"
+      operation 132231 "output_file"
 	public explicit_return_type "void"
 	nparams 2
 	  param inout name "" explicit_type "FILE"
@@ -706,7 +706,7 @@ ${inlines}
 	
       end
 
-      operation 171015 "move"
+      operation 132359 "move"
 	public explicit_return_type "void"
 	nparams 1
 	  param inout name "" explicit_type "char"
@@ -721,7 +721,7 @@ ${inlines}
 	
       end
 
-      operation 171143 "get_connectable"
+      operation 132487 "get_connectable"
 	public explicit_return_type "int"
 	nparams 2
 	  param in name "from" explicit_type "int"
@@ -737,7 +737,7 @@ ${inlines}
 	
       end
 
-      operation 171271 "get_connected"
+      operation 132615 "get_connected"
 	public explicit_return_type "int"
 	nparams 2
 	  param in name "from" explicit_type "int"
@@ -753,7 +753,7 @@ ${inlines}
 	
       end
 
-      operation 171399 "parseerror"
+      operation 132743 "parseerror"
 	public explicit_return_type "void"
 	nparams 1
 	  param in name "error" explicit_type "int"
@@ -768,7 +768,7 @@ ${inlines}
 	
       end
 
-      operation 171527 "checkWin"
+      operation 132871 "checkWin"
 	public explicit_return_type "int"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -782,7 +782,7 @@ ${inlines}
 	
       end
 
-      operation 171655 "possibleMoves"
+      operation 132999 "possibleMoves"
 	public explicit_return_type "std::list<std::string>"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -796,7 +796,7 @@ ${inlines}
 	
       end
 
-      operation 171783 "checkMoveState"
+      operation 133127 "checkMoveState"
 	public explicit_return_type "int"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -810,7 +810,7 @@ ${inlines}
 	
       end
 
-      operation 171911 "numberNodes"
+      operation 133255 "numberNodes"
 	public explicit_return_type "int"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -824,7 +824,7 @@ ${inlines}
 	
       end
 
-      operation 172039 "playerTurn"
+      operation 133383 "playerTurn"
 	public explicit_return_type "int"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -838,7 +838,7 @@ ${inlines}
 	
       end
 
-      operation 172167 "checkRegion"
+      operation 133511 "checkRegion"
 	public explicit_return_type "bool"
 	nparams 3
 	  param in name "created" explicit_type "int"
@@ -855,7 +855,7 @@ ${inlines}
 	
       end
 
-      operation 172295 "~Game"
+      operation 133639 "~Game"
 	public explicit_return_type ""
 	nparams 1
 	  param in name "" explicit_type "void"
@@ -871,7 +871,7 @@ ${inlines}
       end
     end
 
-    class 161671 "ButtonState"
+    class 128519 "ButtonState"
       visibility package stereotype "enum"
       cpp_decl "${comment}enum ${name} {
 ${items}
@@ -885,8 +885,8 @@ ${items}
       
       comment " Base Class for buttons
  Should include all basic button functionality which can be easliy derived from for specialty buttons"
-      attribute 255367 "B_STATE_NORMAL"
-	public type class_ref 161671 // ButtonState
+      attribute 128263 "B_STATE_NORMAL"
+	public type class_ref 128519 // ButtonState
 	cpp_decl "  ${name}${value},${comment}"
 	java_decl ""
 	php_decl ""
@@ -894,8 +894,8 @@ ${items}
 	idl_decl ""
       end
 
-      attribute 255495 "B_STATE_HOVER"
-	public type class_ref 161671 // ButtonState
+      attribute 128391 "B_STATE_HOVER"
+	public type class_ref 128519 // ButtonState
 	cpp_decl "  ${name}${value},${comment}"
 	java_decl ""
 	php_decl ""
@@ -903,8 +903,8 @@ ${items}
 	idl_decl ""
       end
 
-      attribute 255623 "B_STATE_PRESSED"
-	public type class_ref 161671 // ButtonState
+      attribute 128519 "B_STATE_PRESSED"
+	public type class_ref 128519 // ButtonState
 	cpp_decl "  ${name}${value},${comment}"
 	java_decl ""
 	php_decl ""
@@ -913,7 +913,7 @@ ${items}
       end
     end
 
-    class 161799 "Button"
+    class 128647 "Button"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};
@@ -925,7 +925,7 @@ ${inlines}
       idl_decl ""
       explicit_switch_type ""
       
-      attribute 255751 "text"
+      attribute 128647 "text"
 	private explicit_type "SDL_Surface"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
@@ -936,7 +936,7 @@ ${inlines}
 	comment " Where the image is that will need to be clipped"
       end
 
-      attribute 255879 "font"
+      attribute 128775 "font"
 	private explicit_type "TTF_Font"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
@@ -946,30 +946,30 @@ ${inlines}
 	idl_decl ""
       end
 
-      classrelation 177287 // point (<directional composition>)
-	relation 177287 *-->
+      classrelation 128135 // point (<directional composition>)
+	relation 128135 *-->
 	  a role_name "point" private
 	    comment " (x,y) location and (w,h) of button"
 	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
-	    classrelation_ref 177287 // point (<directional composition>)
-	  b parent class_ref 161415 // Point
+	    classrelation_ref 128135 // point (<directional composition>)
+	  b parent class_ref 128263 // Point
       end
 
-      classrelation 177415 // state (<directional composition>)
-	relation 177415 *-->
+      classrelation 128263 // state (<directional composition>)
+	relation 128263 *-->
 	  a role_name "state" private
 	    comment " The current state of the button"
 	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
-	    classrelation_ref 177415 // state (<directional composition>)
-	  b parent class_ref 161671 // ButtonState
+	    classrelation_ref 128263 // state (<directional composition>)
+	  b parent class_ref 128519 // ButtonState
       end
 
-      operation 168711 "Button"
+      operation 130055 "Button"
 	public explicit_return_type ""
 	nparams 3
-	  param in name "placement" type class_ref 161415 // Point
+	  param in name "placement" type class_ref 128263 // Point
 	  param in name "textString" explicit_type "std::string"
 	  param inout name "theFont" explicit_type "TTF_Font"
 	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} * ${p2}${v2}${)}${volatile}${throw};
@@ -983,7 +983,7 @@ ${inlines}
 	
       end
 
-      operation 168839 "~Button"
+      operation 130183 "~Button"
 	public explicit_return_type ""
 	nparams 1
 	  param in name "" explicit_type "void"
@@ -998,10 +998,10 @@ ${inlines}
 	
       end
 
-      operation 168967 "setState"
+      operation 130311 "setState"
 	public explicit_return_type "bool"
 	nparams 1
-	  param in name "newState" type class_ref 161671 // ButtonState
+	  param in name "newState" type class_ref 128519 // ButtonState
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
 	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
@@ -1013,8 +1013,8 @@ ${inlines}
 	
       end
 
-      operation 169095 "getState"
-	public return_type class_ref 161671 // ButtonState
+      operation 130439 "getState"
+	public return_type class_ref 128519 // ButtonState
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
 "
@@ -1028,7 +1028,7 @@ ${inlines}
 	comment " update the state of the button"
       end
 
-      operation 169223 "isMouseover"
+      operation 130567 "isMouseover"
 	public explicit_return_type "bool"
 	nparams 2
 	  param in name "x" explicit_type "int"
@@ -1045,7 +1045,7 @@ ${inlines}
 	comment " Returns the state of the button"
       end
 
-      operation 169351 "draw"
+      operation 130695 "draw"
 	public explicit_return_type "bool"
 	nparams 1
 	  param inout name "destination" explicit_type "SDL_Surface"
@@ -1061,7 +1061,7 @@ ${inlines}
 	comment " Tells if the given xy buttons are over the button"
       end
 
-      operation 169479 "moveTo"
+      operation 130823 "moveTo"
 	public explicit_return_type "bool"
 	nparams 2
 	  param in name "x" explicit_type "int"
@@ -1080,7 +1080,7 @@ ${inlines}
       end
     end
 
-    class 161927 "SproutClips"
+    class 128775 "SproutClips"
       visibility package stereotype "struct"
       cpp_decl "${comment}${template}struct ${name}${inherit} {
 ${members}};
@@ -1092,7 +1092,7 @@ ${inlines}
       idl_decl ""
       explicit_switch_type ""
       
-      attribute 258183 "clipsGreen"
+      attribute 131079 "clipsGreen"
 	public explicit_type "SDL_Rect"
 	multiplicity "[ 14 ]"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
@@ -1103,7 +1103,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 258311 "clipsYellow"
+      attribute 131207 "clipsYellow"
 	public explicit_type "SDL_Rect"
 	multiplicity "[ 14 ]"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
@@ -1114,7 +1114,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 258439 "clipsRed"
+      attribute 131335 "clipsRed"
 	public explicit_type "SDL_Rect"
 	multiplicity "[ 14 ]"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
@@ -1125,7 +1125,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 258567 "clipBlack"
+      attribute 131463 "clipBlack"
 	public explicit_type "SDL_Rect"
 	multiplicity "[ 1 ]"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${multiplicity}${value};
@@ -1136,7 +1136,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 258695 "anime"
+      attribute 131591 "anime"
 	public explicit_type "SDL_Surface"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
@@ -1146,7 +1146,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 258823 "click"
+      attribute 131719 "click"
 	public explicit_type "SDL_Surface"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
@@ -1156,7 +1156,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 258951 "font"
+      attribute 131847 "font"
 	public explicit_type "TTF_Font"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
@@ -1167,7 +1167,7 @@ ${inlines}
       end
     end
 
-    class 162055 "Sprout"
+    class 128903 "Sprout"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};
@@ -1179,7 +1179,7 @@ ${inlines}
       idl_decl ""
       explicit_switch_type ""
       
-      attribute 259079 "frame"
+      attribute 131975 "frame"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1190,7 +1190,7 @@ ${inlines}
 	comment "Its current frame"
       end
 
-      attribute 259207 "ticks"
+      attribute 132103 "ticks"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1200,7 +1200,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 259335 "color"
+      attribute 132231 "color"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1210,7 +1210,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 259463 "status"
+      attribute 132359 "status"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1221,17 +1221,17 @@ ${inlines}
 	comment "Its animation status"
       end
 
-      classrelation 177799 // clips (<unidirectional association>)
-	relation 177799 --->
+      classrelation 128647 // clips (<unidirectional association>)
+	relation 128647 --->
 	  a role_name "clips" private
 	    comment "The clips/image for the sprout"
 	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
-	    classrelation_ref 177799 // clips (<unidirectional association>)
-	  b parent class_ref 161927 // SproutClips
+	    classrelation_ref 128647 // clips (<unidirectional association>)
+	  b parent class_ref 128775 // SproutClips
       end
 
-      attribute 259591 "sproutNumber"
+      attribute 132487 "sproutNumber"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1242,7 +1242,7 @@ ${inlines}
 	comment "The identifier of the sprout"
       end
 
-      attribute 259719 "number"
+      attribute 132615 "number"
 	private explicit_type "SDL_Surface"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
@@ -1253,7 +1253,7 @@ ${inlines}
 	comment " The Surface that will hold the rendered Number"
       end
 
-      operation 172935 "renderNumber"
+      operation 134279 "renderNumber"
 	private explicit_return_type "void"
 	nparams 1
 	  param in name "" explicit_type "void"
@@ -1268,14 +1268,14 @@ ${inlines}
 	
       end
 
-      operation 173063 "available"
+      operation 134407 "available"
 	private explicit_return_type "bool"
 	nparams 5
 	  param in name "x" explicit_type "int"
 	  param in name "y" explicit_type "int"
 	  param in name "from" explicit_type "int"
 	  param in name "to" explicit_type "int"
-	  param inout name "sprouts" type class_ref 162055 // Sprout
+	  param inout name "sprouts" type class_ref 128903 // Sprout
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}, ${t4} * * ${p4}${v4}${)}${const}${volatile}${throw}${abstract};
 "
 	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} * * ${p4}${)}${const}${throw}${staticnl}{
@@ -1288,7 +1288,7 @@ ${inlines}
 	comment " Renders the text for the number of the node"
       end
 
-      operation 173191 "willOverlap"
+      operation 134535 "willOverlap"
 	private explicit_return_type "bool"
 	nparams 2
 	  param in name "x" explicit_type "int"
@@ -1305,16 +1305,16 @@ ${inlines}
 	comment " Checks to see if the given (x,y) is not over another sprout"
       end
 
-      classrelation 177927 // parent (<unidirectional association>)
-	relation 177927 --->
+      classrelation 128775 // parent (<unidirectional association>)
+	relation 128775 --->
 	  a role_name "parent" private
 	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
-	    classrelation_ref 177927 // parent (<unidirectional association>)
-	  b parent class_ref 161543 // Game
+	    classrelation_ref 128775 // parent (<unidirectional association>)
+	  b parent class_ref 128391 // Game
       end
 
-      attribute 259847 "node"
+      attribute 132743 "node"
 	public explicit_type "SDL_Rect"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1324,12 +1324,12 @@ ${inlines}
 	idl_decl ""
       end
 
-      operation 173319 "Sprout"
+      operation 134663 "Sprout"
 	public explicit_return_type ""
 	nparams 3
-	  param inout name "theClips" type class_ref 161927 // SproutClips
-	  param inout name "sprouts" type class_ref 162055 // Sprout
-	  param inout name "game" type class_ref 161543 // Game
+	  param inout name "theClips" type class_ref 128775 // SproutClips
+	  param inout name "sprouts" type class_ref 128903 // Sprout
+	  param inout name "game" type class_ref 128391 // Game
 	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}, ${t1} * * ${p1}${v1}, ${t2} * ${p2}${v2}${)}${volatile}${throw};
 "
 	cpp_def "${comment}${inline}${class}::${name}${(}${t0} * ${p0}, ${t1} * * ${p1}, ${t2} * ${p2}${)}${throw}{
@@ -1342,13 +1342,13 @@ ${inlines}
 	comment "Initializes the variables"
       end
 
-      operation 173447 "Sprout"
+      operation 134791 "Sprout"
 	public explicit_return_type ""
 	nparams 4
 	  param in name "num" explicit_type "int"
 	  param in name "x" explicit_type "int"
 	  param in name "y" explicit_type "int"
-	  param inout name "theClips" type class_ref 161927 // SproutClips
+	  param inout name "theClips" type class_ref 128775 // SproutClips
 	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} * ${p3}${v3}${)}${volatile}${throw};
 "
 	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} * ${p3}${)}${throw}{
@@ -1361,15 +1361,15 @@ ${inlines}
 	comment " Generic everything is randomized"
       end
 
-      operation 173575 "Sprout"
+      operation 134919 "Sprout"
 	public explicit_return_type ""
 	nparams 6
 	  param in name "num" explicit_type "int"
 	  param in name "from" explicit_type "int"
 	  param in name "to" explicit_type "int"
-	  param inout name "theClips" type class_ref 161927 // SproutClips
-	  param inout name "sprouts" type class_ref 162055 // Sprout
-	  param inout name "game" type class_ref 161543 // Game
+	  param inout name "theClips" type class_ref 128775 // SproutClips
+	  param inout name "sprouts" type class_ref 128903 // Sprout
+	  param inout name "game" type class_ref 128391 // Game
 	cpp_decl "    ${comment}${inline}${name}${(}${t0} ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} * ${p3}${v3}, ${t4} * * ${p4}${v4}, ${t5} * ${p5}${v5}${)}${volatile}${throw};
 "
 	cpp_def "${comment}${inline}${class}::${name}${(}${t0} ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} * ${p3}, ${t4} * * ${p4}, ${t5} * ${p5}${)}${throw}{
@@ -1382,10 +1382,10 @@ ${inlines}
 	comment " Set the (x,y) to the given and set up as a 2 connection sprout"
       end
 
-      operation 173703 "Sprout"
+      operation 135047 "Sprout"
 	public explicit_return_type ""
 	nparams 1
-	  param inout name "current" type class_ref 162055 // Sprout
+	  param inout name "current" type class_ref 128903 // Sprout
 	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}${)}${volatile}${throw};
 "
 	cpp_def "${comment}${inline}${class}::${name}${(}${t0} * ${p0}${)}${throw}{
@@ -1398,7 +1398,7 @@ ${inlines}
 	comment " Sets the number and randoms the rest"
       end
 
-      operation 173831 "~Sprout"
+      operation 135175 "~Sprout"
 	public explicit_return_type ""
 	nparams 0
 	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${throw};
@@ -1413,7 +1413,7 @@ ${inlines}
 	comment " duplicate the currnt Sprout to the new sprout"
       end
 
-      operation 173959 "getState"
+      operation 135303 "getState"
 	public explicit_return_type "int"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -1431,7 +1431,7 @@ Sprout(int num, int firstNode, int secondNode, SproutClips* theClips);    // Set
  State functions"
       end
 
-      operation 174087 "setState"
+      operation 135431 "setState"
 	public explicit_return_type "void"
 	nparams 1
 	  param in name "" explicit_type "int"
@@ -1447,8 +1447,8 @@ Sprout(int num, int firstNode, int secondNode, SproutClips* theClips);    // Set
 	comment " Returns the state"
       end
 
-      operation 174215 "getPoint"
-	public return_type class_ref 161415 // Point
+      operation 135559 "getPoint"
+	public return_type class_ref 128263 // Point
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
 "
@@ -1462,7 +1462,7 @@ Sprout(int num, int firstNode, int secondNode, SproutClips* theClips);    // Set
 	comment "sets the status"
       end
 
-      operation 174343 "setPoint"
+      operation 135687 "setPoint"
 	public explicit_return_type "void"
 	nparams 2
 	  param in name "x" explicit_type "int"
@@ -1479,7 +1479,7 @@ Sprout(int num, int firstNode, int secondNode, SproutClips* theClips);    // Set
 	comment " Returns the location point"
       end
 
-      operation 174471 "isMouseOver"
+      operation 135815 "isMouseOver"
 	public explicit_return_type "bool"
 	nparams 2
 	  param in name "x" explicit_type "int"
@@ -1497,7 +1497,7 @@ Sprout(int num, int firstNode, int secondNode, SproutClips* theClips);    // Set
 Handles input"
       end
 
-      operation 174599 "hover"
+      operation 135943 "hover"
 	public explicit_return_type "void"
 	nparams 1
 	  param inout name "destination" explicit_type "SDL_Surface"
@@ -1513,7 +1513,7 @@ Handles input"
 	comment " Disply Functions"
       end
 
-      operation 174727 "click"
+      operation 136071 "click"
 	public explicit_return_type "void"
 	nparams 1
 	  param inout name "destination" explicit_type "SDL_Surface"
@@ -1529,7 +1529,7 @@ Handles input"
 	comment "Shows the hover"
       end
 
-      operation 174855 "show"
+      operation 136199 "show"
 	public explicit_return_type "void"
 	nparams 1
 	  param inout name "destination" explicit_type "SDL_Surface"
@@ -1545,7 +1545,7 @@ Handles input"
 	comment "Shows the click"
       end
 
-      operation 174983 "draw"
+      operation 136327 "draw"
 	public explicit_return_type "void"
 	nparams 1
 	  param inout name "destination" explicit_type "SDL_Surface"
@@ -1561,7 +1561,7 @@ Handles input"
 	comment "Shows the node"
       end
 
-      operation 175111 "addConnection"
+      operation 136455 "addConnection"
 	public explicit_return_type "void"
 	nparams 1
 	  param in name "" explicit_type "void"
@@ -1577,7 +1577,7 @@ Handles input"
 	comment " Calls the correct drawing function based on the stat"
       end
 
-      operation 175239 "removeConnection"
+      operation 136583 "removeConnection"
 	public explicit_return_type "void"
 	nparams 1
 	  param in name "" explicit_type "void"
@@ -1593,7 +1593,7 @@ Handles input"
 	comment " Changes the color based on the number of connections"
       end
 
-      operation 175367 "getConnections"
+      operation 136711 "getConnections"
 	public explicit_return_type "int"
 	nparams 1
 	  param in name "" explicit_type "void"
@@ -1610,7 +1610,7 @@ Handles input"
       end
     end
 
-    class 162183 "TextBox"
+    class 129031 "TextBox"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};
@@ -1622,16 +1622,16 @@ ${inlines}
       idl_decl ""
       explicit_switch_type ""
       
-      classrelation 178055 // game (<unidirectional association>)
-	relation 178055 --->
+      classrelation 128903 // game (<unidirectional association>)
+	relation 128903 --->
 	  a role_name "game" private
 	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
-	    classrelation_ref 178055 // game (<unidirectional association>)
-	  b parent class_ref 161543 // Game
+	    classrelation_ref 128903 // game (<unidirectional association>)
+	  b parent class_ref 128391 // Game
       end
 
-      attribute 260487 "textColor"
+      attribute 133383 "textColor"
 	private explicit_type "SDL_Color"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1641,7 +1641,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 260615 "font"
+      attribute 133511 "font"
 	private explicit_type "TTF_Font"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
@@ -1651,7 +1651,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 260743 "textRender"
+      attribute 133639 "textRender"
 	private explicit_type "SDL_Surface"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
@@ -1661,7 +1661,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 260871 "destination"
+      attribute 133767 "destination"
 	private explicit_type "SDL_Surface"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${value};
 "
@@ -1671,7 +1671,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 260999 "ticksStart"
+      attribute 133895 "ticksStart"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1681,16 +1681,16 @@ ${inlines}
 	idl_decl ""
       end
 
-      classrelation 178183 // point (<directional composition>)
-	relation 178183 *-->
+      classrelation 129031 // point (<directional composition>)
+	relation 129031 *-->
 	  a role_name "point" private
 	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
-	    classrelation_ref 178183 // point (<directional composition>)
-	  b parent class_ref 161415 // Point
+	    classrelation_ref 129031 // point (<directional composition>)
+	  b parent class_ref 128263 // Point
       end
 
-      attribute 261127 "changed"
+      attribute 134023 "changed"
 	private explicit_type "bool"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1701,27 +1701,27 @@ ${inlines}
 	comment " holds whether we should re render the string or not"
       end
 
-      classrelation 178311 // state (<directional composition>)
-	relation 178311 *-->
+      classrelation 129159 // state (<directional composition>)
+	relation 129159 *-->
 	  a role_name "state" private
 	    comment " Holds whether it has focus or not"
 	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
-	    classrelation_ref 178311 // state (<directional composition>)
-	  b parent class_ref 162439 // TextboxFocus
+	    classrelation_ref 129159 // state (<directional composition>)
+	  b parent class_ref 129287 // TextboxFocus
       end
 
-      classrelation 178439 // type (<directional composition>)
-	relation 178439 *-->
+      classrelation 129287 // type (<directional composition>)
+	relation 129287 *-->
 	  a role_name "type" private
 	    comment " Holds what type of box it is (So that we know where to send the string on enter)"
 	    cpp default "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
-	    classrelation_ref 178439 // type (<directional composition>)
-	  b parent class_ref 162567 // TextboxType
+	    classrelation_ref 129287 // type (<directional composition>)
+	  b parent class_ref 129415 // TextboxType
       end
 
-      attribute 261255 "cursor"
+      attribute 134151 "cursor"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1732,7 +1732,7 @@ ${inlines}
 	comment " Where in the flash animation the cursor is"
       end
 
-      attribute 261383 "textString"
+      attribute 134279 "textString"
 	private explicit_type "std::string"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1743,14 +1743,14 @@ ${inlines}
 	comment " The text String"
       end
 
-      operation 175495 "TextBox"
+      operation 136839 "TextBox"
 	public explicit_return_type ""
 	nparams 5
 	  param inout name "theFont" explicit_type "TTF_Font"
 	  param in name "color" explicit_type "SDL_Color"
-	  param in name "type" type class_ref 162567 // TextboxType
-	  param in name "placement" type class_ref 161415 // Point
-	  param inout name "theGame" type class_ref 161543 // Game
+	  param in name "type" type class_ref 129415 // TextboxType
+	  param in name "placement" type class_ref 128263 // Point
+	  param inout name "theGame" type class_ref 128391 // Game
 	cpp_decl "    ${comment}${inline}${name}${(}${t0} * ${p0}${v0}, ${t1} ${p1}${v1}, ${t2} ${p2}${v2}, ${t3} ${p3}${v3}, ${t4} * ${p4}${v4}${)}${volatile}${throw};
 "
 	cpp_def "${comment}${inline}${class}::${name}${(}${t0} * ${p0}, ${t1} ${p1}, ${t2} ${p2}, ${t3} ${p3}, ${t4} * ${p4}${)}${throw}{
@@ -1762,7 +1762,7 @@ ${inlines}
 	
       end
 
-      operation 175623 "~TextBox"
+      operation 136967 "~TextBox"
 	public explicit_return_type ""
 	nparams 0
 	cpp_decl "    ${comment}${inline}${virtual}${name}${(}${)}${volatile}${throw};
@@ -1776,7 +1776,7 @@ ${inlines}
 	
       end
 
-      operation 175751 "draw"
+      operation 137095 "draw"
 	public explicit_return_type "bool"
 	nparams 1
 	  param inout name "destination" explicit_type "SDL_Surface"
@@ -1791,7 +1791,7 @@ ${inlines}
 	
       end
 
-      operation 175879 "processKeyDown"
+      operation 137223 "processKeyDown"
 	public explicit_return_type "bool"
 	nparams 1
 	  param inout name "event" explicit_type "SDL_Event"
@@ -1807,10 +1807,10 @@ ${inlines}
 	comment "draws the textbox"
       end
 
-      operation 176007 "setState"
+      operation 137351 "setState"
 	public explicit_return_type "bool"
 	nparams 1
-	  param in name "state" type class_ref 162439 // TextboxFocus
+	  param in name "state" type class_ref 129287 // TextboxFocus
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
 "
 	cpp_def "${comment}${inline}${type} ${class}::${name}${(}${t0} ${p0}${)}${const}${volatile}${throw}${staticnl}{
@@ -1823,8 +1823,8 @@ ${inlines}
 	comment "processes keyboard input"
       end
 
-      operation 176135 "getState"
-	public return_type class_ref 162439 // TextboxFocus
+      operation 137479 "getState"
+	public return_type class_ref 129287 // TextboxFocus
 	nparams 1
 	  param in name "" explicit_type "void"
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${t0} ${p0}${v0}${)}${const}${volatile}${throw}${abstract};
@@ -1838,7 +1838,7 @@ ${inlines}
 	
       end
 
-      operation 176263 "isMouseover"
+      operation 137607 "isMouseover"
 	public explicit_return_type "bool"
 	nparams 2
 	  param in name "x" explicit_type "int"
@@ -1855,7 +1855,7 @@ ${inlines}
       end
     end
 
-    class 162311 "LoadingScreen"
+    class 129159 "LoadingScreen"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};
@@ -1870,7 +1870,7 @@ ${inlines}
       comment "#include \"../SDL/SDL_timer.h\"
 header for the loading screen
 declaration of the class"
-      attribute 257287 "frame"
+      attribute 130183 "frame"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1881,7 +1881,7 @@ declaration of the class"
 	comment "declarations of variables"
       end
 
-      attribute 257415 "ticksStart"
+      attribute 130311 "ticksStart"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1891,7 +1891,7 @@ declaration of the class"
 	idl_decl ""
       end
 
-      attribute 257543 "folder"
+      attribute 130439 "folder"
 	private explicit_type "std::string"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1901,7 +1901,7 @@ declaration of the class"
 	idl_decl ""
       end
 
-      attribute 257671 "screenname"
+      attribute 130567 "screenname"
 	private explicit_type "std::string"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1911,7 +1911,7 @@ declaration of the class"
 	idl_decl ""
       end
 
-      attribute 257799 "waitname"
+      attribute 130695 "waitname"
 	private explicit_type "std::string"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -1921,7 +1921,7 @@ declaration of the class"
 	idl_decl ""
       end
 
-      attribute 257927 "loadingScreen"
+      attribute 130823 "loadingScreen"
 	private explicit_type "SDL_Surface"
 	multiplicity "[30]"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${multiplicity}${value};
@@ -1932,7 +1932,7 @@ declaration of the class"
 	idl_decl ""
       end
 
-      attribute 258055 "loadingWait"
+      attribute 130951 "loadingWait"
 	private explicit_type "SDL_Surface"
 	multiplicity "[10]"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} * ${name}${multiplicity}${value};
@@ -1943,7 +1943,7 @@ declaration of the class"
 	idl_decl ""
       end
 
-      operation 172423 "LoadingScreen"
+      operation 133767 "LoadingScreen"
 	public explicit_return_type ""
 	nparams 0
 	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw};
@@ -1957,7 +1957,7 @@ declaration of the class"
 	
       end
 
-      operation 172551 "PlayWait"
+      operation 133895 "PlayWait"
 	public explicit_return_type "void"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -1972,7 +1972,7 @@ declaration of the class"
 	comment "constructor"
       end
 
-      operation 172679 "PlayStart"
+      operation 134023 "PlayStart"
 	public explicit_return_type "void"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -1987,7 +1987,7 @@ declaration of the class"
 	comment "music"
       end
 
-      operation 172807 "draw"
+      operation 134151 "draw"
 	public explicit_return_type "bool"
 	nparams 1
 	  param inout name "destination" explicit_type "SDL_Surface"
@@ -2004,7 +2004,7 @@ declaration of the class"
       end
     end
 
-    class 162439 "TextboxFocus"
+    class 129287 "TextboxFocus"
       visibility package stereotype "enum"
       cpp_decl "${comment}enum ${name} {
 ${items}
@@ -2016,8 +2016,8 @@ ${items}
       idl_decl ""
       explicit_switch_type ""
       
-      attribute 259975 "TEXTBOX_NO_FOCUS"
-	public type class_ref 162439 // TextboxFocus
+      attribute 132871 "TEXTBOX_NO_FOCUS"
+	public type class_ref 129287 // TextboxFocus
 	cpp_decl "  ${name}${value},${comment}"
 	java_decl ""
 	php_decl ""
@@ -2025,8 +2025,8 @@ ${items}
 	idl_decl ""
       end
 
-      attribute 260103 "TEXTBOX_FOCUS"
-	public type class_ref 162439 // TextboxFocus
+      attribute 132999 "TEXTBOX_FOCUS"
+	public type class_ref 129287 // TextboxFocus
 	cpp_decl "  ${name}${value},${comment}"
 	java_decl ""
 	php_decl ""
@@ -2035,7 +2035,7 @@ ${items}
       end
     end
 
-    class 162567 "TextboxType"
+    class 129415 "TextboxType"
       visibility package stereotype "enum"
       cpp_decl "${comment}enum ${name} {
 ${items}
@@ -2047,8 +2047,8 @@ ${items}
       idl_decl ""
       explicit_switch_type ""
       
-      attribute 260231 "TEXTBOX_TYPE_NUM"
-	public type class_ref 162567 // TextboxType
+      attribute 133127 "TEXTBOX_TYPE_NUM"
+	public type class_ref 129415 // TextboxType
 	cpp_decl "  ${name}${value},${comment}"
 	java_decl ""
 	php_decl ""
@@ -2056,8 +2056,8 @@ ${items}
 	idl_decl ""
       end
 
-      attribute 260359 "TEXTBOX_TYPE_MOVE"
-	public type class_ref 162567 // TextboxType
+      attribute 133255 "TEXTBOX_TYPE_MOVE"
+	public type class_ref 129415 // TextboxType
 	cpp_decl "  ${name}${value},${comment}"
 	java_decl ""
 	php_decl ""
@@ -2066,7 +2066,7 @@ ${items}
       end
     end
 
-    class 162695 "Timer"
+    class 129543 "Timer"
       visibility package 
       cpp_decl "${comment}${template}class ${name}${inherit} {
 ${members}};
@@ -2078,7 +2078,7 @@ ${inlines}
       idl_decl ""
       explicit_switch_type ""
       
-      attribute 261511 "startTicks"
+      attribute 134407 "startTicks"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -2088,7 +2088,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 261639 "pausedTicks"
+      attribute 134535 "pausedTicks"
 	private explicit_type "int"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -2098,7 +2098,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 261767 "paused"
+      attribute 134663 "paused"
 	private explicit_type "bool"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -2108,7 +2108,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      attribute 261895 "started"
+      attribute 134791 "started"
 	private explicit_type "bool"
 	cpp_decl "    ${comment}${static}${mutable}${volatile}${const}${type} ${name}${value};
 "
@@ -2118,7 +2118,7 @@ ${inlines}
 	idl_decl ""
       end
 
-      operation 176391 "Timer"
+      operation 137735 "Timer"
 	public explicit_return_type ""
 	nparams 0
 	cpp_decl "    ${comment}${inline}${name}${(}${)}${volatile}${throw};
@@ -2133,7 +2133,7 @@ ${inlines}
 	comment "Initializes variables"
       end
 
-      operation 176519 "start"
+      operation 137863 "start"
 	public explicit_return_type "void"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -2148,7 +2148,7 @@ ${inlines}
 	comment "The various clock actions"
       end
 
-      operation 176647 "stop"
+      operation 137991 "stop"
 	public explicit_return_type "void"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -2162,7 +2162,7 @@ ${inlines}
 	
       end
 
-      operation 176775 "pause"
+      operation 138119 "pause"
 	public explicit_return_type "void"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -2176,7 +2176,7 @@ ${inlines}
 	
       end
 
-      operation 176903 "unpause"
+      operation 138247 "unpause"
 	public explicit_return_type "void"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -2190,7 +2190,7 @@ ${inlines}
 	
       end
 
-      operation 177031 "get_ticks"
+      operation 138375 "get_ticks"
 	public explicit_return_type "int"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -2205,7 +2205,7 @@ ${inlines}
 	comment "Gets the timer's time"
       end
 
-      operation 177159 "is_started"
+      operation 138503 "is_started"
 	public explicit_return_type "bool"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -2220,7 +2220,7 @@ ${inlines}
 	comment "Checks the status of the timer"
       end
 
-      operation 177287 "is_paused"
+      operation 138631 "is_paused"
 	public explicit_return_type "bool"
 	nparams 0
 	cpp_decl "    ${comment}${friend}${static}${inline}${virtual}${type} ${name}${(}${)}${const}${volatile}${throw}${abstract};
@@ -2236,11 +2236,11 @@ ${inlines}
     end
   end
 
-  deploymentview 135303 "include"
+  deploymentview 128007 "include"
     //deployment diagram settings
     package_name_in_tab default show_context default write_horizontally default auto_label_position default draw_all_relations default shadow default
     draw_component_as_icon default show_component_req_prov default show_component_rea default show_stereotype_properties default
-    artifact 144135 "bezier"
+    artifact 128007 "bezier"
       stereotype "source"
       cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
 #define ${NAMESPACE}_${NAME}_H
@@ -2259,12 +2259,12 @@ ${namespace_start}
 ${members}
 ${namespace_end}"
       associated_classes
-	class_ref 161159 // Curve
-	class_ref 161287 // Bezier
+	class_ref 128007 // Curve
+	class_ref 128135 // Bezier
       end
     end
 
-    artifact 144263 "button"
+    artifact 128135 "button"
       stereotype "source"
       cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
 #define ${NAMESPACE}_${NAME}_H
@@ -2283,12 +2283,12 @@ ${namespace_start}
 ${members}
 ${namespace_end}"
       associated_classes
-	class_ref 161671 // ButtonState
-	class_ref 161799 // Button
+	class_ref 128519 // ButtonState
+	class_ref 128647 // Button
       end
     end
 
-    artifact 144391 "draw"
+    artifact 128263 "draw"
       stereotype "source"
       cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
 #define ${NAMESPACE}_${NAME}_H
@@ -2307,11 +2307,11 @@ ${namespace_start}
 ${members}
 ${namespace_end}"
       associated_classes
-	class_ref 161415 // Point
+	class_ref 128263 // Point
       end
     end
 
-    artifact 144519 "game"
+    artifact 128391 "game"
       stereotype "source"
       cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
 #define ${NAMESPACE}_${NAME}_H
@@ -2330,11 +2330,11 @@ ${namespace_start}
 ${members}
 ${namespace_end}"
       associated_classes
-	class_ref 161543 // Game
+	class_ref 128391 // Game
       end
     end
 
-    artifact 144647 "LoadingScreen"
+    artifact 128519 "LoadingScreen"
       stereotype "source"
       cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
 #define ${NAMESPACE}_${NAME}_H
@@ -2353,11 +2353,11 @@ ${namespace_start}
 ${members}
 ${namespace_end}"
       associated_classes
-	class_ref 162311 // LoadingScreen
+	class_ref 129159 // LoadingScreen
       end
     end
 
-    artifact 144775 "Sprout"
+    artifact 128647 "Sprout"
       stereotype "source"
       cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
 #define ${NAMESPACE}_${NAME}_H
@@ -2376,12 +2376,12 @@ ${namespace_start}
 ${members}
 ${namespace_end}"
       associated_classes
-	class_ref 161927 // SproutClips
-	class_ref 162055 // Sprout
+	class_ref 128775 // SproutClips
+	class_ref 128903 // Sprout
       end
     end
 
-    artifact 144903 "textbox"
+    artifact 128775 "textbox"
       stereotype "source"
       cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
 #define ${NAMESPACE}_${NAME}_H
@@ -2400,13 +2400,13 @@ ${namespace_start}
 ${members}
 ${namespace_end}"
       associated_classes
-	class_ref 162439 // TextboxFocus
-	class_ref 162567 // TextboxType
-	class_ref 162183 // TextBox
+	class_ref 129287 // TextboxFocus
+	class_ref 129415 // TextboxType
+	class_ref 129031 // TextBox
       end
     end
 
-    artifact 145031 "timer"
+    artifact 128903 "timer"
       stereotype "source"
       cpp_h "#ifndef ${NAMESPACE}_${NAME}_H
 #define ${NAMESPACE}_${NAME}_H
@@ -2425,7 +2425,7 @@ ${namespace_start}
 ${members}
 ${namespace_end}"
       associated_classes
-	class_ref 162695 // Timer
+	class_ref 129543 // Timer
       end
     end
   end
