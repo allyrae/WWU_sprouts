@@ -5,33 +5,32 @@
 //Constructor for Loading screen
 LoadingScreen::LoadingScreen(void)
 {
-  folder = "images/loadingscreen/";
-  screenname = "loadingscreen000";
-  waitname = "loadingwait000";
-  ticksStart = SDL_GetTicks();
+   folder = "images/loadingscreen/";
+   screenname = "";
+   waitname = "loadingwait000";
+   ticksStart = SDL_GetTicks();
    frame = 0;
    isWait = true;
    isStart = false;
-      char buffer[3];
-   for (int i = 0; i < 30; i++)
+   char buffer[3];
+   int pic;
+   for (int i = 0; i <=123; i++)
    {
-      if (i >= 9)
-         screenname = "loadingscreen00";
-
-      sprintf(buffer, "%d", i+1);
+      //pic=i;
+      //if (i >= 9)
+         //pic = i*9;
+         /*screenname = "";*/
+      sprintf(buffer, "%d", i);
       std::string filename = folder + screenname + buffer +".jpg";
       //std::cout << "Filename String: " << filename << std::endl;
       loadingScreen[i] = load_image(filename);
    }
 
-   for (int i = 20; i < 30; i++)
-   {
-      if (i >= 9)
-         waitname = "loadingwait00";
+   //waitname = "front";
+   //loadingWait[0] = IMG_Load( "images/loadingscreen/front.png" );  /*i-20] = load_image(folder + waitname + buffer + ".jpg");*/
+  //printf(buffer, "%d", i);
+  loadingWait = IMG_Load( "images/loadingscreen/front.png" );
 
-      sprintf(buffer, "%d", i);
-      loadingWait[i-20] = load_image(folder + waitname + buffer + ".jpg");
-   }
 }
 
 //loading screen while waiting for play to start
@@ -62,7 +61,7 @@ bool LoadingScreen::draw(SDL_Surface* dest)
     ticksStart += 1000/30;
   }
 
-  if (frame >= 30)
+  if (frame >= 123)
   {
     frame = 0;
     if (!isWait)
@@ -81,7 +80,7 @@ bool LoadingScreen::draw(SDL_Surface* dest)
     {
       frame = frame % 10;
     }
-    apply_surface(0,0,loadingWait[frame],dest,NULL);
+    apply_surface(0,0,loadingWait,dest,NULL);
   }
   return true;
 }

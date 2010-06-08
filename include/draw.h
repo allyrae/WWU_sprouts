@@ -10,7 +10,6 @@ Problems: None that we know of
 #include "SDL.h"
 #include "SDL_image.h"
 #include <string>
-
 // Header for global drawing functions
 
 //Screen attributes

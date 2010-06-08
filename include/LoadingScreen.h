@@ -19,8 +19,8 @@ class LoadingScreen
     std::string screenname;
     std::string waitname;
     bool isWait, isStart;
-    SDL_Surface *loadingScreen[30];
-    SDL_Surface *loadingWait[10];
+    SDL_Surface *loadingScreen[150];
+    SDL_Surface *loadingWait;
   public:
     LoadingScreen();//constructor
     void PlayWait();//music

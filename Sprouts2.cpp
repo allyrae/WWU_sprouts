@@ -263,7 +263,7 @@ bool init()
 //  sproutClips.click = load_image( "images/click.png" );
   sproutClips.anime = IMG_Load( "images/hover.png" );
   sproutClips.click = IMG_Load( "images/click.png" );
-sproutClips.font = font;
+  sproutClips.font = font;
   if (sproutClips.font == NULL)
   {
     cout << "ERROR:  Invlaid font" << endl;
@@ -490,8 +490,8 @@ int main(int argc, char* argv[])
   loading = new LoadingScreen();
   loading->PlayWait();
 
-  Point startPlace = {355, 375};
-  startButton = new Button(startPlace,"Start Game",font);
+  Point startPlace = {360, 367};
+  startButton = new Button(startPlace,"          ",font);
 
   g = new Game(false,true,4,&sproutClips);
 
